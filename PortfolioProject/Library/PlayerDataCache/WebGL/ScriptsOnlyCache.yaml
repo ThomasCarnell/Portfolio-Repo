@@ -1,7 +1,5 @@
 ScriptsOnlyBuild:
   usedScripts:
-    Assembly-CSharp.dll:
-    - ButtonClickScript
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -12,15 +10,7 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
-    - UnityEngine.UI.CanvasScaler
-    - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.Text
-  serializedClasses:
-    UnityEngine.CoreModule:
-    - UnityEngine.Events.PersistentCallGroup
-    UnityEngine.UI:
-    - UnityEngine.UI.FontData
-    - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+  serializedClasses: {}
   methodsToPreserve: []
   sceneClasses:
     Assets/Scenes/MainScene.unity:
@@ -32,19 +22,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
     - Class: 48
-      Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
-    - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -53,30 +33,14 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 5260}
-    - Class: 114
-      Script: {instanceID: 5390}
-    - Class: 114
-      Script: {instanceID: 6160}
-    - Class: 114
-      Script: {instanceID: 6512}
-    - Class: 114
       Script: {instanceID: 6758}
     - Class: 114
       Script: {instanceID: 6986}
     - Class: 115
       Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
       Script: {instanceID: 0}
     - Class: 850595691
       Script: {instanceID: 0}
@@ -510,4 +474,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainScene.unity
-  playerPath: C:/Users/carco/Portfolio_Project/Portfolio/docs
+  playerPath: C:/Users/carco/Portfolio_Project/Portfolio/Ny mappe
