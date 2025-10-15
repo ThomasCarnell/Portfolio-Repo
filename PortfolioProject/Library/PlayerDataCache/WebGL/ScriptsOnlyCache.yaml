@@ -474,4 +474,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainScene.unity
-  playerPath: C:/Users/carco/Portfolio_Project/Portfolio/Ny mappe
+  playerPath: C:/Users/carco/Portfolio_Project/Portfolio/docs
