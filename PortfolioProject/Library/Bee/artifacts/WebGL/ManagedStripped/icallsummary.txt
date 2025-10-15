@@ -720,6 +720,7 @@ UnityEngine.Transform::IsChildOf_Injected
 UnityEngine.Transform::get_childCount_Injected
 UnityEngine.Transform::GetChild_Injected
 UnityEngine.Transform::GetParent_Injected
+UnityEngine.Transform::Internal_LookAt_Injected
 UnityEngine.Transform::InverseTransformPoint_Injected
 UnityEngine.Transform::SetAsFirstSibling_Injected
 UnityEngine.Transform::SetParent_Injected
@@ -736,6 +737,7 @@ UnityEngine.Transform::set_hasChanged_Injected
 UnityEngine.Transform::set_localPosition_Injected
 UnityEngine.Transform::set_localRotation_Injected
 UnityEngine.Transform::set_localScale_Injected
+UnityEngine.Transform::set_position_Injected
 UnityEngine.Transform::set_rotation_Injected
 UnityEngine.U2D.SpriteAtlas::CanBindTo_Injected
 UnityEngine.U2D.SpriteAtlasManager::Register_Injected

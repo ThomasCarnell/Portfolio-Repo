@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - PointAttObj
     - Rotate
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -101,6 +102,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6926}
     - Class: 114
       Script: {instanceID: 7018}
+    - Class: 114
+      Script: {instanceID: 24678}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -550,6 +553,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 2b5f8ea9e725298cba13f95bead3e852
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PointAttObj
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainScene.unity

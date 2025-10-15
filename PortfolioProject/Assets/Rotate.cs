@@ -19,5 +19,10 @@ public class Rotate : MonoBehaviour
     {
         offSpeed = Mathf.PingPong(Time.time, 5f);
         cube.transform.Rotate(new Vector3(15 * offSpeed, 30 * offSpeed, 45) * Time.deltaTime * speed);
+        cube.transform.localScale = new Vector3(1 + offSpeed / 5, 1 + offSpeed / 5, 1 + offSpeed / 5);
+        if(cube.transform.localScale.x >= 3)
+        {
+            cube.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+        }
     }
 }

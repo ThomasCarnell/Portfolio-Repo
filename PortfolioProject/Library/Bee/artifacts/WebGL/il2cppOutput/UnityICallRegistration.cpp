@@ -3286,6 +3286,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Transform_GetParent_Injected();
 		Register_UnityEngine_Transform_GetParent_Injected();
 
+		//System.Void UnityEngine.Transform::Internal_LookAt_Injected(System.IntPtr,UnityEngine.Vector3&,UnityEngine.Vector3&)
+		void Register_UnityEngine_Transform_Internal_LookAt_Injected();
+		Register_UnityEngine_Transform_Internal_LookAt_Injected();
+
 		//System.Void UnityEngine.Transform::InverseTransformPoint_Injected(System.IntPtr,UnityEngine.Vector3&,UnityEngine.Vector3&)
 		void Register_UnityEngine_Transform_InverseTransformPoint_Injected();
 		Register_UnityEngine_Transform_InverseTransformPoint_Injected();
@@ -3349,6 +3353,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Transform::set_localScale_Injected(System.IntPtr,UnityEngine.Vector3&)
 		void Register_UnityEngine_Transform_set_localScale_Injected();
 		Register_UnityEngine_Transform_set_localScale_Injected();
+
+		//System.Void UnityEngine.Transform::set_position_Injected(System.IntPtr,UnityEngine.Vector3&)
+		void Register_UnityEngine_Transform_set_position_Injected();
+		Register_UnityEngine_Transform_set_position_Injected();
 
 		//System.Void UnityEngine.Transform::set_rotation_Injected(System.IntPtr,UnityEngine.Quaternion&)
 		void Register_UnityEngine_Transform_set_rotation_Injected();

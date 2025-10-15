@@ -1,5 +1,6 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="PointAttObj" preserve="nothing"/>
 		<type fullname="Rotate" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro">
