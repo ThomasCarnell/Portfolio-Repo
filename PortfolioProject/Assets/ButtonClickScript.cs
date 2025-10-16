@@ -10,20 +10,37 @@ public class ButtonClickScript : MonoBehaviour
     [SerializeField]
     private GameObject cube;
     [SerializeField]
-    private Material cubeMAt;
+    private GameManager gameManager;
+    [Header("Text GameObjects")]
     [SerializeField]
-    private Text cubeText;
+    private GameObject title;
     [SerializeField]
-    private Text counterText;
+    private GameObject unityPortfolio;
 
-    int counter = 1;
+    [Space(10)]
+    
+    [SerializeField]
+    int speed = 10;
+    [SerializeField]
+    float offSpeed = 2;
+    float size = 2;
+
+    public Camera mainCamera;
+     
+     
+    // size control
+    [SerializeField]
+    float dynamicSize = 1f;             // current uniform scale
+    [SerializeField]
+    float growthRate = 1f;       // units per second while growing
+    [SerializeField]
+    float maxSize = 3f;          // clamp max scale
+    private bool growing = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        cubeMAt.color = Color.red;
-        cube.GetComponent<Renderer>().material = cubeMAt;
-        counterText.text = "Counter: 0";
+
     }
 
     // Update is called once per frame
@@ -31,44 +48,47 @@ public class ButtonClickScript : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Camera cam = mainCamera != null ? mainCamera : Camera.main;
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
+            if(Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.gameObject == cube)
+                if(hit.collider.gameObject == gameObject)
                 {
-                    counterText.text = "Counter: " + counter++;
-                    if (cubeMAt.color == Color.green)
-                    {
-                        ChangeCubeColorRed();
-                        UpdateCubeTextRed();
-                        return;
-                    }
-                    ChangeCubeColorGreen();
-                    UpdateCubeTextGreen();
+                    gameManager.openTarget(gameObject.name);
+                                ButtonClickSeq();
+
                 }
+            }
+            //gameManager.openTarget(gameObject.name);
+        }
+
+        offSpeed = Mathf.PingPong(Time.time, 5f);
+        //size = Mathf.PingPong(Time.time, 5f);
+        cube.transform.Rotate(new Vector3(15 * offSpeed, 30 * offSpeed, 45) * Time.deltaTime * speed);
+
+         // increase size over time when growing
+        if (growing)
+        {
+            size += growthRate * Time.deltaTime;
+            size = Mathf.Min(size, maxSize);
+            cube.transform.localScale = Vector3.one * size;
+
+            // stop growing if reached max AND remove UI elements
+            if (Mathf.Approximately(size, maxSize))
+            {
+                growing = false;
+                cube.gameObject.SetActive(false);
+                mainCamera.backgroundColor = Color.white;
+                title.gameObject.SetActive(false);
+
+
             }
         }
     }
-
-    //Green
-    private void UpdateCubeTextGreen()
+    
+    void ButtonClickSeq()
     {
-        cubeText.text = "Green";
-    }
-
-    private void ChangeCubeColorGreen()
-    {
-        cubeMAt.color = Color.green;
-    }
-
-    //Red
-    private void UpdateCubeTextRed()
-    {
-        cubeText.text = "Red";
-    }
-    private void ChangeCubeColorRed()
-    {
-        cubeMAt.color = Color.red;
+        growing = true;
     }
 }

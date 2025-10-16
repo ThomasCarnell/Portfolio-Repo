@@ -9,7 +9,7 @@ public class PointAttObj : MonoBehaviour
 
     private float angle = 0f;
 
-    void FixedUpdate()
+    void Update()
     {
         if (target != null)
         {
