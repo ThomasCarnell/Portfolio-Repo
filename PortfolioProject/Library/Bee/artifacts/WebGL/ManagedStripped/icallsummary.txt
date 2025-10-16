@@ -105,6 +105,7 @@ UnityEngine.Camera::ScreenToViewportPoint_Injected
 UnityEngine.Camera::SetupCurrent_Injected
 UnityEngine.Camera::WorldToScreenPoint_Injected
 UnityEngine.Camera::get_pixelRect_Injected
+UnityEngine.Camera::set_backgroundColor_Injected
 UnityEngine.Camera::get_clearFlags_Injected
 UnityEngine.CameraRaycastHelper::RaycastTry2D_Injected
 UnityEngine.CameraRaycastHelper::RaycastTry_Injected

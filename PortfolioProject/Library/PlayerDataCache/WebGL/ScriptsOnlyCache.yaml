@@ -1,7 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ButtonClickScript
     - FPSCounter
+    - GameManager
     - PointAttObj
     - Rotate
     Unity.Rider.Editor.dll:
@@ -84,29 +86,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 4908}
+      Script: {instanceID: 4912}
     - Class: 114
-      Script: {instanceID: 5050}
+      Script: {instanceID: 5054}
     - Class: 114
-      Script: {instanceID: 5294}
+      Script: {instanceID: 5298}
     - Class: 114
-      Script: {instanceID: 5742}
+      Script: {instanceID: 5314}
     - Class: 114
-      Script: {instanceID: 6000}
+      Script: {instanceID: 5748}
     - Class: 114
-      Script: {instanceID: 6194}
+      Script: {instanceID: 5768}
     - Class: 114
-      Script: {instanceID: 6792}
+      Script: {instanceID: 6008}
     - Class: 114
-      Script: {instanceID: 6882}
+      Script: {instanceID: 6202}
     - Class: 114
-      Script: {instanceID: 6914}
+      Script: {instanceID: 6554}
     - Class: 114
-      Script: {instanceID: 6930}
+      Script: {instanceID: 6800}
     - Class: 114
-      Script: {instanceID: 7022}
+      Script: {instanceID: 6890}
     - Class: 114
-      Script: {instanceID: 24496}
+      Script: {instanceID: 6922}
+    - Class: 114
+      Script: {instanceID: 6938}
+    - Class: 114
+      Script: {instanceID: 7030}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -138,7 +144,7 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
-      Hash: 7a99370aabfe290ad7fc2ee7914290ea
+      Hash: 76cd3dac80f6a8a4b58aedd23787010b
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Rotate
@@ -190,6 +196,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: c64d4f4364b0b65d7a518fa59a382616
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: FPSCounter
   - hash:
       serializedVersion: 2
       Hash: cf32d98954e63b8e30e9334b152e9b8e
@@ -256,6 +268,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: e47d77dff9f7fd0f54480d10a98b411f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: 8dc40a01667ca02b3354a4e7a61be082
@@ -354,7 +372,7 @@ ScriptsOnlyBuild:
     className: InputField
   - hash:
       serializedVersion: 2
-      Hash: 7ca04fbdc2cce327bd294ddd17998c6d
+      Hash: 82bbd60c9c065cb14468867f46ec2f9b
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ButtonClickScript
@@ -562,12 +580,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
-  - hash:
-      serializedVersion: 2
-      Hash: c64d4f4364b0b65d7a518fa59a382616
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: FPSCounter
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainScene.unity
