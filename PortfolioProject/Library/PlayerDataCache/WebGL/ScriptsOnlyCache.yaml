@@ -83,27 +83,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 4906}
+      Script: {instanceID: 4908}
     - Class: 114
-      Script: {instanceID: 5048}
+      Script: {instanceID: 5050}
     - Class: 114
-      Script: {instanceID: 5292}
+      Script: {instanceID: 5294}
     - Class: 114
-      Script: {instanceID: 5740}
+      Script: {instanceID: 5742}
     - Class: 114
-      Script: {instanceID: 5998}
+      Script: {instanceID: 6000}
     - Class: 114
-      Script: {instanceID: 6192}
+      Script: {instanceID: 6194}
     - Class: 114
-      Script: {instanceID: 6790}
+      Script: {instanceID: 6792}
     - Class: 114
-      Script: {instanceID: 6880}
+      Script: {instanceID: 6882}
     - Class: 114
-      Script: {instanceID: 6926}
+      Script: {instanceID: 6914}
     - Class: 114
-      Script: {instanceID: 7018}
+      Script: {instanceID: 6930}
     - Class: 114
-      Script: {instanceID: 24678}
+      Script: {instanceID: 7022}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -417,6 +417,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
+      Hash: 2b5f8ea9e725298cba13f95bead3e852
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PointAttObj
+  - hash:
+      serializedVersion: 2
       Hash: 0b63f6d3335e11939ce8790b904c8691
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -553,12 +559,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
-  - hash:
-      serializedVersion: 2
-      Hash: 2b5f8ea9e725298cba13f95bead3e852
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PointAttObj
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainScene.unity

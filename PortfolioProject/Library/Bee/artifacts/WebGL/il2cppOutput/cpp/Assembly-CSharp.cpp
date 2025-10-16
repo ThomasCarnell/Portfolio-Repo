@@ -665,7 +665,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ButtonClickScript__ctor_m735FB87BB29DA02
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointAttObj_Update_m89D0F8FE8517C44E722911C898A2C7558CEEBD7A (PointAttObj_tC83B02E61D0DB7EAD0469F4E54E6C636F1CF2FBE* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointAttObj_FixedUpdate_mB19B825C5C0617736E215852BFF4620665819751 (PointAttObj_tC83B02E61D0DB7EAD0469F4E54E6C636F1CF2FBE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
