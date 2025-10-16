@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - FPSCounter
     - PointAttObj
     - Rotate
     Unity.Rider.Editor.dll:
@@ -104,6 +105,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6930}
     - Class: 114
       Script: {instanceID: 7022}
+    - Class: 114
+      Script: {instanceID: 24496}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -559,6 +562,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: c64d4f4364b0b65d7a518fa59a382616
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: FPSCounter
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainScene.unity

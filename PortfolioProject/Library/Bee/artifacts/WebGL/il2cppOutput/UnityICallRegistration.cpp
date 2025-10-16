@@ -1410,6 +1410,14 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GUIStyle_get_rawName_Injected();
 		Register_UnityEngine_GUIStyle_get_rawName_Injected();
 
+		//System.Void UnityEngine.GUIStyle::set_alignment_Injected(System.IntPtr,UnityEngine.TextAnchor)
+		void Register_UnityEngine_GUIStyle_set_alignment_Injected();
+		Register_UnityEngine_GUIStyle_set_alignment_Injected();
+
+		//System.Void UnityEngine.GUIStyle::set_fontSize_Injected(System.IntPtr,System.Int32)
+		void Register_UnityEngine_GUIStyle_set_fontSize_Injected();
+		Register_UnityEngine_GUIStyle_set_fontSize_Injected();
+
 		//System.Void UnityEngine.GUIStyle::set_rawName_Injected(System.IntPtr,UnityEngine.Bindings.ManagedSpanWrapper&)
 		void Register_UnityEngine_GUIStyle_set_rawName_Injected();
 		Register_UnityEngine_GUIStyle_set_rawName_Injected();
