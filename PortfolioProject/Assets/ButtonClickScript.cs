@@ -15,7 +15,18 @@ public class ButtonClickScript : MonoBehaviour
     [SerializeField]
     private GameObject title;
     [SerializeField]
+    private GameObject buttonTexts;
+    [SerializeField]
     private GameObject unityPortfolio;
+    [Header("Button GameObjects")]
+    [SerializeField]
+    private GameObject unityButton;
+    [SerializeField]
+    private GameObject soundDesignButton;
+    [SerializeField]
+    private GameObject physicalToysButton;
+    [SerializeField]
+    private GameObject returnToMainMenuButton;
 
     [Space(10)]
     
@@ -37,10 +48,13 @@ public class ButtonClickScript : MonoBehaviour
     float maxSize = 3f;          // clamp max scale
     private bool growing = false;
 
+    private Vector3 startsize;
+    private bool returnButtonClicked = false;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        startsize = GetComponent<Transform>().localScale;
     }
 
     // Update is called once per frame
@@ -48,27 +62,33 @@ public class ButtonClickScript : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+
             Camera cam = mainCamera != null ? mainCamera : Camera.main;
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if(Physics.Raycast(ray, out hit))
             {
-                if(hit.collider.gameObject == gameObject)
+                if (hit.collider.gameObject == gameObject && tag != "ReturnButton")
                 {
                     gameManager.openTarget(gameObject.name);
-                                ButtonClickSeq();
-
+                    growing = true;
+                }
+                
+                //restart buttons
+                if(hit.collider.gameObject == gameObject && tag == "ReturnButton")
+                {
+                    returnButtonClicked = true;
+                    GetComponent<Transform>().localScale = startsize;
+                    EnableButtons();
                 }
             }
-            //gameManager.openTarget(gameObject.name);
         }
 
         offSpeed = Mathf.PingPong(Time.time, 5f);
-        //size = Mathf.PingPong(Time.time, 5f);
         cube.transform.Rotate(new Vector3(15 * offSpeed, 30 * offSpeed, 45) * Time.deltaTime * speed);
 
          // increase size over time when growing
-        if (growing)
+        if (growing == true && returnButtonClicked == false)
         {
             size += growthRate * Time.deltaTime;
             size = Mathf.Min(size, maxSize);
@@ -77,18 +97,29 @@ public class ButtonClickScript : MonoBehaviour
             // stop growing if reached max AND remove UI elements
             if (Mathf.Approximately(size, maxSize))
             {
+                DisableButtons();
                 growing = false;
-                cube.gameObject.SetActive(false);
-                mainCamera.backgroundColor = Color.white;
-                title.gameObject.SetActive(false);
-
-
+                cube.transform.localScale = startsize;
+                size = 2;
             }
         }
     }
-    
-    void ButtonClickSeq()
+
+    void DisableButtons()
     {
-        growing = true;
+        unityButton.SetActive(false);
+        soundDesignButton.SetActive(false);
+        physicalToysButton.SetActive(false);
+
+        buttonTexts.SetActive(false);
+    }
+    public void EnableButtons()
+    {
+        returnButtonClicked = false;
+        unityButton.SetActive(true);
+        soundDesignButton.SetActive(true);
+        physicalToysButton.SetActive(true);
+
+        buttonTexts.SetActive(true);
     }
 }

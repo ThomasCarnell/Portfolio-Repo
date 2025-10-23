@@ -502,10 +502,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Camera_get_pixelRect_Injected();
 		Register_UnityEngine_Camera_get_pixelRect_Injected();
 
-		//System.Void UnityEngine.Camera::set_backgroundColor_Injected(System.IntPtr,UnityEngine.Color&)
-		void Register_UnityEngine_Camera_set_backgroundColor_Injected();
-		Register_UnityEngine_Camera_set_backgroundColor_Injected();
-
 		//UnityEngine.CameraClearFlags UnityEngine.Camera::get_clearFlags_Injected(System.IntPtr)
 		void Register_UnityEngine_Camera_get_clearFlags_Injected();
 		Register_UnityEngine_Camera_get_clearFlags_Injected();
@@ -1141,6 +1137,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.GameObject::SetActive_Injected(System.IntPtr,System.Boolean)
 		void Register_UnityEngine_GameObject_SetActive_Injected();
 		Register_UnityEngine_GameObject_SetActive_Injected();
+
+		//System.Void UnityEngine.GameObject::get_tag_Injected(System.IntPtr,UnityEngine.Bindings.ManagedSpanWrapper&)
+		void Register_UnityEngine_GameObject_get_tag_Injected();
+		Register_UnityEngine_GameObject_get_tag_Injected();
 
 		//System.Void UnityEngine.GameObject::set_layer_Injected(System.IntPtr,System.Int32)
 		void Register_UnityEngine_GameObject_set_layer_Injected();

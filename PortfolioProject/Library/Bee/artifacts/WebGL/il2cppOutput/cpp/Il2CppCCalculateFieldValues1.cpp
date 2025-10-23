@@ -528,6 +528,7 @@ struct BatchDrawRange_t736D745E918A629658B80A0F7D2D17DAFBA6172F;
 struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22;
 struct Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3;
 struct Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098;
+struct ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA;
 struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3;
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
 struct CancellationCallbackInfo_tC8BE558ED1E173434DD1919D574C9FAFE501E22D;
@@ -10445,7 +10446,12 @@ struct ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA  : public Mon
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___cube;
 	GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* ___gameManager;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___title;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___buttonTexts;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___unityPortfolio;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___unityButton;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___soundDesignButton;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___physicalToysButton;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___returnToMainMenuButton;
 	int32_t ___speed;
 	float ___offSpeed;
 	float ___size;
@@ -10454,6 +10460,8 @@ struct ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA  : public Mon
 	float ___growthRate;
 	float ___maxSize;
 	bool ___growing;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startsize;
+	bool ___returnButtonClicked;
 };
 struct EventTrigger_tAEBFB7A16CA99343EA87722F78884BF8646BAE1B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -10466,6 +10474,7 @@ struct FPSCounter_t43778C9F199A3BDC56F47834FC9838D1235DBC66  : public MonoBehavi
 };
 struct GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA* ___buttonClickScript;
 	String_t* ___currentbutton;
 };
 struct PointAttObj_tC83B02E61D0DB7EAD0469F4E54E6C636F1CF2FBE  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
@@ -15945,15 +15954,15 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4701[6] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4706[1] = 
 {
 	static_cast<int32_t>(offsetof(NavMesh_t3543D236ABB9A67F696BCF9440D669A1578B3D46_StaticFields, ___onPreUpdate)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4715[12] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4715[19] = 
 {
-	static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___cube)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___gameManager)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___title)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___unityPortfolio)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___speed)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___offSpeed)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___size)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___mainCamera)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___dynamicSize)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___growthRate)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___maxSize)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___growing)),};
+	static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___cube)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___gameManager)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___title)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___buttonTexts)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___unityPortfolio)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___unityButton)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___soundDesignButton)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___physicalToysButton)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___returnToMainMenuButton)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___speed)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___offSpeed)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___size)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___mainCamera)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___dynamicSize)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___growthRate)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___maxSize)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___growing)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___startsize)),static_cast<int32_t>(offsetof(ButtonClickScript_t51942F6B5A248479B4047CF161C759C6E6D546AA, ___returnButtonClicked)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4716[2] = 
 {
 	static_cast<int32_t>(offsetof(FPSCounter_t43778C9F199A3BDC56F47834FC9838D1235DBC66, ___deltaTime)),static_cast<int32_t>(offsetof(FPSCounter_t43778C9F199A3BDC56F47834FC9838D1235DBC66, ___off)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4717[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4717[2] = 
 {
-	static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___currentbutton)),};
+	static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___buttonClickScript)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___currentbutton)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4718[5] = 
 {
 	static_cast<int32_t>(offsetof(PointAttObj_tC83B02E61D0DB7EAD0469F4E54E6C636F1CF2FBE, ___target)),static_cast<int32_t>(offsetof(PointAttObj_tC83B02E61D0DB7EAD0469F4E54E6C636F1CF2FBE, ___orbitSpeed)),static_cast<int32_t>(offsetof(PointAttObj_tC83B02E61D0DB7EAD0469F4E54E6C636F1CF2FBE, ___orbitRadius)),static_cast<int32_t>(offsetof(PointAttObj_tC83B02E61D0DB7EAD0469F4E54E6C636F1CF2FBE, ___orbitAxis)),static_cast<int32_t>(offsetof(PointAttObj_tC83B02E61D0DB7EAD0469F4E54E6C636F1CF2FBE, ___angle)),};

@@ -105,7 +105,6 @@ UnityEngine.Camera::ScreenToViewportPoint_Injected
 UnityEngine.Camera::SetupCurrent_Injected
 UnityEngine.Camera::WorldToScreenPoint_Injected
 UnityEngine.Camera::get_pixelRect_Injected
-UnityEngine.Camera::set_backgroundColor_Injected
 UnityEngine.Camera::get_clearFlags_Injected
 UnityEngine.CameraRaycastHelper::RaycastTry2D_Injected
 UnityEngine.CameraRaycastHelper::RaycastTry_Injected
@@ -245,6 +244,7 @@ UnityEngine.GameObject::get_transform_Injected
 UnityEngine.GameObject::Internal_CreateGameObject_Injected
 UnityEngine.GameObject::SendMessage_Injected
 UnityEngine.GameObject::SetActive_Injected
+UnityEngine.GameObject::get_tag_Injected
 UnityEngine.GameObject::set_layer_Injected
 UnityEngine.GL::Begin
 UnityEngine.GL::End

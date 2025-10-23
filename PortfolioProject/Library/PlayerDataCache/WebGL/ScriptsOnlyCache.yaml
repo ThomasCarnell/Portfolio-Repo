@@ -270,7 +270,7 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: e47d77dff9f7fd0f54480d10a98b411f
+      Hash: c8d8be2c72fc6d0a230cba0d6d7fd919
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameManager
@@ -372,7 +372,7 @@ ScriptsOnlyBuild:
     className: InputField
   - hash:
       serializedVersion: 2
-      Hash: 82bbd60c9c065cb14468867f46ec2f9b
+      Hash: 47bcc97d264ba7755be9808c1bbfaa7b
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ButtonClickScript
