@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ButtonClickScript
+    - ButtonLabelTracker
     - FPSCounter
     - GameManager
     - PointAttObj
@@ -113,6 +114,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6938}
     - Class: 114
       Script: {instanceID: 7030}
+    - Class: 114
+      Script: {instanceID: 28764}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -372,7 +375,7 @@ ScriptsOnlyBuild:
     className: InputField
   - hash:
       serializedVersion: 2
-      Hash: 47bcc97d264ba7755be9808c1bbfaa7b
+      Hash: 5667e22e140850fce2b829e0360db21e
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ButtonClickScript
@@ -580,6 +583,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 45f21d888d7ca43a2e13ffd100f4606f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ButtonLabelTracker
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainScene.unity

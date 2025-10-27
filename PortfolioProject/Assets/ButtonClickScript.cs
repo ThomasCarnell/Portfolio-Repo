@@ -15,6 +15,7 @@ public class ButtonClickScript : MonoBehaviour
     [SerializeField]
     private GameObject title;
     [SerializeField]
+    [Header("Button Texts")]
     private GameObject buttonTexts;
     [SerializeField]
     private GameObject unityPortfolio;
@@ -39,9 +40,7 @@ public class ButtonClickScript : MonoBehaviour
     public Camera mainCamera;
      
      
-    // size control
-    [SerializeField]
-    float dynamicSize = 1f;             // current uniform scale
+    // size control         
     [SerializeField]
     float growthRate = 1f;       // units per second while growing
     [SerializeField]
@@ -49,6 +48,7 @@ public class ButtonClickScript : MonoBehaviour
     private bool growing = false;
 
     private Vector3 startsize;
+    private Vector3 startPos;
     private bool returnButtonClicked = false;
 
     // Start is called before the first frame update
@@ -57,9 +57,14 @@ public class ButtonClickScript : MonoBehaviour
         startsize = GetComponent<Transform>().localScale;
     }
 
+
     // Update is called once per frame
     void Update()
     {
+        // Vector3 screenpos = mainCamera.WorldToScreenPoint(transform.position);
+        // unityPortfolio.transform.position = screenpos;
+
+        Debug.Log(unityPortfolio.transform.position);
         if (Input.GetMouseButtonDown(0))
         {
 

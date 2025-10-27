@@ -22,9 +22,12 @@ extern void PointAttObj__ctor_m11EAF07E934B89533EEC69AD2C661048A3833CDA (void);
 extern void Rotate_Start_mD322E77A3CF2BEF28C4DF71D3F529107F511B1FB (void);
 extern void Rotate_Update_m73D585515036D9B7AAD8336BFB8567283CE4C7E7 (void);
 extern void Rotate__ctor_m0EE5CC8EB699542BFC438DC3D547D39E442E9EE4 (void);
+extern void ButtonLabelTracker_Start_mC133F1B8CD49C638DFF2ABC3C33E44990DAD71F9 (void);
+extern void ButtonLabelTracker_Update_m1C931FDE8214263B1EAA0D2A5301A5613A5DCFD7 (void);
+extern void ButtonLabelTracker__ctor_m2BA8ABCB685348CEF1EEC85FB5F4AF0CBFF16C52 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[17] = 
+static Il2CppMethodPointer s_methodPointers[20] = 
 {
 	ButtonClickScript_Start_mBC7677DEA5E47B79380FE28DF2E3B19D4DDB1A3A,
 	ButtonClickScript_Update_m442AD3CA61D291729C795F487A524D267142E2E2,
@@ -41,10 +44,13 @@ static Il2CppMethodPointer s_methodPointers[17] =
 	Rotate_Start_mD322E77A3CF2BEF28C4DF71D3F529107F511B1FB,
 	Rotate_Update_m73D585515036D9B7AAD8336BFB8567283CE4C7E7,
 	Rotate__ctor_m0EE5CC8EB699542BFC438DC3D547D39E442E9EE4,
+	ButtonLabelTracker_Start_mC133F1B8CD49C638DFF2ABC3C33E44990DAD71F9,
+	ButtonLabelTracker_Update_m1C931FDE8214263B1EAA0D2A5301A5613A5DCFD7,
+	ButtonLabelTracker__ctor_m2BA8ABCB685348CEF1EEC85FB5F4AF0CBFF16C52,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[17] = 
+static const int32_t s_InvokerIndices[20] = 
 {
 	6317,
 	6317,
@@ -61,6 +67,9 @@ static const int32_t s_InvokerIndices[17] =
 	6317,
 	6317,
 	6317,
+	6317,
+	6317,
+	6317,
 	8741,
 	6317,
 };
@@ -68,7 +77,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	17,
+	20,
 	s_methodPointers,
 	0,
 	NULL,

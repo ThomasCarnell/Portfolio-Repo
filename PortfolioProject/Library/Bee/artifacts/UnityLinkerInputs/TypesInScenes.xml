@@ -1,6 +1,7 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ButtonClickScript" preserve="nothing"/>
+		<type fullname="ButtonLabelTracker" preserve="nothing"/>
 		<type fullname="FPSCounter" preserve="nothing"/>
 		<type fullname="GameManager" preserve="nothing"/>
 		<type fullname="PointAttObj" preserve="nothing"/>

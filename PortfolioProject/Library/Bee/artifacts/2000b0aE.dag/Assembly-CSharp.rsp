@@ -368,6 +368,7 @@
 "Assets/GameManager.cs"
 "Assets/PointAttObj.cs"
 "Assets/Rotate.cs"
+"Assets/TextAllignment.cs"
 -langversion:9.0
 /deterministic
 /optimize+
