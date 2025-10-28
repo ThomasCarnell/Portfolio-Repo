@@ -12,8 +12,8 @@
         padding: 0;
         width: 100%;
         height: 100%;
-        background-color: #231F20; /* same as canvas background */
-        overflow: hidden; /* prevents scrollbars */
+        background-color: #231F20;
+        overflow: hidden;
       }
 
       #unity-canvas {
@@ -24,19 +24,40 @@
         height: 100vh;
         background: #231F20;
       }
+
+      /* Optional fade-in effect */
+      #myText {
+        opacity: 0;
+        transition: opacity 2s ease;
+        color: white;
+        position: fixed;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: sans-serif;
+      }
+
+      .fade-in {
+        opacity: 1;
+      }
     </style>
   </head>
 
   <body>
+    <!-- Your Unity canvas -->
     <canvas id="unity-canvas" tabindex="-1"></canvas>
+
+    <!-- Optional text element -->
+    <div id="myText">Welcome to my Portfolio!</div>
+
+    <!-- Load Unity -->
     <script src="Build/docs.loader.js"></script>
+
+    <!-- Wait until Unity fully loads -->
     <script>
-      // Set up Unity instance with responsive canvas
       const canvas = document.querySelector("#unity-canvas");
 
-      // Initialize Unity
       createUnityInstance(canvas, {
-        arguments: [],
         dataUrl: "Build/docs.data.unityweb",
         frameworkUrl: "Build/docs.framework.js.unityweb",
         codeUrl: "Build/docs.wasm.unityweb",
@@ -44,13 +65,20 @@
         companyName: "Thomas Carnell",
         productName: "PortfolioProject",
         productVersion: "0.1",
+      })
+      .then((unityInstance) => {
+        console.log("✅ Unity WebGL fully loaded!");
+        startTextFadeIn(); // Only runs after Unity is ready
+      })
+      .catch((message) => {
+        console.error("❌ Unity failed to load:", message);
       });
 
-      // Auto-resize Unity canvas on window resize
-      window.addEventListener('resize', () => {
-        canvas.style.width = "100vw";
-        canvas.style.height = "100vh";
-      });
+      // Your fade animation
+      function startTextFadeIn() {
+        const text = document.querySelector("#myText");
+        text.classList.add("fade-in");
+      }
     </script>
   </body>
 </html>

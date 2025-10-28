@@ -1,0 +1,158 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void Character_init_m011B8DDF1C053C03A86D9C87EA079F8136F497BA (void);
+extern void Character_startMoving_m9DC691B1F7068B16DD4609540FA620F14CD2C3CE (void);
+extern void Character_Update_m6932A6F8B7D19BB4E152154025582CEFC2F192BC (void);
+extern void Character_curve_m74C6A2D72B259EEA52051268AB471DF21DD4CDA7 (void);
+extern void Character_setTransformToRandom_mD6AC4CB2D56D9C4EE2488F380BE96EF202204C58 (void);
+extern void Character__ctor_mCF971D6CC137792ACB63F49B5565815DF718FAF6 (void);
+extern void JsonHelper_LoadKerningPairs_m9AF920F5C75495E757D4DC1917BC88DF22E3C5C0 (void);
+extern void JsonHelper__ctor_m4FC2A58A71998CF7A44288CD2E09C1467B19275E (void);
+extern void KerningPairs_Equals_mEDCC02BBD8D545F9851472183F289487A10EDFC3 (void);
+extern void KerningPairs_Equals_m6889DCAB91982CDDB212CFC1D650AF18B45AFABF (void);
+extern void KerningPairs_toString_m9392567B220479BD574A72FC30B0A5ABFD6366D6 (void);
+extern void KerningPairs__ctor_mF5FE1DDBC16D25D519DA61A019CF8F835EF6320C (void);
+extern void KerningPairsManager__ctor_m782CADCB57177744F0C885AF3DFC3D7F9598EE09 (void);
+extern void KerningPairsManager_Start_m1A73D33EE28624D2D4CB300D3FB5F7D543FE16F8 (void);
+extern void KerningPairsManager_SearchValue_m7BD014B478FDD97EF1369E4C41829126BF9212A4 (void);
+extern void KerningPairsManager_deleteMods_m102A51214F25BB828AAD55F38FA80BD04739DEC7 (void);
+extern void KerningPairsManager_DebugContent_m69EE4BB58C5CB2D17A42F1EADE986D408AF6DDC9 (void);
+extern void OrderableText_Start_mC8499CBA9A5DCB332F90C69D4562A568D451D6BE (void);
+extern void OrderableText_InitializeLetterCloudSavedText_m821DD8EFA4334A402A947DBF796C42AE63756140 (void);
+extern void OrderableText_InitializeLetterCloud_m01289C9E5E6ECFB5AFB898A78AB89B4754410D12 (void);
+extern void OrderableText_Order_mAD8D99D4663418E78723BC99FA1857F70571773A (void);
+extern void OrderableText_InstantiateAllCharacters_m272AE473D6B23E9893E8FB9F256604792F0F8EC3 (void);
+extern void OrderableText_FormatText_m5FFA01FD2676B225BD9F0018CEB8BC3CA216C94F (void);
+extern void OrderableText_calculateAndAssignNextPosition_mE4AD5F8180A3CF6648D6667B47153A2F87D475B6 (void);
+extern void OrderableText_Order_corut_m696B74BC6294BBD73099E0D4840DAEC7FFD4BF58 (void);
+extern void OrderableText_InstantiateCharacter_mF2758BAA263EE6ACE27CAD809AC616F70EA17F38 (void);
+extern void OrderableText__ctor_mB001191F44629820EAF58983762D430119D0FE01 (void);
+extern void U3COrder_corutU3Ed__173__ctor_mF7618F4FB3245ED8858EFC7A8E0D2E25E759F9D5 (void);
+extern void U3COrder_corutU3Ed__173_System_IDisposable_Dispose_mC125303F2D97D21390FF0C4ACF9C6ABE92C71832 (void);
+extern void U3COrder_corutU3Ed__173_MoveNext_m30EED9CD5349613DF0EB97404AB22107E95A04FC (void);
+extern void U3COrder_corutU3Ed__173_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1A6736E0352DC7A6BF0B7C7BCD87ED56ABAE19F8 (void);
+extern void U3COrder_corutU3Ed__173_System_Collections_IEnumerator_Reset_mECF3783258035C4732FD008F76D7A82ED5124468 (void);
+extern void U3COrder_corutU3Ed__173_System_Collections_IEnumerator_get_Current_mB90694E8483105160879324A2A2BF6B8235E45E5 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mC7CA174A23290C34424DF6D2733D5E64B92E5977 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m3C9D09F94200334DD5FA29A465481C7848AF4549 (void);
+static Il2CppMethodPointer s_methodPointers[37] = 
+{
+	Character_init_m011B8DDF1C053C03A86D9C87EA079F8136F497BA,
+	Character_startMoving_m9DC691B1F7068B16DD4609540FA620F14CD2C3CE,
+	Character_Update_m6932A6F8B7D19BB4E152154025582CEFC2F192BC,
+	Character_curve_m74C6A2D72B259EEA52051268AB471DF21DD4CDA7,
+	Character_setTransformToRandom_mD6AC4CB2D56D9C4EE2488F380BE96EF202204C58,
+	Character__ctor_mCF971D6CC137792ACB63F49B5565815DF718FAF6,
+	JsonHelper_LoadKerningPairs_m9AF920F5C75495E757D4DC1917BC88DF22E3C5C0,
+	NULL,
+	JsonHelper__ctor_m4FC2A58A71998CF7A44288CD2E09C1467B19275E,
+	NULL,
+	KerningPairs_Equals_mEDCC02BBD8D545F9851472183F289487A10EDFC3,
+	KerningPairs_Equals_m6889DCAB91982CDDB212CFC1D650AF18B45AFABF,
+	KerningPairs_toString_m9392567B220479BD574A72FC30B0A5ABFD6366D6,
+	KerningPairs__ctor_mF5FE1DDBC16D25D519DA61A019CF8F835EF6320C,
+	KerningPairsManager__ctor_m782CADCB57177744F0C885AF3DFC3D7F9598EE09,
+	KerningPairsManager_Start_m1A73D33EE28624D2D4CB300D3FB5F7D543FE16F8,
+	KerningPairsManager_SearchValue_m7BD014B478FDD97EF1369E4C41829126BF9212A4,
+	KerningPairsManager_deleteMods_m102A51214F25BB828AAD55F38FA80BD04739DEC7,
+	KerningPairsManager_DebugContent_m69EE4BB58C5CB2D17A42F1EADE986D408AF6DDC9,
+	OrderableText_Start_mC8499CBA9A5DCB332F90C69D4562A568D451D6BE,
+	OrderableText_InitializeLetterCloudSavedText_m821DD8EFA4334A402A947DBF796C42AE63756140,
+	OrderableText_InitializeLetterCloud_m01289C9E5E6ECFB5AFB898A78AB89B4754410D12,
+	OrderableText_Order_mAD8D99D4663418E78723BC99FA1857F70571773A,
+	OrderableText_InstantiateAllCharacters_m272AE473D6B23E9893E8FB9F256604792F0F8EC3,
+	OrderableText_FormatText_m5FFA01FD2676B225BD9F0018CEB8BC3CA216C94F,
+	OrderableText_calculateAndAssignNextPosition_mE4AD5F8180A3CF6648D6667B47153A2F87D475B6,
+	OrderableText_Order_corut_m696B74BC6294BBD73099E0D4840DAEC7FFD4BF58,
+	OrderableText_InstantiateCharacter_mF2758BAA263EE6ACE27CAD809AC616F70EA17F38,
+	OrderableText__ctor_mB001191F44629820EAF58983762D430119D0FE01,
+	U3COrder_corutU3Ed__173__ctor_mF7618F4FB3245ED8858EFC7A8E0D2E25E759F9D5,
+	U3COrder_corutU3Ed__173_System_IDisposable_Dispose_mC125303F2D97D21390FF0C4ACF9C6ABE92C71832,
+	U3COrder_corutU3Ed__173_MoveNext_m30EED9CD5349613DF0EB97404AB22107E95A04FC,
+	U3COrder_corutU3Ed__173_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1A6736E0352DC7A6BF0B7C7BCD87ED56ABAE19F8,
+	U3COrder_corutU3Ed__173_System_Collections_IEnumerator_Reset_mECF3783258035C4732FD008F76D7A82ED5124468,
+	U3COrder_corutU3Ed__173_System_Collections_IEnumerator_get_Current_mB90694E8483105160879324A2A2BF6B8235E45E5,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mC7CA174A23290C34424DF6D2733D5E64B92E5977,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m3C9D09F94200334DD5FA29A465481C7848AF4549,
+};
+static const int32_t s_InvokerIndices[37] = 
+{
+	6322,
+	6322,
+	6322,
+	4350,
+	6322,
+	6322,
+	7642,
+	-1,
+	6322,
+	-1,
+	3457,
+	1550,
+	6205,
+	6322,
+	2607,
+	6322,
+	1919,
+	4449,
+	6322,
+	6322,
+	6322,
+	5028,
+	6322,
+	6322,
+	6322,
+	1055,
+	6205,
+	4288,
+	6322,
+	4987,
+	6322,
+	6097,
+	6205,
+	6322,
+	6205,
+	8749,
+	6322,
+};
+static const Il2CppTokenRangePair s_rgctxIndices[1] = 
+{
+	{ 0x06000008, { 0, 3 } },
+};
+extern const uint32_t g_rgctx_JsonUtility_FromJson_TisWrapper_1_t3CFA07BD1F5BE1009B36328C8FA47AD4C4B9408B_mBBFB001E99F8107DA1E569731C92772079224451;
+extern const uint32_t g_rgctx_Wrapper_1_t3CFA07BD1F5BE1009B36328C8FA47AD4C4B9408B;
+extern const uint32_t g_rgctx_TU5BU5D_tEBD6B4D06BBE3395E35F7108D29A5B2415894118;
+static const Il2CppRGCTXDefinition s_rgctxValues[3] = 
+{
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_JsonUtility_FromJson_TisWrapper_1_t3CFA07BD1F5BE1009B36328C8FA47AD4C4B9408B_mBBFB001E99F8107DA1E569731C92772079224451 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Wrapper_1_t3CFA07BD1F5BE1009B36328C8FA47AD4C4B9408B },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU5BU5D_tEBD6B4D06BBE3395E35F7108D29A5B2415894118 },
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule = 
+{
+	"Assembly-CSharp-firstpass.dll",
+	37,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	1,
+	s_rgctxIndices,
+	3,
+	s_rgctxValues,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};

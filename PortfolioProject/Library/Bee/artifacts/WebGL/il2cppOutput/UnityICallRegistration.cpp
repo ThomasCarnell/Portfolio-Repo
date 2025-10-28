@@ -390,6 +390,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Application_OpenURL_Injected();
 		Register_UnityEngine_Application_OpenURL_Injected();
 
+		//System.Void UnityEngine.Application::get_dataPath_Injected(UnityEngine.Bindings.ManagedSpanWrapper&)
+		void Register_UnityEngine_Application_get_dataPath_Injected();
+		Register_UnityEngine_Application_get_dataPath_Injected();
+
 		//UnityEngine.RuntimePlatform UnityEngine.Application::get_platform()
 		void Register_UnityEngine_Application_get_platform();
 		Register_UnityEngine_Application_get_platform();
@@ -1712,6 +1716,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Internal.InputUnsafeUtility
 
+	//Start Registrations for type : UnityEngine.JsonUtility
+
+		//System.Object UnityEngine.JsonUtility::FromJsonInternal_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,System.Object,System.Type)
+		void Register_UnityEngine_JsonUtility_FromJsonInternal_Injected();
+		Register_UnityEngine_JsonUtility_FromJsonInternal_Injected();
+
+	//End Registrations for type : UnityEngine.JsonUtility
+
 	//Start Registrations for type : UnityEngine.Light
 
 		//System.Boolean UnityEngine.Light::get_useColorTemperature_Injected(System.IntPtr)
@@ -2098,6 +2110,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Object_ForceLoadFromInstanceID_Injected();
 		Register_UnityEngine_Object_ForceLoadFromInstanceID_Injected();
 
+		//System.IntPtr UnityEngine.Object::Internal_CloneSingleWithParent_Injected(System.IntPtr,System.IntPtr,System.Boolean)
+		void Register_UnityEngine_Object_Internal_CloneSingleWithParent_Injected();
+		Register_UnityEngine_Object_Internal_CloneSingleWithParent_Injected();
+
 		//System.IntPtr UnityEngine.Object::Internal_CloneSingle_Injected(System.IntPtr)
 		void Register_UnityEngine_Object_Internal_CloneSingle_Injected();
 		Register_UnityEngine_Object_Internal_CloneSingle_Injected();
@@ -2282,11 +2298,27 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Quaternion_Internal_ToAxisAngleRad_Injected();
 		Register_UnityEngine_Quaternion_Internal_ToAxisAngleRad_Injected();
 
+		//System.Void UnityEngine.Quaternion::Internal_ToEulerRad_Injected(UnityEngine.Quaternion&,UnityEngine.Vector3&)
+		void Register_UnityEngine_Quaternion_Internal_ToEulerRad_Injected();
+		Register_UnityEngine_Quaternion_Internal_ToEulerRad_Injected();
+
 		//System.Void UnityEngine.Quaternion::Inverse_Injected(UnityEngine.Quaternion&,UnityEngine.Quaternion&)
 		void Register_UnityEngine_Quaternion_Inverse_Injected();
 		Register_UnityEngine_Quaternion_Inverse_Injected();
 
 	//End Registrations for type : UnityEngine.Quaternion
+
+	//Start Registrations for type : UnityEngine.Random
+
+		//System.Int32 UnityEngine.Random::RandomRangeInt(System.Int32,System.Int32)
+		void Register_UnityEngine_Random_RandomRangeInt();
+		Register_UnityEngine_Random_RandomRangeInt();
+
+		//System.Single UnityEngine.Random::Range(System.Single,System.Single)
+		void Register_UnityEngine_Random_Range();
+		Register_UnityEngine_Random_Range();
+
+	//End Registrations for type : UnityEngine.Random
 
 	//Start Registrations for type : UnityEngine.RectOffset
 

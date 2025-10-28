@@ -344,6 +344,7 @@
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.30f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.0.30f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll"
 -r:"Library/PackageCache/com.unity.ext.nunit/net40/unity-custom/nunit.framework.dll"
+-r:"Library/Bee/artifacts/2000b0aE.dag/Assembly-CSharp-firstpass.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.AI.Navigation.Editor.ConversionSystem.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.AI.Navigation.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.AI.Navigation.ref.dll"
@@ -364,11 +365,13 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.30f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.30f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/ButtonClickScript.cs"
+"Assets/ButtonResetAnimation.cs"
 "Assets/FPSShow.cs"
 "Assets/GameManager.cs"
 "Assets/PointAttObj.cs"
 "Assets/Rotate.cs"
 "Assets/TextAllignment.cs"
+"Assets/TextFadeInScript.cs"
 -langversion:9.0
 /deterministic
 /optimize+

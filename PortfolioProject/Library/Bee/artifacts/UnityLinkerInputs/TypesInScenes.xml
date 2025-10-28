@@ -1,11 +1,15 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="AttachToObject" preserve="nothing"/>
 		<type fullname="ButtonClickScript" preserve="nothing"/>
-		<type fullname="ButtonLabelTracker" preserve="nothing"/>
+		<type fullname="FadeMaterialDirect" preserve="nothing"/>
 		<type fullname="FPSCounter" preserve="nothing"/>
 		<type fullname="GameManager" preserve="nothing"/>
-		<type fullname="PointAttObj" preserve="nothing"/>
 		<type fullname="Rotate" preserve="nothing"/>
+		<type fullname="ScaleOverTime" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="Assembly-CSharp-firstpass">
+		<type fullname="OrderableText" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro">
 		<type fullname="TMPro.TextMeshProUGUI" preserve="nothing"/>

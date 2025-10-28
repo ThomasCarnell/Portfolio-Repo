@@ -63,8 +63,6 @@ public class ButtonClickScript : MonoBehaviour
     {
         // Vector3 screenpos = mainCamera.WorldToScreenPoint(transform.position);
         // unityPortfolio.transform.position = screenpos;
-
-        Debug.Log(unityPortfolio.transform.position);
         if (Input.GetMouseButtonDown(0))
         {
 

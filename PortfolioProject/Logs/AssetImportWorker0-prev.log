@@ -1,0 +1,646 @@
+Using pre-set license
+Built from '6000.0/staging' branch; Version is '6000.0.30f1 (62b05ba0686a) revision 6467675'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) 64bit Core' Language: 'da' Physical Memory: 32678 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.30f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/carco/Portfolio_Project/Portfolio/PortfolioProject
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56230
+-job-worker-count
+7
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: C:/Users/carco/Portfolio_Project/Portfolio/PortfolioProject
+C:/Users/carco/Portfolio_Project/Portfolio/PortfolioProject
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [10296]  Target information:
+
+Player connection [10296]  * "[IP] 192.168.1.64 [Port] 0 [Flags] 2 [Guid] 3526106335 [EditorId] 3526106335 [Version] 1048832 [Id] WindowsEditor(7,Shakma2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [10296] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [10296] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.30f1 (62b05ba0686a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/carco/Portfolio_Project/Portfolio/PortfolioProject/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 (ID=0x2206)
+    Vendor:   NVIDIA
+    VRAM:     10053 MB
+    Driver:   32.0.15.7697
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003913 seconds.
+- Loaded All Assemblies, in  0.312 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.253 seconds
+Domain Reload Profiling: 562ms
+	BeginReloadAssembly (103ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (124ms)
+		LoadAssemblies (100ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (121ms)
+			TypeCache.Refresh (120ms)
+				TypeCache.ScanAssembly (110ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (253ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (226ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (120ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.401 seconds
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.402 seconds
+Domain Reload Profiling: 800ms
+	BeginReloadAssembly (138ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (192ms)
+		LoadAssemblies (199ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (73ms)
+			TypeCache.Refresh (57ms)
+				TypeCache.ScanAssembly (47ms)
+			BuildScriptInfoCaches (13ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (403ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (325ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (243ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1615 unused Assets / (504.8 KB). Loaded Objects now: 2123.
+Memory consumption went from 72.0 MB to 71.5 MB.
+Total: 6.848400 ms (FindLiveObjects: 0.300300 ms CreateObjectMapping: 0.122900 ms MarkObjects: 5.925100 ms  DeleteObjects: 0.496300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 78036.162330 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/Characters/'Accent.prefab
+  artifactKey: Guid(2cf1df3da696aba41aed30775a03fdac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/Characters/'Accent.prefab using Guid(2cf1df3da696aba41aed30775a03fdac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7670bc78ed83970cc9f19a5d5e66d30d') in 0.117659 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_A_acute.prefab
+  artifactKey: Guid(7da416214a2b3474fbac476d9d311616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_A_acute.prefab using Guid(7da416214a2b3474fbac476d9d311616) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3d8e5aa9fb80c0ea270ebc089e4f5a3') in 0.021104 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_c.prefab
+  artifactKey: Guid(0213ebd94572f5449b0f786eb2f59971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_c.prefab using Guid(0213ebd94572f5449b0f786eb2f59971) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '68cd1e851c907d3e83dcdae94f3cd4be') in 0.0130245 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/Characters/SPACE.prefab
+  artifactKey: Guid(f2063e42d99ad1f459f1389b54b22c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/Characters/SPACE.prefab using Guid(f2063e42d99ad1f459f1389b54b22c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a78739d75a84cae6820d2bbfab1aba6') in 0.0016654 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/tilde.prefab
+  artifactKey: Guid(027f0da4a275fc54cb65549236008a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/tilde.prefab using Guid(027f0da4a275fc54cb65549236008a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4fda3808f569cdd14d67a7bf864a982') in 0.0207966 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_B.prefab
+  artifactKey: Guid(342c22583623a4647b559ce5ed70d87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_B.prefab using Guid(342c22583623a4647b559ce5ed70d87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '11b8f3e8dd1d4f300c05c48a138a621a') in 0.0170701 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/parentright.prefab
+  artifactKey: Guid(58f5b4093c653d644b3b724c09ed1003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/parentright.prefab using Guid(58f5b4093c653d644b3b724c09ed1003) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1583e41e14570f1ddf08d7d548972b17') in 0.0155101 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_e_diae.prefab
+  artifactKey: Guid(5e179f1d3301bea4e86848c02df06fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_e_diae.prefab using Guid(5e179f1d3301bea4e86848c02df06fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f405238d64afb2e3ab523deabecd7bc') in 0.012694 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/grave.prefab
+  artifactKey: Guid(d2eba6669778d62489f154aa60f73d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/grave.prefab using Guid(d2eba6669778d62489f154aa60f73d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '141140b992b447c8f9baeac742661446') in 0.0176874 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_E_acute.prefab
+  artifactKey: Guid(f14c50ec18a00f14d91457dc30291e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_E_acute.prefab using Guid(f14c50ec18a00f14d91457dc30291e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4fd986cc33845025a6b1d31ac413241b') in 0.0159744 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_p.prefab
+  artifactKey: Guid(59e8536423f82f34cb140a51df0f9b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_p.prefab using Guid(59e8536423f82f34cb140a51df0f9b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b968dfbd7688d86d52831438b881dad') in 0.0191101 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_g.prefab
+  artifactKey: Guid(1dfc56d765f1b88468fdf7f860247b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_g.prefab using Guid(1dfc56d765f1b88468fdf7f860247b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cefee0584851d8baaa9fd2503e55aed0') in 0.0162502 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/CharacterBoundsVisualizer.prefab
+  artifactKey: Guid(1c0164a58e82036468465b2939a5ca1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/CharacterBoundsVisualizer.prefab using Guid(1c0164a58e82036468465b2939a5ca1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e932b4aba0511bb150ecdd8e6d6fdef') in 0.1728592 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/space.prefab
+  artifactKey: Guid(017f96937ab726a499edaea3e5d190ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/space.prefab using Guid(017f96937ab726a499edaea3e5d190ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d1405b557644b6fe2497272259313c2') in 0.010638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_u.prefab
+  artifactKey: Guid(271546464197fc340b0eee8dcf27c26e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_u.prefab using Guid(271546464197fc340b0eee8dcf27c26e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ca8ce89066919ecf1c53c4032a86dca') in 0.011901 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/Characters/E.prefab
+  artifactKey: Guid(f9f1fd2ef5acb1946ac36b2273ed3d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/Characters/E.prefab using Guid(f9f1fd2ef5acb1946ac36b2273ed3d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6fbd054b2fd2310ac453be3cd25f6398') in 0.001603 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_e_acute.prefab
+  artifactKey: Guid(779c80bda0a9182428f93c25f9fea01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_e_acute.prefab using Guid(779c80bda0a9182428f93c25f9fea01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '060f3fe4cfc7a50f46b292527817f3eb') in 0.0111064 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_n.prefab
+  artifactKey: Guid(eb2bd459d62f80d47a09740d03ea88fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_n.prefab using Guid(eb2bd459d62f80d47a09740d03ea88fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8731785d757e9546ff7330c5a6c63538') in 0.0160271 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_A_circum.prefab
+  artifactKey: Guid(fa873cabd13c88d4aba315d6e0da7762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_A_circum.prefab using Guid(fa873cabd13c88d4aba315d6e0da7762) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ecc367ae0d2ee034c6da57558fe293b2') in 0.0128876 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/six.prefab
+  artifactKey: Guid(3905abf5e88f3754b951509f22ef4fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/six.prefab using Guid(3905abf5e88f3754b951509f22ef4fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85315cf584ab683c984b5d7de0233cba') in 0.011917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/asterisk.prefab
+  artifactKey: Guid(ba750180c0965d84eb86c24154318fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/asterisk.prefab using Guid(ba750180c0965d84eb86c24154318fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4137e136333166d3b89b44f91883d04f') in 0.011738 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/backslash.prefab
+  artifactKey: Guid(bb7e98b5f8dd16c46850c3d71ce85d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/backslash.prefab using Guid(bb7e98b5f8dd16c46850c3d71ce85d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ca7a47f1d2f33f35b0191f95e680c5a') in 0.0122526 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_y.prefab
+  artifactKey: Guid(d9425eaf7bbd0c0439ab2e1a9b52c726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_y.prefab using Guid(d9425eaf7bbd0c0439ab2e1a9b52c726) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c15d845ca7c9c0000a5a00a86b33f013') in 0.0120108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/period.prefab
+  artifactKey: Guid(6baab09ff43ff5048b0b55cbbbb364fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/period.prefab using Guid(6baab09ff43ff5048b0b55cbbbb364fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '98e852f2d75e5304e83f95d5af80d458') in 0.0116905 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_n_tilde.prefab
+  artifactKey: Guid(cd6c8984854abce408ade6137f0bdbae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_n_tilde.prefab using Guid(cd6c8984854abce408ade6137f0bdbae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a8d76a3f53d06509e98d06d80a64927') in 0.0135339 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_A_grave.prefab
+  artifactKey: Guid(8f86c25d2ecd1564dbf5b694dcdc199a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_A_grave.prefab using Guid(8f86c25d2ecd1564dbf5b694dcdc199a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a33e5949ccafac167d7c53250c49b986') in 0.012187 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_i_circum.prefab
+  artifactKey: Guid(684618c7d8c1e894ba42f191eedd478e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_i_circum.prefab using Guid(684618c7d8c1e894ba42f191eedd478e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd118812b366327ebb7c5028b7cdb0b5') in 0.0123229 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_o_acute.prefab
+  artifactKey: Guid(292a79b0e9950994abb9bae36593a0f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_o_acute.prefab using Guid(292a79b0e9950994abb9bae36593a0f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '529b121df47e4ed8f57f946aebccb0e9') in 0.012221 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/slash.prefab
+  artifactKey: Guid(d3a5c5407f378f443b186135fcd7e8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/slash.prefab using Guid(d3a5c5407f378f443b186135fcd7e8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd4b95171e01162b9aae1af61ea8c5b1d') in 0.0118091 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_E.prefab
+  artifactKey: Guid(3ed3679dd6fb3774e83c042f146c1ffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_E.prefab using Guid(3ed3679dd6fb3774e83c042f146c1ffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '427afc4598266ae026f2ebca38caab14') in 0.0133518 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_x.prefab
+  artifactKey: Guid(a02fcb37e359ac24982b53558484f203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_x.prefab using Guid(a02fcb37e359ac24982b53558484f203) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '130ae0958c8b1e32003ba9db257b6d1f') in 0.0114814 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/dollar.prefab
+  artifactKey: Guid(8fa37c00dea937444a080e0e9df34a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/dollar.prefab using Guid(8fa37c00dea937444a080e0e9df34a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a1c13abae9a76c8c34baca5cc20a4518') in 0.0132797 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/bar.prefab
+  artifactKey: Guid(c94b6e583a5d88a4085750d637d3011c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/bar.prefab using Guid(c94b6e583a5d88a4085750d637d3011c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '61ceaef0bd825ab5d5a9d237d3d81706') in 0.0122969 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_E_grave.prefab
+  artifactKey: Guid(5804e1728ad8cbb44b704cfab08c1279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_E_grave.prefab using Guid(5804e1728ad8cbb44b704cfab08c1279) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa42480232310cec7241a31054da5729') in 0.0117545 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/plus.prefab
+  artifactKey: Guid(abf6c03939464784da9c31b597736095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/plus.prefab using Guid(abf6c03939464784da9c31b597736095) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4e589dd97e812f848fd5fc13303f606f') in 0.0118131 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/Characters/J.prefab
+  artifactKey: Guid(74bb45f041d97dc43913bc2c7becae35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/Characters/J.prefab using Guid(74bb45f041d97dc43913bc2c7becae35) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f41e3beb89b7e06a4674e3c4a743c2c3') in 0.0011915 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/Characters/T.prefab
+  artifactKey: Guid(20de76346e0c5c44a8b92d0532b6bf4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/Characters/T.prefab using Guid(20de76346e0c5c44a8b92d0532b6bf4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c9bbdaa71e4ed4bfbcbbec8792674e5') in 0.0013148 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_E_diae.prefab
+  artifactKey: Guid(1d48492194b497d469866463bb363267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_E_diae.prefab using Guid(1d48492194b497d469866463bb363267) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d731d65c4a2c8affef6365b3acce638') in 0.0104737 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_w.prefab
+  artifactKey: Guid(b7f1862140e41a947bcc463d3485f9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_w.prefab using Guid(b7f1862140e41a947bcc463d3485f9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5617e9d75eda0dc00d11cf71c95f407c') in 0.0127809 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/semicolon.prefab
+  artifactKey: Guid(40233eaef78b03a49aa8d820c306ea35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/semicolon.prefab using Guid(40233eaef78b03a49aa8d820c306ea35) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e18ac48823577da286d78c0583667449') in 0.0115464 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/quotedbl.prefab
+  artifactKey: Guid(64a80912757ed1240a877952cd3a0e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/quotedbl.prefab using Guid(64a80912757ed1240a877952cd3a0e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d66fa89fc89e8e59018fc42fae6ca00') in 0.0122122 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_i_grave.prefab
+  artifactKey: Guid(189850837e0cb694d825c1eb5ce68fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_i_grave.prefab using Guid(189850837e0cb694d825c1eb5ce68fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '975cb5cba7c6050384b7dd763fb0e2fb') in 0.0133732 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/comma.prefab
+  artifactKey: Guid(b1058c0ca5a64634a83bd004638e9c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/comma.prefab using Guid(b1058c0ca5a64634a83bd004638e9c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad342b47a485938c58977f9bacd779ae') in 0.0126484 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_o_grave.prefab
+  artifactKey: Guid(0cff6f3c5f0ad2544910e6347d29e49e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_o_grave.prefab using Guid(0cff6f3c5f0ad2544910e6347d29e49e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5aff1d62be98fa17487b1299d493ea39') in 0.0122472 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/Characters/P.prefab
+  artifactKey: Guid(80dcbcb7a474a88458e69b11d01af512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/Characters/P.prefab using Guid(80dcbcb7a474a88458e69b11d01af512) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e650df2241ec97bb430f1d5170becdd8') in 0.0013652 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/bracketright.prefab
+  artifactKey: Guid(8a9f1e93173c42a42a91f7fda76529d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/bracketright.prefab using Guid(8a9f1e93173c42a42a91f7fda76529d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f817ba55065553dfede80d550ec290c') in 0.0128394 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_E_circum.prefab
+  artifactKey: Guid(c50223b38a29dfe40b11599bf8f2f089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_E_circum.prefab using Guid(c50223b38a29dfe40b11599bf8f2f089) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '385e6699afc1014a8632d5960c3f8121') in 0.0132588 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/braceleft.prefab
+  artifactKey: Guid(65c9c7f8027215f4186f13a29c1dcce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/braceleft.prefab using Guid(65c9c7f8027215f4186f13a29c1dcce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1bbb891864a9433477fe690bfcac8f0d') in 0.0131705 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/three.prefab
+  artifactKey: Guid(1d95bb0bd83c9fe4f8e402d1e0250e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/three.prefab using Guid(1d95bb0bd83c9fe4f8e402d1e0250e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '58c7c02787417ca8577485d6f997f1b8') in 0.0133776 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/Characters/H.prefab
+  artifactKey: Guid(6fc188e665017bb4ba1a9858b0f77da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/Characters/H.prefab using Guid(6fc188e665017bb4ba1a9858b0f77da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '892b896009f5d097495550de6dd4f861') in 0.0012272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_e_grave.prefab
+  artifactKey: Guid(49d55a0a25c39df4685121423b1f45c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/lower_e_grave.prefab using Guid(49d55a0a25c39df4685121423b1f45c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c9166fc2a61f85aa0607c754153cc04') in 0.0123933 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/Characters/L.prefab
+  artifactKey: Guid(043f7c3a3fd0d034ea6dd4e90db67b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/Characters/L.prefab using Guid(043f7c3a3fd0d034ea6dd4e90db67b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9394ef54af15cfb35fad0b15b535950b') in 0.0016101 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/ampersand.prefab
+  artifactKey: Guid(a7c44474247d3814eb07734b9498c41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/ampersand.prefab using Guid(a7c44474247d3814eb07734b9498c41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1087811de245d8e4bf2cff7210433521') in 0.011287 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/greater.prefab
+  artifactKey: Guid(6d424688ead0a39498fa33f2865d3850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/greater.prefab using Guid(6d424688ead0a39498fa33f2865d3850) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1914ccb20d769f3d547216832c130a8') in 0.0120845 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/colon.prefab
+  artifactKey: Guid(379168737d7d83d4db1219abc8eafaee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/colon.prefab using Guid(379168737d7d83d4db1219abc8eafaee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6c21f5352316093321317518171f2496') in 0.0125969 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_A_diae.prefab
+  artifactKey: Guid(4fa8331721cfa4a459982353e38c83a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/upper_A_diae.prefab using Guid(4fa8331721cfa4a459982353e38c83a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9ad89d7bf65766357183277a436c430a') in 0.0135744 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/quotesingle.prefab
+  artifactKey: Guid(f51a8e937101101439306c412807f3e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/3DTextGenerator/Prefabs/SpecialChars/quotesingle.prefab using Guid(f51a8e937101101439306c412807f3e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ed99046a06203c0b49f53fb25ff1d333') in 0.0138001 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
