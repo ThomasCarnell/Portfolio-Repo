@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -288,13 +289,130 @@ public class OrderableText : MonoBehaviour {
     }
 
     /// <summary> Start the text ordering process </summary>
-    public void Order() {
+    public void Order()
+    {
         StartCoroutine(nameof(Order_corut));
     }
-    #endregion
 
-// PRIVATE FUNCTIONS //////////////////////////////////////////////////////////////////////////////////////////
+
+    #endregion
+// ==============================
+// GRAVITY CONTROL + CLEAR LOGIC
+// ==============================
+[Header("Physics")]
+public bool enableGravity = false;
+private List<Rigidbody> letterRigidbodies = new List<Rigidbody>();
+private Dictionary<Rigidbody, Vector3> originalPositions = new Dictionary<Rigidbody, Vector3>();
+
+public Vector3 explosionPoint = Vector3.zero; // Point to apply force from (e.g. center of text)
+public float explosionForce = 100f;
+public float explosionRadius = 50f;
+public float upwardsModifier = 50f;
+public ForceMode forceMode = ForceMode.VelocityChange;
+
+public void EnableGravity()
+{
+    enableGravity = true;
+
+    foreach (Character character in characterArray)
+    {
+        if (character == null) continue;
+
+        Rigidbody rb = character.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.useGravity = true;
+            rb.isKinematic = false;
+
+            if (!letterRigidbodies.Contains(rb))
+            {
+                // Store original position
+                if (!originalPositions.ContainsKey(rb))
+                {
+                    originalPositions.Add(rb, rb.transform.localPosition);
+                }
+
+                letterRigidbodies.Add(rb);
+            }
+        }
+    }
+}
+
+public void DisableGravity()
+{
+    enableGravity = false;
+}
+
+public void ClearLetters()
+{
+    Debug.Log("🧹 Clearing all letter instances...");
+
+    foreach (Character character in characterArray)
+    {
+        if (character != null)
+            Destroy(character.gameObject);
+    }
+
+    //characterArray.Clear();
+    letterRigidbodies.Clear();
+    originalPositions.Clear();
+}
+    private bool storingOGPositions = false;
+void Update()
+{
+    if (enableGravity)
+    {
+        foreach (Character character in characterArray)
+        {
+            if (character == null) continue;
+
+            Rigidbody rb = character.GetComponent<Rigidbody>();
+            if (rb != null && !letterRigidbodies.Contains(rb))
+                {
+                storingOGPositions = true;
+                // Store original position
+                if (!originalPositions.ContainsKey(rb))
+                   if(storingOGPositions == true)
+                             {
+                            originalPositions.Add(rb, rb.transform.localPosition);
+                            storingOGPositions = false;
+                              } 
+
+                rb.useGravity = true;
+                rb.isKinematic = false;
+                letterRigidbodies.Add(rb);
+            }
+        }
+    }
+else // gravity disabled
+{
+    foreach (Rigidbody rb in letterRigidbodies)
+    {
+        if (rb == null) continue;
+
+        rb.useGravity = false;
+        rb.isKinematic = true;
+        rb.linearVelocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+
+        if (originalPositions.TryGetValue(rb, out Vector3 originalPos))
+        {
+            // Snap immediately to original position
+            rb.transform.localPosition = originalPos;
+            rb.transform.localRotation = Quaternion.identity;
+        }
+    }
+
+    // Clear the list after resetting
+    letterRigidbodies.Clear();
+}
+
+}
+
+
+    // PRIVATE FUNCTIONS //////////////////////////////////////////////////////////////////////////////////////////
     #region Private functions
+
 
     /// <summary> Instantiates all characters needed to formed the desired text </summary>
     private void InstantiateAllCharacters() {
@@ -311,10 +429,21 @@ public class OrderableText : MonoBehaviour {
             GameObject go = InstantiateCharacter(segmentedText[i]).gameObject;
             Character character = go.AddComponent<Character>() as Character;
             Renderer rend = go.GetComponentInChildren<Renderer>();
-            if (rend != null) {
+            if (rend != null)
+            {
                 rend.material = mat;
             }
+                            // ✅ Add a Rigidbody (if it doesn’t already exist)
+                Rigidbody rb = go.GetComponent<Rigidbody>();
+                if (rb == null)
+                {
+                    rb = go.AddComponent<Rigidbody>();
+                    rb.useGravity = false;  // optional — disable gravity if not needed
+                    rb.isKinematic = true;  // optional — set true if you only want scripted movement
+                rb.mass = 0.1f;         // optional — keep lightweight for many letters
 
+                }
+            
             // Spawn a box representing the bounds of the character
             if (showCharacterBounds) {
                 Transform box;

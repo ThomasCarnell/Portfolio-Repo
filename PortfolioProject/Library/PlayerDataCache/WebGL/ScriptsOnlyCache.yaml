@@ -5,11 +5,11 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - AttachToObject
     - ButtonClickScript
+    - ButtonResetAnimation
     - FPSCounter
     - FadeMaterialDirect
     - GameManager
     - Rotate
-    - ScaleOverTime
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -87,39 +87,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 4930}
+      Script: {instanceID: 4928}
     - Class: 114
-      Script: {instanceID: 5072}
+      Script: {instanceID: 5070}
     - Class: 114
-      Script: {instanceID: 5318}
+      Script: {instanceID: 5316}
     - Class: 114
-      Script: {instanceID: 5334}
+      Script: {instanceID: 5332}
     - Class: 114
-      Script: {instanceID: 5384}
+      Script: {instanceID: 5382}
     - Class: 114
-      Script: {instanceID: 5770}
+      Script: {instanceID: 5768}
     - Class: 114
-      Script: {instanceID: 5790}
+      Script: {instanceID: 5788}
     - Class: 114
-      Script: {instanceID: 6030}
+      Script: {instanceID: 6028}
     - Class: 114
-      Script: {instanceID: 6112}
+      Script: {instanceID: 6110}
     - Class: 114
-      Script: {instanceID: 6226}
+      Script: {instanceID: 6224}
     - Class: 114
-      Script: {instanceID: 6378}
+      Script: {instanceID: 6376}
     - Class: 114
-      Script: {instanceID: 6584}
+      Script: {instanceID: 6582}
     - Class: 114
-      Script: {instanceID: 6830}
+      Script: {instanceID: 6828}
     - Class: 114
-      Script: {instanceID: 6920}
+      Script: {instanceID: 6918}
     - Class: 114
-      Script: {instanceID: 6960}
+      Script: {instanceID: 6958}
     - Class: 114
-      Script: {instanceID: 6970}
+      Script: {instanceID: 6968}
     - Class: 114
-      Script: {instanceID: 7064}
+      Script: {instanceID: 7062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -289,7 +289,7 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: 5d906034165e539766c96c9d8aee9bcb
+      Hash: f6c720b08b65cdbb6f5af281aa8fb002
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameManager
@@ -385,10 +385,10 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 34c2669f5d83f0c457ea8217821b05cf
+      Hash: 2e8c9ebf3a12e4ec6fa3deb5c6b94e48
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: ScaleOverTime
+    className: ButtonResetAnimation
   - hash:
       serializedVersion: 2
       Hash: dd9dda1dfd39e605c49e72003342ef5d
@@ -481,7 +481,7 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: eba0669a0dbdde0383ac8f585c7784d8
+      Hash: 7b5c5176255d60011876c95774ad3d18
     assemblyName: Assembly-CSharp-firstpass
     namespaceName: 
     className: OrderableText

@@ -466,6 +466,7 @@ UnityEngine.Object::FindObjectFromInstanceID_Injected
 UnityEngine.Object::ForceLoadFromInstanceID_Injected
 UnityEngine.Object::Internal_CloneSingleWithParent_Injected
 UnityEngine.Object::Internal_CloneSingle_Injected
+UnityEngine.Object::Internal_InstantiateSingle_Injected
 UnityEngine.Object::DestroyImmediate_Injected
 UnityEngine.Object::Destroy_Injected
 UnityEngine.Object::GetName_Injected
@@ -574,6 +575,11 @@ UnityEngine.Resources::GetBuiltinResource_Injected
 UnityEngine.ResourcesAPIInternal::FindShaderByName_Injected
 UnityEngine.ResourcesAPIInternal::Load_Injected
 UnityEngine.ResourcesAPIInternal::FindObjectsOfTypeAll
+UnityEngine.Rigidbody::set_angularVelocity_Injected
+UnityEngine.Rigidbody::set_isKinematic_Injected
+UnityEngine.Rigidbody::set_linearVelocity_Injected
+UnityEngine.Rigidbody::set_mass_Injected
+UnityEngine.Rigidbody::set_useGravity_Injected
 UnityEngine.Screen::get_fullScreen
 UnityEngine.Screen::get_height
 UnityEngine.Screen::get_width

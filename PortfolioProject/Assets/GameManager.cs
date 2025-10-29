@@ -7,7 +7,19 @@ public class GameManager : MonoBehaviour
     private string currentbutton = "start";
 
     [SerializeField]
-    private GameObject buttonContainer; 
+    private GameObject buttonContainer;
+    [SerializeField]
+    private GameObject portfolioTextButtonContainer;
+    [SerializeField]
+    private GameObject returnButtonText;
+    [SerializeField]
+    private GameObject returnButton;
+    [SerializeField]
+    private GameObject selectionTarget;
+    private GameObject startPosPortfolio;
+
+    private GameObject instanceReturnButtonText;
+    private GameObject instancePortfolioButtonText;
     
     [Header("Animation Settings")]
 
@@ -23,37 +35,68 @@ public class GameManager : MonoBehaviour
  
     private bool running = false;
 
-
     //Button pressed handler
     public void openTarget(string buttonPressed)
     {
-        Debug.Log("openTarget called by: " + buttonPressed);
         currentbutton = buttonPressed;
         if (currentbutton == "UnityPortfolioButton")
         {
-            Debug.Log("openTarget called by: " + buttonPressed);
+            instanceReturnButtonText = Instantiate(returnButtonText, transform.position, transform.rotation);
+            instanceReturnButtonText.GetComponent<AttachToObject>().target = returnButton.transform;
+            anim3[0].GetComponent<FadeMaterialDirect>().FadeOut();
+            anim3[1].GetComponentInChildren<OrderableText>().EnableGravity();
+            anim3[2].GetComponentInChildren<OrderableText>().EnableGravity();
+
+            buttonContainer.GetComponent<ButtonResetAnimation>().StartReverseScaling();
+
         }
         if (currentbutton == "SoundDesignPortfolioButton")
         {
-            Debug.Log("openTarget called by: " + buttonPressed);
+            instanceReturnButtonText = Instantiate(returnButtonText, transform.position, transform.rotation);
+            instanceReturnButtonText.GetComponent<AttachToObject>().target = returnButton.transform;
+            anim3[1].GetComponent<FadeMaterialDirect>().FadeOut();
+            anim3[0].GetComponentInChildren<OrderableText>().EnableGravity();
+            anim3[2].GetComponentInChildren<OrderableText>().EnableGravity();
+
+            buttonContainer.GetComponent<ButtonResetAnimation>().StartReverseScaling();
 
         }
         if (currentbutton == "PhysicalToysPortfolioButton")
         {
-            Debug.Log("openTarget called by: " + buttonPressed);
+            instanceReturnButtonText = Instantiate(returnButtonText, transform.position, transform.rotation);
+            instanceReturnButtonText.GetComponent<AttachToObject>().target = returnButton.transform;
+            anim3[2].GetComponent<FadeMaterialDirect>().FadeOut();
+            anim3[0].GetComponentInChildren<OrderableText>().EnableGravity();
+            anim3[1].GetComponentInChildren<OrderableText>().EnableGravity();
+            buttonContainer.GetComponent<ButtonResetAnimation>().StartReverseScaling();
 
         }
         if (currentbutton == "ReturnToMainMenuButton")
         {
-            Debug.Log("openTarget called by: " + buttonPressed);
-
+            portfolioTextButtonContainer.SetActive(true);
+            Destroy(instanceReturnButtonText);
+            buttonContainer.GetComponent<ButtonResetAnimation>().StartScaling();
+            anim3[0].GetComponentInChildren<OrderableText>().DisableGravity();
+            anim3[1].GetComponentInChildren<OrderableText>().DisableGravity();
+            anim3[2].GetComponentInChildren<OrderableText>().DisableGravity();
+    
+            anim3[0].GetComponent<FadeMaterialDirect>().FadeIn();
+            anim3[1].GetComponent<FadeMaterialDirect>().FadeIn();
+            anim3[2].GetComponent<FadeMaterialDirect>().FadeIn();
         }
     }
-    
-    //Animation 
-  void Update()
+    void Start()
     {
-        timer += Time.deltaTime;
+        running = true;
+    }
+
+    //Animation 
+    void Update()
+    {
+        if (running)
+        {
+                    timer += Time.deltaTime;
+        }
 
         if (timer >= delay)
         {
@@ -68,6 +111,8 @@ public class GameManager : MonoBehaviour
             ToggleObjectsAnim3();
             ToggleButtonContainer();
             running = false; // stop after triggering
+            StopTimer();
+            ResetTimer();
         }
     }
 
@@ -95,12 +140,14 @@ public class GameManager : MonoBehaviour
                 obj.SetActive(setActiveState);
         }
     }
-    
+
     private void ToggleButtonContainer()
     {
-        
-            buttonContainer.SetActive(true);
-        
+        buttonContainer.SetActive(true);
+    }
+    public void DisablePortfolioTextButtonContainer()
+    {
+        portfolioTextButtonContainer.SetActive(false);
     }
 
     // --- Public Controls ---

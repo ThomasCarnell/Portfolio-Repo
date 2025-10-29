@@ -2118,6 +2118,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Object_Internal_CloneSingle_Injected();
 		Register_UnityEngine_Object_Internal_CloneSingle_Injected();
 
+		//System.IntPtr UnityEngine.Object::Internal_InstantiateSingle_Injected(System.IntPtr,UnityEngine.Vector3&,UnityEngine.Quaternion&)
+		void Register_UnityEngine_Object_Internal_InstantiateSingle_Injected();
+		Register_UnityEngine_Object_Internal_InstantiateSingle_Injected();
+
 		//System.Void UnityEngine.Object::DestroyImmediate_Injected(System.IntPtr,System.Boolean)
 		void Register_UnityEngine_Object_DestroyImmediate_Injected();
 		Register_UnityEngine_Object_DestroyImmediate_Injected();
@@ -2627,6 +2631,30 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_ResourcesAPIInternal_FindObjectsOfTypeAll();
 
 	//End Registrations for type : UnityEngine.ResourcesAPIInternal
+
+	//Start Registrations for type : UnityEngine.Rigidbody
+
+		//System.Void UnityEngine.Rigidbody::set_angularVelocity_Injected(System.IntPtr,UnityEngine.Vector3&)
+		void Register_UnityEngine_Rigidbody_set_angularVelocity_Injected();
+		Register_UnityEngine_Rigidbody_set_angularVelocity_Injected();
+
+		//System.Void UnityEngine.Rigidbody::set_isKinematic_Injected(System.IntPtr,System.Boolean)
+		void Register_UnityEngine_Rigidbody_set_isKinematic_Injected();
+		Register_UnityEngine_Rigidbody_set_isKinematic_Injected();
+
+		//System.Void UnityEngine.Rigidbody::set_linearVelocity_Injected(System.IntPtr,UnityEngine.Vector3&)
+		void Register_UnityEngine_Rigidbody_set_linearVelocity_Injected();
+		Register_UnityEngine_Rigidbody_set_linearVelocity_Injected();
+
+		//System.Void UnityEngine.Rigidbody::set_mass_Injected(System.IntPtr,System.Single)
+		void Register_UnityEngine_Rigidbody_set_mass_Injected();
+		Register_UnityEngine_Rigidbody_set_mass_Injected();
+
+		//System.Void UnityEngine.Rigidbody::set_useGravity_Injected(System.IntPtr,System.Boolean)
+		void Register_UnityEngine_Rigidbody_set_useGravity_Injected();
+		Register_UnityEngine_Rigidbody_set_useGravity_Injected();
+
+	//End Registrations for type : UnityEngine.Rigidbody
 
 	//Start Registrations for type : UnityEngine.Screen
 

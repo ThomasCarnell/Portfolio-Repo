@@ -28,21 +28,25 @@ extern void OrderableText_Start_mC8499CBA9A5DCB332F90C69D4562A568D451D6BE (void)
 extern void OrderableText_InitializeLetterCloudSavedText_m821DD8EFA4334A402A947DBF796C42AE63756140 (void);
 extern void OrderableText_InitializeLetterCloud_m01289C9E5E6ECFB5AFB898A78AB89B4754410D12 (void);
 extern void OrderableText_Order_mAD8D99D4663418E78723BC99FA1857F70571773A (void);
+extern void OrderableText_EnableGravity_m3212AFCFA752B09EBAD134C04EBBB253700A5DBF (void);
+extern void OrderableText_DisableGravity_m431FB7574F7723C3D36E95EEF81AD22D06D219EF (void);
+extern void OrderableText_ClearLetters_m9F68275B3E76FAF5D51546700052BB6DB97E0B25 (void);
+extern void OrderableText_Update_m5D52E05B9059D5116EDDC6A94901D9E6F5B23463 (void);
 extern void OrderableText_InstantiateAllCharacters_m272AE473D6B23E9893E8FB9F256604792F0F8EC3 (void);
 extern void OrderableText_FormatText_m5FFA01FD2676B225BD9F0018CEB8BC3CA216C94F (void);
 extern void OrderableText_calculateAndAssignNextPosition_mE4AD5F8180A3CF6648D6667B47153A2F87D475B6 (void);
 extern void OrderableText_Order_corut_m696B74BC6294BBD73099E0D4840DAEC7FFD4BF58 (void);
 extern void OrderableText_InstantiateCharacter_mF2758BAA263EE6ACE27CAD809AC616F70EA17F38 (void);
 extern void OrderableText__ctor_mB001191F44629820EAF58983762D430119D0FE01 (void);
-extern void U3COrder_corutU3Ed__173__ctor_mF7618F4FB3245ED8858EFC7A8E0D2E25E759F9D5 (void);
-extern void U3COrder_corutU3Ed__173_System_IDisposable_Dispose_mC125303F2D97D21390FF0C4ACF9C6ABE92C71832 (void);
-extern void U3COrder_corutU3Ed__173_MoveNext_m30EED9CD5349613DF0EB97404AB22107E95A04FC (void);
-extern void U3COrder_corutU3Ed__173_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1A6736E0352DC7A6BF0B7C7BCD87ED56ABAE19F8 (void);
-extern void U3COrder_corutU3Ed__173_System_Collections_IEnumerator_Reset_mECF3783258035C4732FD008F76D7A82ED5124468 (void);
-extern void U3COrder_corutU3Ed__173_System_Collections_IEnumerator_get_Current_mB90694E8483105160879324A2A2BF6B8235E45E5 (void);
+extern void U3COrder_corutU3Ed__186__ctor_m7DBEC526AC91B5F974EAD2A8B7F49BFE9D34DDC2 (void);
+extern void U3COrder_corutU3Ed__186_System_IDisposable_Dispose_m5059E59A4C9C8E9337BA2015AF4533EAE959F4B7 (void);
+extern void U3COrder_corutU3Ed__186_MoveNext_mD9C674BDC7BBF8CB3CD92881E39DB686DDBAD9C4 (void);
+extern void U3COrder_corutU3Ed__186_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB5C96179488EF273FC239B250891739BF34A79BD (void);
+extern void U3COrder_corutU3Ed__186_System_Collections_IEnumerator_Reset_m9B9B857C4678FDF9567A083A3FCF94FB79C4EBE6 (void);
+extern void U3COrder_corutU3Ed__186_System_Collections_IEnumerator_get_Current_m862445120AB2850C3CF97B50871AE71698D60E07 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mC7CA174A23290C34424DF6D2733D5E64B92E5977 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m3C9D09F94200334DD5FA29A465481C7848AF4549 (void);
-static Il2CppMethodPointer s_methodPointers[37] = 
+static Il2CppMethodPointer s_methodPointers[41] = 
 {
 	Character_init_m011B8DDF1C053C03A86D9C87EA079F8136F497BA,
 	Character_startMoving_m9DC691B1F7068B16DD4609540FA620F14CD2C3CE,
@@ -67,60 +71,68 @@ static Il2CppMethodPointer s_methodPointers[37] =
 	OrderableText_InitializeLetterCloudSavedText_m821DD8EFA4334A402A947DBF796C42AE63756140,
 	OrderableText_InitializeLetterCloud_m01289C9E5E6ECFB5AFB898A78AB89B4754410D12,
 	OrderableText_Order_mAD8D99D4663418E78723BC99FA1857F70571773A,
+	OrderableText_EnableGravity_m3212AFCFA752B09EBAD134C04EBBB253700A5DBF,
+	OrderableText_DisableGravity_m431FB7574F7723C3D36E95EEF81AD22D06D219EF,
+	OrderableText_ClearLetters_m9F68275B3E76FAF5D51546700052BB6DB97E0B25,
+	OrderableText_Update_m5D52E05B9059D5116EDDC6A94901D9E6F5B23463,
 	OrderableText_InstantiateAllCharacters_m272AE473D6B23E9893E8FB9F256604792F0F8EC3,
 	OrderableText_FormatText_m5FFA01FD2676B225BD9F0018CEB8BC3CA216C94F,
 	OrderableText_calculateAndAssignNextPosition_mE4AD5F8180A3CF6648D6667B47153A2F87D475B6,
 	OrderableText_Order_corut_m696B74BC6294BBD73099E0D4840DAEC7FFD4BF58,
 	OrderableText_InstantiateCharacter_mF2758BAA263EE6ACE27CAD809AC616F70EA17F38,
 	OrderableText__ctor_mB001191F44629820EAF58983762D430119D0FE01,
-	U3COrder_corutU3Ed__173__ctor_mF7618F4FB3245ED8858EFC7A8E0D2E25E759F9D5,
-	U3COrder_corutU3Ed__173_System_IDisposable_Dispose_mC125303F2D97D21390FF0C4ACF9C6ABE92C71832,
-	U3COrder_corutU3Ed__173_MoveNext_m30EED9CD5349613DF0EB97404AB22107E95A04FC,
-	U3COrder_corutU3Ed__173_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1A6736E0352DC7A6BF0B7C7BCD87ED56ABAE19F8,
-	U3COrder_corutU3Ed__173_System_Collections_IEnumerator_Reset_mECF3783258035C4732FD008F76D7A82ED5124468,
-	U3COrder_corutU3Ed__173_System_Collections_IEnumerator_get_Current_mB90694E8483105160879324A2A2BF6B8235E45E5,
+	U3COrder_corutU3Ed__186__ctor_m7DBEC526AC91B5F974EAD2A8B7F49BFE9D34DDC2,
+	U3COrder_corutU3Ed__186_System_IDisposable_Dispose_m5059E59A4C9C8E9337BA2015AF4533EAE959F4B7,
+	U3COrder_corutU3Ed__186_MoveNext_mD9C674BDC7BBF8CB3CD92881E39DB686DDBAD9C4,
+	U3COrder_corutU3Ed__186_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB5C96179488EF273FC239B250891739BF34A79BD,
+	U3COrder_corutU3Ed__186_System_Collections_IEnumerator_Reset_m9B9B857C4678FDF9567A083A3FCF94FB79C4EBE6,
+	U3COrder_corutU3Ed__186_System_Collections_IEnumerator_get_Current_m862445120AB2850C3CF97B50871AE71698D60E07,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mC7CA174A23290C34424DF6D2733D5E64B92E5977,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m3C9D09F94200334DD5FA29A465481C7848AF4549,
 };
-static const int32_t s_InvokerIndices[37] = 
+static const int32_t s_InvokerIndices[41] = 
 {
-	6322,
-	6322,
-	6322,
-	4350,
-	6322,
-	6322,
-	7642,
+	6339,
+	6339,
+	6339,
+	4360,
+	6339,
+	6339,
+	7660,
 	-1,
-	6322,
+	6339,
 	-1,
-	3457,
-	1550,
-	6205,
-	6322,
-	2607,
-	6322,
-	1919,
-	4449,
-	6322,
-	6322,
-	6322,
-	5028,
-	6322,
-	6322,
-	6322,
-	1055,
-	6205,
-	4288,
-	6322,
-	4987,
-	6322,
-	6097,
-	6205,
-	6322,
-	6205,
-	8749,
-	6322,
+	3465,
+	1552,
+	6222,
+	6339,
+	2611,
+	6339,
+	1921,
+	4459,
+	6339,
+	6339,
+	6339,
+	5040,
+	6339,
+	6339,
+	6339,
+	6339,
+	6339,
+	6339,
+	6339,
+	1056,
+	6222,
+	4298,
+	6339,
+	4999,
+	6339,
+	6114,
+	6222,
+	6339,
+	6222,
+	8767,
+	6339,
 };
 static const Il2CppTokenRangePair s_rgctxIndices[1] = 
 {
@@ -139,7 +151,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharpU2Dfirstpass_CodeGe
 const Il2CppCodeGenModule g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule = 
 {
 	"Assembly-CSharp-firstpass.dll",
-	37,
+	41,
 	s_methodPointers,
 	0,
 	NULL,

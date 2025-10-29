@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -38,7 +38,7 @@ public class ButtonClickScript : MonoBehaviour
     float size = 2;
 
     public Camera mainCamera;
-     
+  
      
     // size control         
     [SerializeField]
@@ -80,9 +80,7 @@ public class ButtonClickScript : MonoBehaviour
                 //restart buttons
                 if(hit.collider.gameObject == gameObject && tag == "ReturnButton")
                 {
-                    returnButtonClicked = true;
-                    GetComponent<Transform>().localScale = startsize;
-                    EnableButtons();
+                    gameManager.openTarget(gameObject.name);
                 }
             }
         }
@@ -91,30 +89,29 @@ public class ButtonClickScript : MonoBehaviour
         cube.transform.Rotate(new Vector3(15 * offSpeed, 30 * offSpeed, 45) * Time.deltaTime * speed);
 
          // increase size over time when growing
-        if (growing == true && returnButtonClicked == false)
-        {
-            size += growthRate * Time.deltaTime;
-            size = Mathf.Min(size, maxSize);
-            cube.transform.localScale = Vector3.one * size;
+        // if (growing == true && returnButtonClicked == false)
+        // {
+        //     size += growthRate * Time.deltaTime;
+        //     size = Mathf.Min(size, maxSize);
+        //     cube.transform.localScale = Vector3.one * size;
 
-            // stop growing if reached max AND remove UI elements
-            if (Mathf.Approximately(size, maxSize))
-            {
-                DisableButtons();
-                growing = false;
-                cube.transform.localScale = startsize;
-                size = 2;
-            }
-        }
+        //     // stop growing if reached max AND remove UI elements
+        //     if (Mathf.Approximately(size, maxSize))
+        //     {
+        //         DisableButtons();
+        //         growing = false;
+        //         cube.transform.localScale = startsize;
+        //         size = 2;
+        //     }
+        // }
     }
 
-    void DisableButtons()
+    public void DisableButtons()
     {
         unityButton.SetActive(false);
         soundDesignButton.SetActive(false);
         physicalToysButton.SetActive(false);
 
-        buttonTexts.SetActive(false);
     }
     public void EnableButtons()
     {
@@ -122,7 +119,5 @@ public class ButtonClickScript : MonoBehaviour
         unityButton.SetActive(true);
         soundDesignButton.SetActive(true);
         physicalToysButton.SetActive(true);
-
-        buttonTexts.SetActive(true);
     }
 }
