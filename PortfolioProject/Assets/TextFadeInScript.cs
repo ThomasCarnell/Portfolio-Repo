@@ -4,6 +4,8 @@ public class FadeMaterialDirect : MonoBehaviour
 {
     [SerializeField] private Material targetMaterial;
     [SerializeField] private float fadeDuration = 1.5f;
+        [SerializeField] private AnimationCurve fadeCurve = AnimationCurve.EaseInOut(0, 0, 1, 1); // curve for easing
+
 
     private Color startColor;
     private Color endColor;
@@ -28,7 +30,10 @@ public class FadeMaterialDirect : MonoBehaviour
         timer += Time.deltaTime;
         float t = Mathf.Clamp01(timer / fadeDuration);
 
-        Color c = Color.Lerp(startColor, endColor, t);
+        // apply curve to the normalized time before lerping
+        float curvedT = (fadeCurve != null) ? fadeCurve.Evaluate(t) : t;
+
+        Color c = Color.Lerp(startColor, endColor, curvedT);
         targetMaterial.color = c;
 
         if (t >= 1f)

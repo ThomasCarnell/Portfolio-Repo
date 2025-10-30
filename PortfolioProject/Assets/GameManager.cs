@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
     private GameObject startPosPortfolio;
 
     private GameObject instanceReturnButtonText;
-    private GameObject instancePortfolioButtonText;
     
     [Header("Animation Settings")]
 
@@ -32,8 +31,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private bool setActiveState = true; // True = activate, False = deactivate
 
     private float timer;
- 
+
     private bool running = false;
+    private bool returnButtonActive = false;
 
     //Button pressed handler
     public void openTarget(string buttonPressed)
@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
             anim3[2].GetComponentInChildren<OrderableText>().EnableGravity();
 
             buttonContainer.GetComponent<ButtonResetAnimation>().StartReverseScaling();
+            returnButtonActive = true;
 
         }
         if (currentbutton == "SoundDesignPortfolioButton")
@@ -59,6 +60,7 @@ public class GameManager : MonoBehaviour
             anim3[2].GetComponentInChildren<OrderableText>().EnableGravity();
 
             buttonContainer.GetComponent<ButtonResetAnimation>().StartReverseScaling();
+            returnButtonActive = true;
 
         }
         if (currentbutton == "PhysicalToysPortfolioButton")
@@ -69,21 +71,65 @@ public class GameManager : MonoBehaviour
             anim3[0].GetComponentInChildren<OrderableText>().EnableGravity();
             anim3[1].GetComponentInChildren<OrderableText>().EnableGravity();
             buttonContainer.GetComponent<ButtonResetAnimation>().StartReverseScaling();
+            returnButtonActive = true;
 
         }
-        if (currentbutton == "ReturnToMainMenuButton")
+        if (currentbutton == "ReturnToMainMenuButton" && returnButtonActive == true)
         {
             portfolioTextButtonContainer.SetActive(true);
-            Destroy(instanceReturnButtonText);
+            returnButtonClicked();
             buttonContainer.GetComponent<ButtonResetAnimation>().StartScaling();
             anim3[0].GetComponentInChildren<OrderableText>().DisableGravity();
             anim3[1].GetComponentInChildren<OrderableText>().DisableGravity();
             anim3[2].GetComponentInChildren<OrderableText>().DisableGravity();
-    
+
             anim3[0].GetComponent<FadeMaterialDirect>().FadeIn();
             anim3[1].GetComponent<FadeMaterialDirect>().FadeIn();
             anim3[2].GetComponent<FadeMaterialDirect>().FadeIn();
+            returnButtonActive = false;
         }
+    }
+    private void returnButtonClicked()
+    {
+          if (instanceReturnButtonText == null) return;
+
+        // enable OrderableText gravity if present
+        var orderable = instanceReturnButtonText.GetComponent<OrderableText>();
+        if (orderable != null) orderable.EnableGravity();
+
+        // find or add rigidbodies on the root and all children
+        Rigidbody[] rbs = instanceReturnButtonText.GetComponentsInChildren<Rigidbody>(true);
+        if (rbs == null || rbs.Length == 0)
+        {
+            // ensure there's at least one rigidbody on the root
+            var rootRb = instanceReturnButtonText.GetComponent<Rigidbody>();
+            if (rootRb == null) rootRb = instanceReturnButtonText.AddComponent<Rigidbody>();
+            rbs = new Rigidbody[] { rootRb };
+        }
+
+        // explosion-like random impulse parameters
+        float forceMin = 2f;
+        float forceMax = 3f;
+        float radius = 3f;
+        float upwardsModifier = -0.1f;
+
+        Vector3 explosionCenter = instanceReturnButtonText.transform.position;
+
+        foreach (var rb in rbs)
+        {
+            if (rb == null) continue;
+
+            rb.isKinematic = false;
+            rb.useGravity = true;
+
+            // randomize force and a slightly offset center so pieces scatter nicely
+            float force = Random.Range(forceMin, forceMax);
+            Vector3 centerOffset = explosionCenter + Random.insideUnitSphere * 0.5f;
+            rb.AddExplosionForce(force, centerOffset, radius, upwardsModifier, ForceMode.Impulse);
+
+        }
+
+        Destroy(instanceReturnButtonText, 2f);
     }
     void Start()
     {
