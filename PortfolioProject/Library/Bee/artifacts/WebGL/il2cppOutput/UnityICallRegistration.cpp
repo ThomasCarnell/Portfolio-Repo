@@ -342,6 +342,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AnimationCurve_Internal_Create_Injected();
 		Register_UnityEngine_AnimationCurve_Internal_Create_Injected();
 
+		//System.Single UnityEngine.AnimationCurve::Evaluate_Injected(System.IntPtr,System.Single)
+		void Register_UnityEngine_AnimationCurve_Evaluate_Injected();
+		Register_UnityEngine_AnimationCurve_Evaluate_Injected();
+
 		//System.Void UnityEngine.AnimationCurve::Internal_Destroy(System.IntPtr)
 		void Register_UnityEngine_AnimationCurve_Internal_Destroy();
 		Register_UnityEngine_AnimationCurve_Internal_Destroy();
@@ -2322,6 +2326,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Random_Range();
 		Register_UnityEngine_Random_Range();
 
+		//System.Void UnityEngine.Random::get_insideUnitSphere_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_Random_get_insideUnitSphere_Injected();
+		Register_UnityEngine_Random_get_insideUnitSphere_Injected();
+
 	//End Registrations for type : UnityEngine.Random
 
 	//Start Registrations for type : UnityEngine.RectOffset
@@ -2633,6 +2641,10 @@ void RegisterAllStrippedInternalCalls()
 	//End Registrations for type : UnityEngine.ResourcesAPIInternal
 
 	//Start Registrations for type : UnityEngine.Rigidbody
+
+		//System.Void UnityEngine.Rigidbody::AddExplosionForce_Injected(System.IntPtr,System.Single,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.ForceMode)
+		void Register_UnityEngine_Rigidbody_AddExplosionForce_Injected();
+		Register_UnityEngine_Rigidbody_AddExplosionForce_Injected();
 
 		//System.Void UnityEngine.Rigidbody::set_angularVelocity_Injected(System.IntPtr,UnityEngine.Vector3&)
 		void Register_UnityEngine_Rigidbody_set_angularVelocity_Injected();

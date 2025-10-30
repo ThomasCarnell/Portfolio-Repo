@@ -511,6 +511,7 @@ struct TagTypeInfoU5BU5D_t74D146542BA39E421745D69062E8C3C3618DE860;
 struct HitInfoU5BU5D_tDAE7DF0D2B0BE3EB2FD25FB4418704E27A2BF1D5;
 struct TextProcessingElementU5BU5D_tC3E97D1672C8DB6E1F91DB2C0987D0ED9A2E7113;
 struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
+struct AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354;
 struct AnimationState_tC704F25A20169025B6CFDC2F00DC84152B5B73CE;
 struct AnimationTriggers_tA0DC06F89C5280C6DD972F6F4C8A56D7F4F79074;
 struct ArgumentCache_t30F5878E7190B37456E045E039655C33EB27FF1D;
@@ -10617,6 +10618,7 @@ struct FadeMaterialDirect_t6FADC3BDFFFFC2D8A74FD272881D86848B5F41F8  : public Mo
 {
 	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___targetMaterial;
 	float ___fadeDuration;
+	AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* ___fadeCurve;
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___startColor;
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___endColor;
 	float ___timer;
@@ -10633,7 +10635,6 @@ struct GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6  : public MonoBehav
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___selectionTarget;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___startPosPortfolio;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___instanceReturnButtonText;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___instancePortfolioButtonText;
 	float ___delay;
 	float ___delay2;
 	float ___delay3;
@@ -10643,6 +10644,7 @@ struct GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6  : public MonoBehav
 	bool ___setActiveState;
 	float ___timer;
 	bool ___running;
+	bool ___returnButtonActive;
 };
 struct OrderableText_tF14FD89B1E5E7F38F149470DD56F054002666BC1  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -16318,7 +16320,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4705[2] =
 	static_cast<int32_t>(offsetof(FPSCounter_t43778C9F199A3BDC56F47834FC9838D1235DBC66, ___deltaTime)),static_cast<int32_t>(offsetof(FPSCounter_t43778C9F199A3BDC56F47834FC9838D1235DBC66, ___off)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4706[19] = 
 {
-	static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___buttonClickScript)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___currentbutton)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___buttonContainer)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___portfolioTextButtonContainer)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___returnButtonText)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___returnButton)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___selectionTarget)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___startPosPortfolio)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___instanceReturnButtonText)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___instancePortfolioButtonText)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___delay)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___delay2)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___delay3)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___anim1)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___anim2)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___anim3)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___setActiveState)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___timer)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___running)),};
+	static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___buttonClickScript)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___currentbutton)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___buttonContainer)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___portfolioTextButtonContainer)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___returnButtonText)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___returnButton)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___selectionTarget)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___startPosPortfolio)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___instanceReturnButtonText)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___delay)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___delay2)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___delay3)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___anim1)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___anim2)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___anim3)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___setActiveState)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___timer)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___running)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___returnButtonActive)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4707[5] = 
 {
 	static_cast<int32_t>(offsetof(PointAttObj_tC83B02E61D0DB7EAD0469F4E54E6C636F1CF2FBE, ___target)),static_cast<int32_t>(offsetof(PointAttObj_tC83B02E61D0DB7EAD0469F4E54E6C636F1CF2FBE, ___orbitSpeed)),static_cast<int32_t>(offsetof(PointAttObj_tC83B02E61D0DB7EAD0469F4E54E6C636F1CF2FBE, ___orbitRadius)),static_cast<int32_t>(offsetof(PointAttObj_tC83B02E61D0DB7EAD0469F4E54E6C636F1CF2FBE, ___orbitAxis)),static_cast<int32_t>(offsetof(PointAttObj_tC83B02E61D0DB7EAD0469F4E54E6C636F1CF2FBE, ___angle)),};
@@ -16328,9 +16330,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4708[5] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4709[2] = 
 {
 	static_cast<int32_t>(offsetof(AttachToObject_t54CB7A4089DE01463A9EB7AB494527F3DCA91265, ___target)),static_cast<int32_t>(offsetof(AttachToObject_t54CB7A4089DE01463A9EB7AB494527F3DCA91265, ___offset)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4710[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4710[7] = 
 {
-	static_cast<int32_t>(offsetof(FadeMaterialDirect_t6FADC3BDFFFFC2D8A74FD272881D86848B5F41F8, ___targetMaterial)),static_cast<int32_t>(offsetof(FadeMaterialDirect_t6FADC3BDFFFFC2D8A74FD272881D86848B5F41F8, ___fadeDuration)),static_cast<int32_t>(offsetof(FadeMaterialDirect_t6FADC3BDFFFFC2D8A74FD272881D86848B5F41F8, ___startColor)),static_cast<int32_t>(offsetof(FadeMaterialDirect_t6FADC3BDFFFFC2D8A74FD272881D86848B5F41F8, ___endColor)),static_cast<int32_t>(offsetof(FadeMaterialDirect_t6FADC3BDFFFFC2D8A74FD272881D86848B5F41F8, ___timer)),static_cast<int32_t>(offsetof(FadeMaterialDirect_t6FADC3BDFFFFC2D8A74FD272881D86848B5F41F8, ___fading)),};
+	static_cast<int32_t>(offsetof(FadeMaterialDirect_t6FADC3BDFFFFC2D8A74FD272881D86848B5F41F8, ___targetMaterial)),static_cast<int32_t>(offsetof(FadeMaterialDirect_t6FADC3BDFFFFC2D8A74FD272881D86848B5F41F8, ___fadeDuration)),static_cast<int32_t>(offsetof(FadeMaterialDirect_t6FADC3BDFFFFC2D8A74FD272881D86848B5F41F8, ___fadeCurve)),static_cast<int32_t>(offsetof(FadeMaterialDirect_t6FADC3BDFFFFC2D8A74FD272881D86848B5F41F8, ___startColor)),static_cast<int32_t>(offsetof(FadeMaterialDirect_t6FADC3BDFFFFC2D8A74FD272881D86848B5F41F8, ___endColor)),static_cast<int32_t>(offsetof(FadeMaterialDirect_t6FADC3BDFFFFC2D8A74FD272881D86848B5F41F8, ___timer)),static_cast<int32_t>(offsetof(FadeMaterialDirect_t6FADC3BDFFFFC2D8A74FD272881D86848B5F41F8, ___fading)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4711[5] = 
 {
 	static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___FilePathsData)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___TypesData)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___TotalTypes)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___TotalFiles)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___IsEditorOnly)) + static_cast<int32_t>(sizeof(RuntimeObject)),};

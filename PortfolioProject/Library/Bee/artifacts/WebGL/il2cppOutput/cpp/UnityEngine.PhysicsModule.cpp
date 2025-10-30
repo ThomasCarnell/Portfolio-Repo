@@ -892,6 +892,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_angularVelocity_Injected_m
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_mass_Injected_m19C3B6F0F2C8AE43E22EAD4A4A28315DB2C63880 (intptr_t ___0__unity_self, float ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_useGravity_Injected_mE1C763DD42795192ABDEF9C9CD758ACA6B91EBBC (intptr_t ___0__unity_self, bool ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_isKinematic_Injected_m5613C03722F001F12F373B8AAB0C3CFF5512A78D (intptr_t ___0__unity_self, bool ___1_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddExplosionForce_Injected_mABD06DF246F338199E69A50D5440C5D97C4F86F0 (intptr_t ___0__unity_self, float ___1_explosionForce, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___2_explosionPosition, float ___3_explosionRadius, float ___4_upwardsModifier, int32_t ___5_mode, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Normalize_mEF8349CC39674236CFC694189AFD36E31F89AC8F_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
 inline void Span_1__ctor_m7E2B58017948399EC02850E4C7DE9ACB0D8B4786_inline (Span_1_tBEC7C4E9169E4140C814175AFCBB22857D8132A3* __this, void* ___0_pointer, int32_t ___1_length, const RuntimeMethod* method)
@@ -4493,6 +4494,44 @@ IL_000f:
 		return;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddExplosionForce_mE4673F6D1DA0C206DA79659E9005A0F067348402 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, float ___0_explosionForce, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_explosionPosition, float ___2_explosionRadius, float ___3_upwardsModifier, int32_t ___4_mode, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MarshalledUnityObject_MarshalNotNull_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m29B9DBD0F0BE08827F00B9DE16AD8305D57B8AC1_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t G_B2_0;
+	memset((&G_B2_0), 0, sizeof(G_B2_0));
+	intptr_t G_B1_0;
+	memset((&G_B1_0), 0, sizeof(G_B1_0));
+	{
+		intptr_t L_0;
+		L_0 = MarshalledUnityObject_MarshalNotNull_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m29B9DBD0F0BE08827F00B9DE16AD8305D57B8AC1_inline(__this, MarshalledUnityObject_MarshalNotNull_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m29B9DBD0F0BE08827F00B9DE16AD8305D57B8AC1_RuntimeMethod_var);
+		intptr_t L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000f;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF(__this, NULL);
+		G_B2_0 = G_B1_0;
+	}
+
+IL_000f:
+	{
+		float L_2 = ___0_explosionForce;
+		float L_3 = ___2_explosionRadius;
+		float L_4 = ___3_upwardsModifier;
+		int32_t L_5 = ___4_mode;
+		Rigidbody_AddExplosionForce_Injected_mABD06DF246F338199E69A50D5440C5D97C4F86F0(G_B2_0, L_2, (&___1_explosionPosition), L_3, L_4, L_5, NULL);
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_linearVelocity_Injected_mCAC97A87C8F0FAFA7007C394AF7974DD37073467 (intptr_t ___0__unity_self, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___1_value, const RuntimeMethod* method) 
 {
 	typedef void (*Rigidbody_set_linearVelocity_Injected_mCAC97A87C8F0FAFA7007C394AF7974DD37073467_ftn) (intptr_t, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*);
@@ -4532,6 +4571,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_isKinematic_Injected_m5613
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Rigidbody_set_isKinematic_Injected_m5613C03722F001F12F373B8AAB0C3CFF5512A78D_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::set_isKinematic_Injected(System.IntPtr,System.Boolean)");
 	_il2cpp_icall_func(___0__unity_self, ___1_value);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddExplosionForce_Injected_mABD06DF246F338199E69A50D5440C5D97C4F86F0 (intptr_t ___0__unity_self, float ___1_explosionForce, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___2_explosionPosition, float ___3_explosionRadius, float ___4_upwardsModifier, int32_t ___5_mode, const RuntimeMethod* method) 
+{
+	typedef void (*Rigidbody_AddExplosionForce_Injected_mABD06DF246F338199E69A50D5440C5D97C4F86F0_ftn) (intptr_t, float, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, float, float, int32_t);
+	static Rigidbody_AddExplosionForce_Injected_mABD06DF246F338199E69A50D5440C5D97C4F86F0_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody_AddExplosionForce_Injected_mABD06DF246F338199E69A50D5440C5D97C4F86F0_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::AddExplosionForce_Injected(System.IntPtr,System.Single,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.ForceMode)");
+	_il2cpp_icall_func(___0__unity_self, ___1_explosionForce, ___2_explosionPosition, ___3_explosionRadius, ___4_upwardsModifier, ___5_mode);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

@@ -72,6 +72,7 @@ Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility::CreateCounterValue__Unman
 UnityEngine.AnimationCurve::Internal_Equals_Injected
 UnityEngine.AnimationCurve::GetHashCode_Injected
 UnityEngine.AnimationCurve::Internal_Create_Injected
+UnityEngine.AnimationCurve::Evaluate_Injected
 UnityEngine.AnimationCurve::Internal_Destroy
 UnityEngine.Animations.AnimationLayerMixerPlayable::SetSingleLayerOptimizationInternal
 UnityEngine.Animator::get_hasBoundPlayables_Injected
@@ -508,6 +509,7 @@ UnityEngine.Quaternion::Internal_ToEulerRad_Injected
 UnityEngine.Quaternion::Inverse_Injected
 UnityEngine.Random::RandomRangeInt
 UnityEngine.Random::Range
+UnityEngine.Random::get_insideUnitSphere_Injected
 UnityEngine.RectOffset::get_bottom_Injected
 UnityEngine.RectOffset::get_horizontal_Injected
 UnityEngine.RectOffset::get_left_Injected
@@ -575,6 +577,7 @@ UnityEngine.Resources::GetBuiltinResource_Injected
 UnityEngine.ResourcesAPIInternal::FindShaderByName_Injected
 UnityEngine.ResourcesAPIInternal::Load_Injected
 UnityEngine.ResourcesAPIInternal::FindObjectsOfTypeAll
+UnityEngine.Rigidbody::AddExplosionForce_Injected
 UnityEngine.Rigidbody::set_angularVelocity_Injected
 UnityEngine.Rigidbody::set_isKinematic_Injected
 UnityEngine.Rigidbody::set_linearVelocity_Injected
