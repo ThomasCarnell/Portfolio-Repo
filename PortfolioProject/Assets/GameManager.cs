@@ -1,3 +1,4 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -5,6 +6,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private ButtonClickScript buttonClickScript;
     private string currentbutton = "start";
+    [SerializeField] private PortfolioManager portfolioManager;
 
     [SerializeField]
     private GameObject buttonContainer;
@@ -49,6 +51,8 @@ public class GameManager : MonoBehaviour
 
             buttonContainer.GetComponent<ButtonResetAnimation>().StartReverseScaling();
             returnButtonActive = true;
+
+            portfolioManager.ShowDemoEntries();
 
         }
         if (currentbutton == "SoundDesignPortfolioButton")

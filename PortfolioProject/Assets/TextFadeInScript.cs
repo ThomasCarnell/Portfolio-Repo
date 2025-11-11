@@ -1,40 +1,56 @@
+// ...existing code...
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FadeMaterialDirect : MonoBehaviour
 {
     [SerializeField] private Material targetMaterial;
+    [SerializeField] private RawImage targetRawImage;
     [SerializeField] private float fadeDuration = 1.5f;
-        [SerializeField] private AnimationCurve fadeCurve = AnimationCurve.EaseInOut(0, 0, 1, 1); // curve for easing
+    [SerializeField] private AnimationCurve fadeCurve = AnimationCurve.EaseInOut(0, 0, 1, 1); // curve for easing
 
+    // material colors
+    private Color matStartColor;
+    private Color matEndColor;
 
-    private Color startColor;
-    private Color endColor;
+    // rawimage colors
+    private Color imgStartColor;
+    private Color imgEndColor;
+
     private float timer;
     private bool fading;
-
+    [SerializeField]
+    private bool musingImage = false;
     void Start()
     {
-        ResetAlpha();
+        if (musingImage == true)
+        {
+            FadeIn();
+        }
     }
 
     void OnEnable()
     {
-        if (targetMaterial == null) return;
-        ResetAlpha();
+        
     }
 
     void Update()
     {
-        if (!fading || targetMaterial == null) return;
+        if (!fading) return;
 
         timer += Time.deltaTime;
         float t = Mathf.Clamp01(timer / fadeDuration);
-
-        // apply curve to the normalized time before lerping
         float curvedT = (fadeCurve != null) ? fadeCurve.Evaluate(t) : t;
 
-        Color c = Color.Lerp(startColor, endColor, curvedT);
-        targetMaterial.color = c;
+        if (targetMaterial != null)
+        {
+            targetMaterial.color = Color.Lerp(matStartColor, matEndColor, curvedT);
+        }
+
+        if (targetRawImage != null)
+        {
+            targetRawImage.color = Color.Lerp(imgStartColor, imgEndColor, curvedT);
+        }
 
         if (t >= 1f)
             fading = false;
@@ -42,12 +58,21 @@ public class FadeMaterialDirect : MonoBehaviour
 
     public void FadeIn()
     {
-        if (targetMaterial == null) return;
+        // prepare material
+        if (targetMaterial != null)
+        {
+            matStartColor = targetMaterial.color;
+            matEndColor = matStartColor;
+            matEndColor.a = 1f;
+        }
 
-        // Always fade from current alpha to fully opaque
-        startColor = targetMaterial.color;
-        endColor = startColor;
-        endColor.a = 1f;
+        // prepare raw image
+        if (targetRawImage != null && musingImage == true)
+        {
+            imgStartColor = targetRawImage.color;
+            imgEndColor = imgStartColor;
+            imgEndColor.a = 1f;
+        }
 
         timer = 0f;
         fading = true;
@@ -55,12 +80,21 @@ public class FadeMaterialDirect : MonoBehaviour
 
     public void FadeOut()
     {
-        if (targetMaterial == null) return;
+        // prepare material
+        if (targetMaterial != null)
+        {
+            matStartColor = targetMaterial.color;
+            matEndColor = matStartColor;
+            matEndColor.a = 0f;
+        }
 
-        // Always fade from current alpha to fully transparent
-        startColor = targetMaterial.color;
-        endColor = startColor;
-        endColor.a = 0f;
+        // prepare raw image
+        if (targetRawImage != null)
+        {
+            imgStartColor = targetRawImage.color;
+            imgEndColor = imgStartColor;
+            imgEndColor.a = 0f;
+        }
 
         timer = 0f;
         fading = true;
@@ -68,10 +102,19 @@ public class FadeMaterialDirect : MonoBehaviour
 
     private void ResetAlpha()
     {
-        if (targetMaterial == null) return;
+        if (targetMaterial != null)
+        {
+            Color c = targetMaterial.color;
+            c.a = 1f; // fully opaque
+            targetMaterial.color = c;
+        }
 
-        Color c = targetMaterial.color;
-        c.a = 1f; // fully opaque
-        targetMaterial.color = c;
+        if (targetRawImage != null)
+        {
+            Color c = targetRawImage.color;
+            c.a = 1f; // fully opaque
+            targetRawImage.color = c;
+        }
     }
 }
+// ...existing code...
