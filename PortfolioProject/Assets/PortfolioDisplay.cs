@@ -15,11 +15,22 @@ public class PortfolioDisplay : MonoBehaviour
 
     public void SetEntry(PortfolioEntry entry)
     {
+
         currentEntry = entry;
         titleText.text = entry.projectName;
         dateText.text = entry.productionDate;
         descriptionText.text = entry.description;
         showcaseVideo = entry.showcaseVideo;
+
+    }
+
+    void OnEnable()
+    {
+        GetComponentInChildren<TMPGroupFader>().FadeGroupIn();
+    }
+    void OnDisable()
+    {
+        GetComponentInChildren<TMPGroupFader>().FadeGroupOut();
     }
 
     public void OpenWebLink()

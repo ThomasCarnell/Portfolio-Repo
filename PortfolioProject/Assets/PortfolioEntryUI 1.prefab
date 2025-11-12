@@ -130,7 +130,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -45.114014, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -127.38098, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -283,6 +283,7 @@ GameObject:
   - component: {fileID: 745190335723574207}
   - component: {fileID: 8085706082667342079}
   - component: {fileID: 3380448084880386966}
+  - component: {fileID: 2708066132903766387}
   m_Layer: 5
   m_Name: PortfolioEntryUI 1
   m_TagString: Untagged
@@ -339,6 +340,24 @@ MonoBehaviour:
   dateText: {fileID: 2405788699279937969}
   descriptionText: {fileID: 429599675695267520}
   showcaseVideo: {fileID: 0}
+--- !u!114 &2708066132903766387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2894484826373005177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31e4b0b25b0a6f4b9f959f81b282700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texts:
+  - {fileID: 55638064671406568}
+  - {fileID: 2405788699279937969}
+  - {fileID: 7612628912876864243}
+  - {fileID: 429599675695267520}
+  fadeDuration: 1
 --- !u!1 &3571583022518228168
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,7 +708,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -439.19885, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

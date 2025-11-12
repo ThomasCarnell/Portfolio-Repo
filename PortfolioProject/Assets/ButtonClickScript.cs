@@ -28,6 +28,7 @@ public class ButtonClickScript : MonoBehaviour
     private GameObject physicalToysButton;
     [SerializeField]
     private GameObject returnToMainMenuButton;
+    [SerializeField] PortfolioManager pm;
 
     [Space(10)]
     
@@ -81,6 +82,8 @@ public class ButtonClickScript : MonoBehaviour
                 if(hit.collider.gameObject == gameObject && tag == "ReturnButton")
                 {
                     gameManager.openTarget(gameObject.name);
+                            pm.GetComponent<PortfolioManager>().ClearPortfolio();
+
                 }
             }
         }
@@ -111,7 +114,7 @@ public class ButtonClickScript : MonoBehaviour
         unityButton.SetActive(false);
         soundDesignButton.SetActive(false);
         physicalToysButton.SetActive(false);
-
+        
     }
     public void EnableButtons()
     {

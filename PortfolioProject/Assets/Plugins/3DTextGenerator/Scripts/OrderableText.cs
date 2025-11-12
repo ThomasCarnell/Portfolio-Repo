@@ -393,7 +393,7 @@ else // gravity disabled
         rb.useGravity = false;
         rb.isKinematic = true;
         rb.linearVelocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
+//        rb.angularVelocity = Vector3.zero;
 
         if (originalPositions.TryGetValue(rb, out Vector3 originalPos))
         {

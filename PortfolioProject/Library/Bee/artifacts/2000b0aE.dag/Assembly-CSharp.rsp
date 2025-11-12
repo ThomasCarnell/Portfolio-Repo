@@ -375,6 +375,7 @@
 "Assets/Rotate.cs"
 "Assets/TextAllignment.cs"
 "Assets/TextFadeInScript.cs"
+"Assets/TMPFader.cs"
 -langversion:9.0
 /deterministic
 /optimize+
