@@ -82,7 +82,8 @@ public class ButtonClickScript : MonoBehaviour
                 if(hit.collider.gameObject == gameObject && tag == "ReturnButton")
                 {
                     gameManager.openTarget(gameObject.name);
-                            pm.GetComponent<PortfolioManager>().ClearPortfolio();
+                    pm.GetComponent<PortfolioManager>().ClearPortfolio();
+                    pm.GetComponent<PortfolioManager>().ResetCurrentIndex();
 
                 }
             }

@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
             buttonContainer.GetComponent<ButtonResetAnimation>().StartReverseScaling();
             returnButtonActive = true;
 
-            portfolioManager.ShowDemoEntries();
+            portfolioManager.ShowEntry(0); // Show first portfolio entry
 
         }
         if (currentbutton == "SoundDesignPortfolioButton")

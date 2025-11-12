@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class PortfolioManager : MonoBehaviour
@@ -8,76 +9,93 @@ public class PortfolioManager : MonoBehaviour
     [SerializeField] private Transform uiParent;
     [SerializeField] private GameObject entryUIPrefab;
 
-    private List<GameObject> spawnedEntries = new();
+    [Header("UI Navigation")]
+    [SerializeField] private Button nextButton;
+    [SerializeField] private Button previousButton;
 
-    // 🔹 Optional: you can have multiple entry sets (categories)
-    [Header("Optional Categories")]
-    [SerializeField] private List<PortfolioEntry> demoEntries;
-    [SerializeField] private List<PortfolioEntry> designEntries;
-    [SerializeField] private List<PortfolioEntry> codeEntries;
+    private List<GameObject> spawnedEntries = new();
+    private int currentIndex = 0;
 
     void Start()
     {
         Debug.Log($"📁 PortfolioManager ready — entries: {entries.Count}");
+
+        // Hook up buttons
+        if (nextButton != null)
+            nextButton.onClick.AddListener(ShowNextEntry);
+
+        if (previousButton != null)
+            previousButton.onClick.AddListener(ShowPreviousEntry);
+
+        // Start with first entry if available
+        // if (entries.Count > 0)
+        //     ShowEntry(0);
     }
 
-    // 🔹 Called by your custom button system
-    public void ShowEntries(List<PortfolioEntry> entrySet)
+    public void ShowEntry(int index)
     {
-        if (entrySet == null || entrySet.Count == 0)
+        ClearPortfolio();
+
+        if (index < 0 || index >= entries.Count)
         {
-            Debug.LogWarning("⚠️ No entries found for this category.");
+            Debug.LogWarning("⚠️ Invalid entry index.");
             return;
         }
 
-        ClearPortfolio();
-        PopulatePortfolio(entrySet);
+        var entry = entries[index];
+        GameObject ui = Instantiate(entryUIPrefab, uiParent);
+        var display = ui.GetComponent<PortfolioDisplay>();
+
+        if (display != null)
+            display.SetEntry(entry);
+
+        spawnedEntries.Add(ui);
+
+        Debug.Log($"🖼️ Showing entry {index + 1}/{entries.Count}: {entry.projectName}");
+
+        UpdateButtonStates();
     }
 
-    // 🔹 For example, hook these to your custom button events
-    public void ShowDemoEntries() => ShowEntries(demoEntries);
-    public void ShowDesignEntries() => ShowEntries(designEntries);
-    public void ShowCodeEntries() => ShowEntries(codeEntries);
-
-    // --- internal helpers ---
-
-    private void PopulatePortfolio(List<PortfolioEntry> entrySet)
+    private void UpdateButtonStates()
     {
-        foreach (var entry in entrySet)
-        {
-            if (entryUIPrefab == null || uiParent == null)
-            {
-                Debug.LogError("❌ Missing UI Prefab or UI Parent reference.");
-                return;
-            }
+        if (previousButton != null)
+            previousButton.interactable = currentIndex > 0;
 
-            GameObject ui = Instantiate(entryUIPrefab, uiParent);
-            var display = ui.GetComponent<PortfolioDisplay>();
+        if (nextButton != null)
+            nextButton.interactable = currentIndex < entries.Count - 1;
+       
+    }
 
-            if (display != null)
-            {
-                display.SetEntry(entry);
-                Debug.Log($"✅ Spawned entry: {entry.projectName}");
-            }
-            else
-            {
-                Debug.LogWarning("⚠️ Missing PortfolioDisplay component on prefab.");
-            }
+    public void ShowNextEntry()
+    {
+        if (entries.Count == 0 || currentIndex >= entries.Count - 1)
+            return;
 
-            spawnedEntries.Add(ui);
-        }
+        currentIndex++;
+        ShowEntry(currentIndex);
+    }
+
+    public void ShowPreviousEntry()
+    {
+        if (entries.Count == 0 || currentIndex <= 0)
+            return;
+
+        currentIndex--;
+        ShowEntry(currentIndex);
     }
 
     public void ClearPortfolio()
     {
-        Debug.Log($"🧹 Clearing {spawnedEntries.Count} spawned entries...");
-
         foreach (var e in spawnedEntries)
         {
             if (e != null)
                 Destroy(e);
         }
-
         spawnedEntries.Clear();
+
+    }
+    public void ResetCurrentIndex()
+    {
+        currentIndex = 0;
     }
 }

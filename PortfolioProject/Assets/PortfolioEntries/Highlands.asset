@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 299f02cab8b437643be53cf2058c1adf, type: 3}
+  m_Name: Highlands
+  m_EditorClassIdentifier: 
+  projectName: The Highlands
+  description: "uiParent \u2192 a VerticalLayoutGroup or GridLayoutGroup under a
+    ScrollView.uiParent \u2192 a VerticalLayoutGroup or GridLayoutGroup under a ScrollView.uiParent
+    \u2192 a VerticalLayoutGroup or GridLayoutGroup under a ScrollView.uiParent \u2192
+    a VerticalLayoutGroup or GridLayoutGroup under a ScrollView."
+  roles:
+  - Sound- and Game Design, Producer
+  productionDate: 2023
+  thumbnail: {fileID: 0}
+  webLink: 
+  showcaseVideo: {fileID: 0}
+  projectPrefab: {fileID: 0}
+  tags: []

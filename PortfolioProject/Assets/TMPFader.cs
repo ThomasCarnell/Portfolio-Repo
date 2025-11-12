@@ -15,7 +15,6 @@ public class TMPGroupFader : MonoBehaviour
     /// </summary>
     public void FadeGroupIn()
     {
-        Debug.Log("Fading in TMP group.");
         if (fadeRoutine != null)
             StopCoroutine(fadeRoutine);
         fadeRoutine = StartCoroutine(FadeGroup(0f, 1f));
