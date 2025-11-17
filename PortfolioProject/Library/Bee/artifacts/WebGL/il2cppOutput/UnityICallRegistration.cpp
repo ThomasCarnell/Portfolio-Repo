@@ -2646,10 +2646,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Rigidbody_AddExplosionForce_Injected();
 		Register_UnityEngine_Rigidbody_AddExplosionForce_Injected();
 
-		//System.Void UnityEngine.Rigidbody::set_angularVelocity_Injected(System.IntPtr,UnityEngine.Vector3&)
-		void Register_UnityEngine_Rigidbody_set_angularVelocity_Injected();
-		Register_UnityEngine_Rigidbody_set_angularVelocity_Injected();
-
 		//System.Void UnityEngine.Rigidbody::set_isKinematic_Injected(System.IntPtr,System.Boolean)
 		void Register_UnityEngine_Rigidbody_set_isKinematic_Injected();
 		Register_UnityEngine_Rigidbody_set_isKinematic_Injected();

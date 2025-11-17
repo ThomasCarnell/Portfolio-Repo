@@ -302,10 +302,14 @@
 "Assets/ButtonResetAnimation.cs"
 "Assets/FPSShow.cs"
 "Assets/GameManager.cs"
+"Assets/NewPortfolioEntry.cs"
 "Assets/PointAttObj.cs"
+"Assets/PortfolioDisplay.cs"
+"Assets/PortfolioManager.cs"
 "Assets/Rotate.cs"
 "Assets/TextAllignment.cs"
 "Assets/TextFadeInScript.cs"
+"Assets/TMPFader.cs"
 -langversion:9.0
 /deterministic
 /optimize+

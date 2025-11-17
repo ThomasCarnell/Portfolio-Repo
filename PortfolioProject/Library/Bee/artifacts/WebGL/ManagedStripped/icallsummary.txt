@@ -578,7 +578,6 @@ UnityEngine.ResourcesAPIInternal::FindShaderByName_Injected
 UnityEngine.ResourcesAPIInternal::Load_Injected
 UnityEngine.ResourcesAPIInternal::FindObjectsOfTypeAll
 UnityEngine.Rigidbody::AddExplosionForce_Injected
-UnityEngine.Rigidbody::set_angularVelocity_Injected
 UnityEngine.Rigidbody::set_isKinematic_Injected
 UnityEngine.Rigidbody::set_linearVelocity_Injected
 UnityEngine.Rigidbody::set_mass_Injected

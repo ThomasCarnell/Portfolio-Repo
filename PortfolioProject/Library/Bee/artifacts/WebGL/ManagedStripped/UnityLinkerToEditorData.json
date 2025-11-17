@@ -68,10 +68,24 @@
             "icon": null
           },
           {
+            "name": "AudioSource",
+            "scenes": [
+              "Assets/Scenes/MainScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "SampleClip",
             "scenes": [],
             "dependencyType": 1,
             "icon": null
+          },
+          {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
           }
         ]
       },
@@ -366,7 +380,9 @@
           },
           {
             "name": "Sprite",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/MainScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -501,6 +517,12 @@
             "icon": "package/com.unity.modules.runtimeinitializeonloadmanagerinitializer"
           },
           {
+            "name": "Required by TLS Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.tls"
+          },
+          {
             "name": "Required by TextCoreFontEngine Module",
             "scenes": [],
             "dependencyType": 2,
@@ -529,6 +551,18 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.uielements"
+          },
+          {
+            "name": "Required by UnityWebRequest Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unitywebrequest"
+          },
+          {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
           },
           {
             "name": "Required by WebGL Module",
@@ -652,6 +686,14 @@
             "icon": null
           },
           {
+            "name": "MeshCollider",
+            "scenes": [
+              "Assets/Scenes/MainScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "PhysicsManager",
             "scenes": [],
             "dependencyType": 1,
@@ -763,6 +805,12 @@
             "icon": "package/com.unity.modules.runtimeinitializeonloadmanagerinitializer"
           },
           {
+            "name": "Required by TLS Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.tls"
+          },
+          {
             "name": "Required by TextCoreFontEngine Module",
             "scenes": [],
             "dependencyType": 2,
@@ -793,10 +841,39 @@
             "icon": "package/com.unity.modules.uielements"
           },
           {
+            "name": "Required by UnityWebRequest Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unitywebrequest"
+          },
+          {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
+          },
+          {
             "name": "Required by WebGL Module",
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.webgl"
+          }
+        ]
+      },
+      {
+        "name": "TLS",
+        "dependencies": [
+          {
+            "name": "Required by UnityWebRequest Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unitywebrequest"
+          },
+          {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
           }
         ]
       },
@@ -907,6 +984,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.uielements"
+          },
+          {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
           }
         ]
       },
@@ -916,6 +999,30 @@
           {
             "name": "UIRenderer",
             "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          }
+        ]
+      },
+      {
+        "name": "UnityWebRequest",
+        "dependencies": [
+          {
+            "name": "Required by Video Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.video"
+          }
+        ]
+      },
+      {
+        "name": "Video",
+        "dependencies": [
+          {
+            "name": "VideoPlayer",
+            "scenes": [
+              "Assets/Scenes/MainScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           }

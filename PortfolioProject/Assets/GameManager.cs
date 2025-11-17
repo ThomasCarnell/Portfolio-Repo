@@ -1,4 +1,4 @@
-using UnityEditor.Experimental.GraphView;
+//using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     private GameObject returnButtonText;
     [SerializeField]
     private GameObject returnButton;
+    [SerializeField]
+    private GameObject nextPreviousButtons;
     [SerializeField]
     private GameObject selectionTarget;
     private GameObject startPosPortfolio;
@@ -53,6 +55,7 @@ public class GameManager : MonoBehaviour
             returnButtonActive = true;
 
             portfolioManager.ShowEntry(0); // Show first portfolio entry
+            nextPreviousButtons.SetActive(true);
 
         }
         if (currentbutton == "SoundDesignPortfolioButton")
@@ -65,6 +68,8 @@ public class GameManager : MonoBehaviour
 
             buttonContainer.GetComponent<ButtonResetAnimation>().StartReverseScaling();
             returnButtonActive = true;
+                        nextPreviousButtons.SetActive(true);
+
 
         }
         if (currentbutton == "PhysicalToysPortfolioButton")
@@ -76,6 +81,8 @@ public class GameManager : MonoBehaviour
             anim3[1].GetComponentInChildren<OrderableText>().EnableGravity();
             buttonContainer.GetComponent<ButtonResetAnimation>().StartReverseScaling();
             returnButtonActive = true;
+                        nextPreviousButtons.SetActive(true);
+
 
         }
         if (currentbutton == "ReturnToMainMenuButton" && returnButtonActive == true)
@@ -91,12 +98,15 @@ public class GameManager : MonoBehaviour
             anim3[1].GetComponent<FadeMaterialDirect>().FadeIn();
             anim3[2].GetComponent<FadeMaterialDirect>().FadeIn();
             returnButtonActive = false;
+                        nextPreviousButtons.SetActive(false);
+
         }
     }
     private void returnButtonClicked()
     {
-          if (instanceReturnButtonText == null) return;
 
+          if (instanceReturnButtonText == null) return;
+        
         // enable OrderableText gravity if present
         var orderable = instanceReturnButtonText.GetComponent<OrderableText>();
         if (orderable != null) orderable.EnableGravity();
@@ -134,6 +144,7 @@ public class GameManager : MonoBehaviour
         }
 
         Destroy(instanceReturnButtonText, 2f);
+
     }
     void Start()
     {
