@@ -23,6 +23,5 @@ MonoBehaviour:
   thumbnail: {fileID: 0}
   webLink: 
   showcaseVideo: {fileID: 32900000, guid: 88f0f0aeb09fca14eaccfdbd802689fc, type: 3}
-  videoFileName: YaYShowcase.mp4
   projectPrefab: {fileID: 0}
   tags: []

@@ -83,7 +83,6 @@ UnityEngine.Application::get_isFocused
 UnityEngine.Application::get_isPlaying
 UnityEngine.Application::OpenURL_Injected
 UnityEngine.Application::get_dataPath_Injected
-UnityEngine.Application::get_streamingAssetsPath_Injected
 UnityEngine.Application::get_platform
 UnityEngine.Awaitable::IsNativeAwaitableCompleted
 UnityEngine.Awaitable::ReleaseNativeAwaitable
@@ -800,7 +799,8 @@ UnityEngine.UIElements.UIRenderer::SetNativeData_Injected
 UnityEngine.UISystemProfilerApi::AddMarker_Injected
 UnityEngine.UISystemProfilerApi::BeginSample
 UnityEngine.UISystemProfilerApi::EndSample
+UnityEngine.Video.VideoPlayer::get_targetTexture_Injected
 UnityEngine.Video.VideoPlayer::Play_Injected
-UnityEngine.Video.VideoPlayer::Prepare_Injected
-UnityEngine.Video.VideoPlayer::set_source_Injected
-UnityEngine.Video.VideoPlayer::set_url_Injected
+UnityEngine.Video.VideoPlayer::Stop_Injected
+UnityEngine.Video.VideoPlayer::set_clip_Injected
+UnityEngine.Video.VideoPlayer::set_renderMode_Injected
