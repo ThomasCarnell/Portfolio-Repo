@@ -25,6 +25,9 @@ public class PortfolioManager : MonoBehaviour
     private bool isPhysicalPortfolio = false;
     private bool isStartPortfolio = false;
 
+    private int lastProcessedFrame = -1;
+
+
     void Start()
     {
         Debug.Log($"📁 PortfolioManager ready — entries: {entries_unity.Count}");
@@ -162,46 +165,69 @@ public class PortfolioManager : MonoBehaviour
 
     public void ShowNextEntry()
     {
-        if (entries_unity.Count == 0 || currentIndex >= entries_unity.Count - 1)
-            return;
-        currentIndex++;
         if (isUnityPortfolio)
-        ShowEntry_unity(currentIndex);
-
-        if(entries_soundDesign.Count == 0 || currentIndex >= entries_soundDesign.Count - 1)
-            return; 
+        {
+            if (entries_unity.Count == 0)
+            return;
+            if (currentIndex < entries_unity.Count - 1)
             currentIndex++;
+            ShowEntry_unity(currentIndex);
+        }
+    
         if(isSoundDesignPortfolio)
-            ShowEntry_soundDesign(currentIndex);
-
-        if(entries_physical.Count == 0 || currentIndex >= entries_physical.Count - 1)
+        {
+            if(entries_soundDesign.Count == 0)
             return; 
+            if (currentIndex < entries_soundDesign.Count - 1)
             currentIndex++;
+            if(isSoundDesignPortfolio)
+            ShowEntry_soundDesign(currentIndex);
+        }
+  
         if(isPhysicalPortfolio)
+        {
+            if(entries_physical.Count == 0)
+            return; 
+            if (currentIndex < entries_physical.Count - 1)
+            currentIndex++;
+            if(isPhysicalPortfolio)
             ShowEntry_physical(currentIndex);
+        }
     }
+    
+    
 
     public void ShowPreviousEntry()
     {
-        if (entries_unity.Count == 0 || currentIndex <= 0)
-            return;
-
-        currentIndex--;
         if (isUnityPortfolio)
+        {
+                  if (entries_unity.Count == 0)
+            return;
+         if (currentIndex > 0)
+        currentIndex--;
         ShowEntry_unity(currentIndex);
+        }
+  
 
-        if (entries_soundDesign.Count == 0 || currentIndex <= 0)
-            return;
-        currentIndex--;
         if (isSoundDesignPortfolio)
-            ShowEntry_soundDesign(currentIndex);
-
-        if (entries_physical.Count == 0 || currentIndex <= 0)
+        {
+               if (entries_soundDesign.Count == 0)
             return;
+        if (currentIndex > 0)    
         currentIndex--;
+            ShowEntry_soundDesign(currentIndex);
+        }
+     
+
         if (isPhysicalPortfolio)
-            ShowEntry_physical(currentIndex);   
-       
+        {
+               if (entries_physical.Count == 0)
+            return;
+        if (currentIndex > 0)
+        currentIndex--;
+            ShowEntry_physical(currentIndex);  
+        }
+      
     }
 
     public void ClearPortfolio()

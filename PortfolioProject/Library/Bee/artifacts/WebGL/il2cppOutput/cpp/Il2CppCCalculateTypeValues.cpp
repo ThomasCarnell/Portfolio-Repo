@@ -36297,6 +36297,7 @@ struct PortfolioManager_t933598C4A20AF9C0F0DD2B6B5C865EA6D9596903  : public Mono
 	bool ___isSoundDesignPortfolio;
 	bool ___isPhysicalPortfolio;
 	bool ___isStartPortfolio;
+	int32_t ___lastProcessedFrame;
 };
 struct PropertyChangedEvent_t440B641D5E33B90FF5D5C579700CE9262887C4C5  : public EventBase_1_t4220A5F9403D1AF0CC78DAA74EA18AA29699A6CF
 {

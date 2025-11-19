@@ -287,11 +287,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entries_unity:
+  - {fileID: 11400000, guid: 1f275e23aca5d5647b270ff3ae9ee4b5, type: 2}
   - {fileID: 11400000, guid: faabc20b270ac8a42ac2a02abfccabf4, type: 2}
   - {fileID: 11400000, guid: 1f275e23aca5d5647b270ff3ae9ee4b5, type: 2}
   entries_soundDesign:
-  - {fileID: 11400000, guid: 368f63c9e4dde234297779e8a6c14ce3, type: 2}
   - {fileID: 11400000, guid: 61a8016104a984f48b90460e4037acb0, type: 2}
+  - {fileID: 11400000, guid: 368f63c9e4dde234297779e8a6c14ce3, type: 2}
   - {fileID: 11400000, guid: 61a8016104a984f48b90460e4037acb0, type: 2}
   entries_physical:
   - {fileID: 11400000, guid: 15ddfa932db847945867bf7713e14971, type: 2}
@@ -3825,7 +3826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -3855,19 +3856,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1907407576}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 28314914}
-        m_TargetAssemblyTypeName: PortfolioManager, Assembly-CSharp
-        m_MethodName: ShowPreviousEntry
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1907407576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4642,7 +4631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -4672,19 +4661,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2144291789}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 28314914}
-        m_TargetAssemblyTypeName: PortfolioManager, Assembly-CSharp
-        m_MethodName: ShowNextEntry
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1001 &5386209913856105812
 PrefabInstance:
   m_ObjectHideFlags: 0

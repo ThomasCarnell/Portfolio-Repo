@@ -81,13 +81,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ScrollRect/ScrollRectEvent
     - UnityEngine.UI.Scrollbar/ScrollEvent
     - UnityEngine.UI.SpriteState
-  methodsToPreserve:
-  - assembly: Assembly-CSharp
-    fullTypeName: PortfolioManager
-    methodName: ShowPreviousEntry
-  - assembly: Assembly-CSharp
-    fullTypeName: PortfolioManager
-    methodName: ShowNextEntry
+  methodsToPreserve: []
   sceneClasses:
     Assets/Scenes/MainScene.unity:
     - Class: 1

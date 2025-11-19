@@ -1736,6 +1736,7 @@ struct PortfolioManager_t933598C4A20AF9C0F0DD2B6B5C865EA6D9596903  : public Mono
 	bool ___isSoundDesignPortfolio;
 	bool ___isPhysicalPortfolio;
 	bool ___isStartPortfolio;
+	int32_t ___lastProcessedFrame;
 };
 struct Rotate_t3280DFA30ADF04B60D2B142844F3B2364A472EAE  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -4967,40 +4968,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PortfolioManager_ShowNextEntry_m828174A3
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_0 = __this->___entries_unity;
-		int32_t L_1;
-		L_1 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_0, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
-		if (!L_1)
-		{
-			goto IL_0022;
-		}
-	}
-	{
-		int32_t L_2 = __this->___currentIndex;
-		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_3 = __this->___entries_unity;
-		int32_t L_4;
-		L_4 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_3, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
-		if ((((int32_t)L_2) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_4, 1)))))
-		{
-			goto IL_0023;
-		}
-	}
-
-IL_0022:
-	{
-		return;
-	}
-
-IL_0023:
-	{
-		int32_t L_5 = __this->___currentIndex;
-		__this->___currentIndex = ((int32_t)il2cpp_codegen_add(L_5, 1));
-		bool L_6 = __this->___isUnityPortfolio;
-		if (!L_6)
+		bool L_0 = __this->___isUnityPortfolio;
+		if (!L_0)
 		{
 			goto IL_0045;
 		}
 	}
+	{
+		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_1 = __this->___entries_unity;
+		int32_t L_2;
+		L_2 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_1, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
+		if (L_2)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0016:
+	{
+		int32_t L_3 = __this->___currentIndex;
+		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_4 = __this->___entries_unity;
+		int32_t L_5;
+		L_5 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_4, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
+		if ((((int32_t)L_3) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_5, 1)))))
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		int32_t L_6 = __this->___currentIndex;
+		__this->___currentIndex = ((int32_t)il2cpp_codegen_add(L_6, 1));
+	}
+
+IL_0039:
 	{
 		int32_t L_7 = __this->___currentIndex;
 		PortfolioManager_ShowEntry_unity_m78AFF22D7E74BFB5C4628B1741004B01A2588EE3(__this, L_7, NULL);
@@ -5008,87 +5011,105 @@ IL_0023:
 
 IL_0045:
 	{
-		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_8 = __this->___entries_soundDesign;
-		int32_t L_9;
-		L_9 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_8, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
-		if (!L_9)
+		bool L_8 = __this->___isSoundDesignPortfolio;
+		if (!L_8)
 		{
-			goto IL_0067;
+			goto IL_0092;
 		}
 	}
 	{
-		int32_t L_10 = __this->___currentIndex;
-		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_11 = __this->___entries_soundDesign;
-		int32_t L_12;
-		L_12 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_11, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
-		if ((((int32_t)L_10) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_12, 1)))))
+		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_9 = __this->___entries_soundDesign;
+		int32_t L_10;
+		L_10 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_9, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
+		if (L_10)
 		{
-			goto IL_0068;
+			goto IL_005b;
 		}
 	}
-
-IL_0067:
 	{
 		return;
 	}
 
-IL_0068:
+IL_005b:
 	{
-		int32_t L_13 = __this->___currentIndex;
-		__this->___currentIndex = ((int32_t)il2cpp_codegen_add(L_13, 1));
-		bool L_14 = __this->___isSoundDesignPortfolio;
-		if (!L_14)
+		int32_t L_11 = __this->___currentIndex;
+		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_12 = __this->___entries_soundDesign;
+		int32_t L_13;
+		L_13 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_12, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
+		if ((((int32_t)L_11) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_13, 1)))))
 		{
-			goto IL_008a;
+			goto IL_007e;
 		}
 	}
 	{
-		int32_t L_15 = __this->___currentIndex;
-		PortfolioManager_ShowEntry_soundDesign_m1264761BFFCDEEE52EAC6EF8BDE2103E4AAD16CD(__this, L_15, NULL);
+		int32_t L_14 = __this->___currentIndex;
+		__this->___currentIndex = ((int32_t)il2cpp_codegen_add(L_14, 1));
 	}
 
-IL_008a:
+IL_007e:
 	{
-		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_16 = __this->___entries_physical;
-		int32_t L_17;
-		L_17 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_16, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
+		bool L_15 = __this->___isSoundDesignPortfolio;
+		if (!L_15)
+		{
+			goto IL_0092;
+		}
+	}
+	{
+		int32_t L_16 = __this->___currentIndex;
+		PortfolioManager_ShowEntry_soundDesign_m1264761BFFCDEEE52EAC6EF8BDE2103E4AAD16CD(__this, L_16, NULL);
+	}
+
+IL_0092:
+	{
+		bool L_17 = __this->___isPhysicalPortfolio;
 		if (!L_17)
 		{
-			goto IL_00ac;
+			goto IL_00df;
 		}
 	}
 	{
-		int32_t L_18 = __this->___currentIndex;
-		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_19 = __this->___entries_physical;
-		int32_t L_20;
-		L_20 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_19, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
-		if ((((int32_t)L_18) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_20, 1)))))
+		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_18 = __this->___entries_physical;
+		int32_t L_19;
+		L_19 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_18, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
+		if (L_19)
 		{
-			goto IL_00ad;
+			goto IL_00a8;
 		}
 	}
-
-IL_00ac:
 	{
 		return;
 	}
 
-IL_00ad:
+IL_00a8:
 	{
-		int32_t L_21 = __this->___currentIndex;
-		__this->___currentIndex = ((int32_t)il2cpp_codegen_add(L_21, 1));
-		bool L_22 = __this->___isPhysicalPortfolio;
-		if (!L_22)
+		int32_t L_20 = __this->___currentIndex;
+		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_21 = __this->___entries_physical;
+		int32_t L_22;
+		L_22 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_21, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
+		if ((((int32_t)L_20) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_22, 1)))))
 		{
-			goto IL_00cf;
+			goto IL_00cb;
 		}
 	}
 	{
 		int32_t L_23 = __this->___currentIndex;
-		PortfolioManager_ShowEntry_physical_m81CD994E66FB351E9AC48D3BF766EE08CC97FB6B(__this, L_23, NULL);
+		__this->___currentIndex = ((int32_t)il2cpp_codegen_add(L_23, 1));
 	}
 
-IL_00cf:
+IL_00cb:
+	{
+		bool L_24 = __this->___isPhysicalPortfolio;
+		if (!L_24)
+		{
+			goto IL_00df;
+		}
+	}
+	{
+		int32_t L_25 = __this->___currentIndex;
+		PortfolioManager_ShowEntry_physical_m81CD994E66FB351E9AC48D3BF766EE08CC97FB6B(__this, L_25, NULL);
+	}
+
+IL_00df:
 	{
 		return;
 	}
@@ -5102,37 +5123,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PortfolioManager_ShowPreviousEntry_mF022
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_0 = __this->___entries_unity;
-		int32_t L_1;
-		L_1 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_0, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
-		if (!L_1)
+		bool L_0 = __this->___isUnityPortfolio;
+		if (!L_0)
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_1 = __this->___entries_unity;
+		int32_t L_2;
+		L_2 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_1, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
+		if (L_2)
 		{
 			goto IL_0016;
 		}
 	}
 	{
-		int32_t L_2 = __this->___currentIndex;
-		if ((((int32_t)L_2) > ((int32_t)0)))
-		{
-			goto IL_0017;
-		}
+		return;
 	}
 
 IL_0016:
 	{
-		return;
-	}
-
-IL_0017:
-	{
 		int32_t L_3 = __this->___currentIndex;
-		__this->___currentIndex = ((int32_t)il2cpp_codegen_subtract(L_3, 1));
-		bool L_4 = __this->___isUnityPortfolio;
-		if (!L_4)
+		if ((((int32_t)L_3) <= ((int32_t)0)))
 		{
-			goto IL_0039;
+			goto IL_002d;
 		}
 	}
+	{
+		int32_t L_4 = __this->___currentIndex;
+		__this->___currentIndex = ((int32_t)il2cpp_codegen_subtract(L_4, 1));
+	}
+
+IL_002d:
 	{
 		int32_t L_5 = __this->___currentIndex;
 		PortfolioManager_ShowEntry_unity_m78AFF22D7E74BFB5C4628B1741004B01A2588EE3(__this, L_5, NULL);
@@ -5140,37 +5163,39 @@ IL_0017:
 
 IL_0039:
 	{
-		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_6 = __this->___entries_soundDesign;
-		int32_t L_7;
-		L_7 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_6, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
-		if (!L_7)
+		bool L_6 = __this->___isSoundDesignPortfolio;
+		if (!L_6)
+		{
+			goto IL_0072;
+		}
+	}
+	{
+		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_7 = __this->___entries_soundDesign;
+		int32_t L_8;
+		L_8 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_7, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
+		if (L_8)
 		{
 			goto IL_004f;
 		}
 	}
 	{
-		int32_t L_8 = __this->___currentIndex;
-		if ((((int32_t)L_8) > ((int32_t)0)))
-		{
-			goto IL_0050;
-		}
+		return;
 	}
 
 IL_004f:
 	{
-		return;
-	}
-
-IL_0050:
-	{
 		int32_t L_9 = __this->___currentIndex;
-		__this->___currentIndex = ((int32_t)il2cpp_codegen_subtract(L_9, 1));
-		bool L_10 = __this->___isSoundDesignPortfolio;
-		if (!L_10)
+		if ((((int32_t)L_9) <= ((int32_t)0)))
 		{
-			goto IL_0072;
+			goto IL_0066;
 		}
 	}
+	{
+		int32_t L_10 = __this->___currentIndex;
+		__this->___currentIndex = ((int32_t)il2cpp_codegen_subtract(L_10, 1));
+	}
+
+IL_0066:
 	{
 		int32_t L_11 = __this->___currentIndex;
 		PortfolioManager_ShowEntry_soundDesign_m1264761BFFCDEEE52EAC6EF8BDE2103E4AAD16CD(__this, L_11, NULL);
@@ -5178,37 +5203,39 @@ IL_0050:
 
 IL_0072:
 	{
-		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_12 = __this->___entries_physical;
-		int32_t L_13;
-		L_13 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_12, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
-		if (!L_13)
+		bool L_12 = __this->___isPhysicalPortfolio;
+		if (!L_12)
+		{
+			goto IL_00ab;
+		}
+	}
+	{
+		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_13 = __this->___entries_physical;
+		int32_t L_14;
+		L_14 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_13, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
+		if (L_14)
 		{
 			goto IL_0088;
 		}
 	}
 	{
-		int32_t L_14 = __this->___currentIndex;
-		if ((((int32_t)L_14) > ((int32_t)0)))
-		{
-			goto IL_0089;
-		}
+		return;
 	}
 
 IL_0088:
 	{
-		return;
-	}
-
-IL_0089:
-	{
 		int32_t L_15 = __this->___currentIndex;
-		__this->___currentIndex = ((int32_t)il2cpp_codegen_subtract(L_15, 1));
-		bool L_16 = __this->___isPhysicalPortfolio;
-		if (!L_16)
+		if ((((int32_t)L_15) <= ((int32_t)0)))
 		{
-			goto IL_00ab;
+			goto IL_009f;
 		}
 	}
+	{
+		int32_t L_16 = __this->___currentIndex;
+		__this->___currentIndex = ((int32_t)il2cpp_codegen_subtract(L_16, 1));
+	}
+
+IL_009f:
 	{
 		int32_t L_17 = __this->___currentIndex;
 		PortfolioManager_ShowEntry_physical_m81CD994E66FB351E9AC48D3BF766EE08CC97FB6B(__this, L_17, NULL);
@@ -5353,6 +5380,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PortfolioManager__ctor_mA51F8B5D92A49DA7
 		List_1__ctor_m447372C1EF7141193B93090A77395B786C72C7BC(L_4, List_1__ctor_m447372C1EF7141193B93090A77395B786C72C7BC_RuntimeMethod_var);
 		__this->___spawnedEntries = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___spawnedEntries), (void*)L_4);
+		__this->___lastProcessedFrame = (-1);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
