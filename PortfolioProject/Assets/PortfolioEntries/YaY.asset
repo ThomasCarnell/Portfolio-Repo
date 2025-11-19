@@ -24,4 +24,5 @@ MonoBehaviour:
   webLink: 
   showcaseVideo: {fileID: 32900000, guid: 88f0f0aeb09fca14eaccfdbd802689fc, type: 3}
   projectPrefab: {fileID: 0}
+  videoURL: https://thomascarnell.github.io/Portfolio-Repo/Vids/YaYShowcase.mp4
   tags: []
