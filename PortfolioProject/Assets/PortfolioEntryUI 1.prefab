@@ -413,7 +413,7 @@ MonoBehaviour:
   titleText: {fileID: 55638064671406568}
   dateText: {fileID: 2405788699279937969}
   descriptionText: {fileID: 429599675695267520}
-  VideoPlayer: {fileID: 2076567015390905506}
+  videoPlayer: {fileID: 2076567015390905506}
   videoDisplay: {fileID: 414423078475275187}
 --- !u!114 &2708066132903766387
 MonoBehaviour:

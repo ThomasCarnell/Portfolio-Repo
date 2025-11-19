@@ -3658,25 +3658,21 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Video.VideoPlayer
 
-		//System.IntPtr UnityEngine.Video.VideoPlayer::get_targetTexture_Injected(System.IntPtr)
-		void Register_UnityEngine_Video_VideoPlayer_get_targetTexture_Injected();
-		Register_UnityEngine_Video_VideoPlayer_get_targetTexture_Injected();
-
 		//System.Void UnityEngine.Video.VideoPlayer::Play_Injected(System.IntPtr)
 		void Register_UnityEngine_Video_VideoPlayer_Play_Injected();
 		Register_UnityEngine_Video_VideoPlayer_Play_Injected();
 
-		//System.Void UnityEngine.Video.VideoPlayer::Stop_Injected(System.IntPtr)
-		void Register_UnityEngine_Video_VideoPlayer_Stop_Injected();
-		Register_UnityEngine_Video_VideoPlayer_Stop_Injected();
+		//System.Void UnityEngine.Video.VideoPlayer::Prepare_Injected(System.IntPtr)
+		void Register_UnityEngine_Video_VideoPlayer_Prepare_Injected();
+		Register_UnityEngine_Video_VideoPlayer_Prepare_Injected();
 
-		//System.Void UnityEngine.Video.VideoPlayer::set_clip_Injected(System.IntPtr,System.IntPtr)
-		void Register_UnityEngine_Video_VideoPlayer_set_clip_Injected();
-		Register_UnityEngine_Video_VideoPlayer_set_clip_Injected();
+		//System.Void UnityEngine.Video.VideoPlayer::set_source_Injected(System.IntPtr,UnityEngine.Video.VideoSource)
+		void Register_UnityEngine_Video_VideoPlayer_set_source_Injected();
+		Register_UnityEngine_Video_VideoPlayer_set_source_Injected();
 
-		//System.Void UnityEngine.Video.VideoPlayer::set_renderMode_Injected(System.IntPtr,UnityEngine.Video.VideoRenderMode)
-		void Register_UnityEngine_Video_VideoPlayer_set_renderMode_Injected();
-		Register_UnityEngine_Video_VideoPlayer_set_renderMode_Injected();
+		//System.Void UnityEngine.Video.VideoPlayer::set_url_Injected(System.IntPtr,UnityEngine.Bindings.ManagedSpanWrapper&)
+		void Register_UnityEngine_Video_VideoPlayer_set_url_Injected();
+		Register_UnityEngine_Video_VideoPlayer_set_url_Injected();
 
 	//End Registrations for type : UnityEngine.Video.VideoPlayer
 

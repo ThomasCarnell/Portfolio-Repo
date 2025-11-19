@@ -15,6 +15,7 @@ public class PortfolioEntry : ScriptableObject
     public string webLink; // Optional: link to demo, GitHub, etc.
     public VideoClip showcaseVideo; // If you have a short video
     public GameObject projectPrefab; // Optional 3D model to display
+    public string videoURL; // Optional: link to external video
 
     [Header("Tags / Metadata")]
     public string[] tags; // e.g. ["Unity", "C#", "Shader Graph"]

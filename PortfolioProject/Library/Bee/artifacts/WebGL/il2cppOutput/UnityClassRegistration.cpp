@@ -150,14 +150,13 @@ namespace UI { class Canvas; } template <> void RegisterUnityClass<UI::Canvas>(c
 namespace UI { class CanvasGroup; } template <> void RegisterUnityClass<UI::CanvasGroup>(const char*);
 namespace UI { class CanvasRenderer; } template <> void RegisterUnityClass<UI::CanvasRenderer>(const char*);
 class UIRenderer; template <> void RegisterUnityClass<UIRenderer>(const char*);
-class VideoClip; template <> void RegisterUnityClass<VideoClip>(const char*);
 class VideoPlayer; template <> void RegisterUnityClass<VideoPlayer>(const char*);
 
 void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 76 non stripped classes
+	//Total: 75 non stripped classes
 	//0. Animator
 	RegisterUnityClass<Animator>("Animation");
 	//1. AnimatorController
@@ -306,9 +305,7 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<UI::CanvasRenderer>("UI");
 	//73. UIRenderer
 	RegisterUnityClass<UIRenderer>("UIElements");
-	//74. VideoClip
-	RegisterUnityClass<VideoClip>("Video");
-	//75. VideoPlayer
+	//74. VideoPlayer
 	RegisterUnityClass<VideoPlayer>("Video");
 
 }

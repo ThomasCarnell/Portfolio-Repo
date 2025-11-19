@@ -41,6 +41,8 @@ extern void PortfolioEntry__ctor_mE289F0AF06EF5DEF641B4C528F34BAD2F1F2D049 (void
 extern void PointAttObj_Update_m89D0F8FE8517C44E722911C898A2C7558CEEBD7A (void);
 extern void PointAttObj__ctor_m11EAF07E934B89533EEC69AD2C661048A3833CDA (void);
 extern void PortfolioDisplay_SetEntry_mB810A7EF458797ECBF65053B2599799C81401A0B (void);
+extern void PortfolioDisplay_SetupVideo_m439F851858B0CDB3403922198BDB167509D30EE5 (void);
+extern void PortfolioDisplay_OnVideoPrepared_m843F526638147CBB8FA15B276307D31660DF311B (void);
 extern void PortfolioDisplay_OnEnable_m385DD02E504A7458C44129C684FE8CF925B9ABFA (void);
 extern void PortfolioDisplay_OnDisable_m67D7BA24982085A41E0FE6910B5909065724AD09 (void);
 extern void PortfolioDisplay_OpenWebLink_m2CE5F30B63AB26F6757E559E2AA536A4779056DB (void);
@@ -81,7 +83,7 @@ extern void U3CFadeGroupU3Ed__5_System_Collections_IEnumerator_Reset_m2E9A4666FD
 extern void U3CFadeGroupU3Ed__5_System_Collections_IEnumerator_get_Current_m10DA777AA804A030CE0116630884224B0DB8BF52 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[74] = 
+static Il2CppMethodPointer s_methodPointers[76] = 
 {
 	ButtonClickScript_Start_mBC7677DEA5E47B79380FE28DF2E3B19D4DDB1A3A,
 	ButtonClickScript_Update_m442AD3CA61D291729C795F487A524D267142E2E2,
@@ -117,6 +119,8 @@ static Il2CppMethodPointer s_methodPointers[74] =
 	PointAttObj_Update_m89D0F8FE8517C44E722911C898A2C7558CEEBD7A,
 	PointAttObj__ctor_m11EAF07E934B89533EEC69AD2C661048A3833CDA,
 	PortfolioDisplay_SetEntry_mB810A7EF458797ECBF65053B2599799C81401A0B,
+	PortfolioDisplay_SetupVideo_m439F851858B0CDB3403922198BDB167509D30EE5,
+	PortfolioDisplay_OnVideoPrepared_m843F526638147CBB8FA15B276307D31660DF311B,
 	PortfolioDisplay_OnEnable_m385DD02E504A7458C44129C684FE8CF925B9ABFA,
 	PortfolioDisplay_OnDisable_m67D7BA24982085A41E0FE6910B5909065724AD09,
 	PortfolioDisplay_OpenWebLink_m2CE5F30B63AB26F6757E559E2AA536A4779056DB,
@@ -158,7 +162,7 @@ static Il2CppMethodPointer s_methodPointers[74] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[74] = 
+static const int32_t s_InvokerIndices[76] = 
 {
 	6343,
 	6343,
@@ -193,6 +197,8 @@ static const int32_t s_InvokerIndices[74] =
 	6343,
 	6343,
 	6343,
+	5044,
+	5044,
 	5044,
 	6343,
 	6343,
@@ -239,7 +245,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	74,
+	76,
 	s_methodPointers,
 	0,
 	NULL,

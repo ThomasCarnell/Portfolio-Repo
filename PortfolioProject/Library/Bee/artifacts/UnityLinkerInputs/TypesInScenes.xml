@@ -66,7 +66,6 @@
 		<type fullname="UnityEngine.Texture" preserve="nothing"/>
 		<type fullname="UnityEngine.Texture2D" preserve="nothing"/>
 		<type fullname="UnityEngine.Transform" preserve="nothing"/>
-		<type fullname="UnityEngine.Video.VideoClip" preserve="nothing"/>
 		<type fullname="UnityEngine.Video.VideoPlayer" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine.UI">

@@ -1019,14 +1019,6 @@
         "name": "Video",
         "dependencies": [
           {
-            "name": "VideoClip",
-            "scenes": [
-              "Assets/Scenes/MainScene.unity"
-            ],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
             "name": "VideoPlayer",
             "scenes": [
               "Assets/Scenes/MainScene.unity"
