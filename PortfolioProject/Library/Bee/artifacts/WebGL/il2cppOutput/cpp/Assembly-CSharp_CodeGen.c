@@ -46,12 +46,16 @@ extern void PortfolioDisplay_OnDisable_m67D7BA24982085A41E0FE6910B5909065724AD09
 extern void PortfolioDisplay_OpenWebLink_m2CE5F30B63AB26F6757E559E2AA536A4779056DB (void);
 extern void PortfolioDisplay__ctor_mA45794E19D70B6056CAA0D04BDA9E4C3600391A2 (void);
 extern void PortfolioManager_Start_m9E5CC69173D418A7B83A42CF6EB07A95908FEC32 (void);
-extern void PortfolioManager_ShowEntry_mD7A4C71A69D30D2181F9E5A2ECBF4E0E70E090D1 (void);
+extern void PortfolioManager_ShowEntry_unity_m78AFF22D7E74BFB5C4628B1741004B01A2588EE3 (void);
+extern void PortfolioManager_ShowEntry_soundDesign_m1264761BFFCDEEE52EAC6EF8BDE2103E4AAD16CD (void);
+extern void PortfolioManager_ShowEntry_physical_m81CD994E66FB351E9AC48D3BF766EE08CC97FB6B (void);
+extern void PortfolioManager_ShowEntry_start_m334EE9F2DF88E7EFCE4689C8F3901267EF8F1C3B (void);
 extern void PortfolioManager_UpdateButtonStates_m5E81D6A8B5E52B9D24532441D82391E1CED79E89 (void);
 extern void PortfolioManager_ShowNextEntry_m828174A3B455F95705404756DCCB030A6C69F109 (void);
 extern void PortfolioManager_ShowPreviousEntry_mF022CA7138CEFCB966D00BE96E8FD2ACA99876ED (void);
 extern void PortfolioManager_ClearPortfolio_m7748E6E260905FB2C9085068123CFB321657526C (void);
 extern void PortfolioManager_ResetCurrentIndex_mE40AD3A1F04233BC757B51C6B60EE67636931210 (void);
+extern void PortfolioManager_ButtonReset_m727E661CBCA42DA08BF0A339D64C315FE96B3139 (void);
 extern void PortfolioManager__ctor_mA51F8B5D92A49DA7B15F200BD27C298E7929B3E3 (void);
 extern void Rotate_Start_mD322E77A3CF2BEF28C4DF71D3F529107F511B1FB (void);
 extern void Rotate_Update_m73D585515036D9B7AAD8336BFB8567283CE4C7E7 (void);
@@ -77,7 +81,7 @@ extern void U3CFadeGroupU3Ed__5_System_Collections_IEnumerator_Reset_m2E9A4666FD
 extern void U3CFadeGroupU3Ed__5_System_Collections_IEnumerator_get_Current_m10DA777AA804A030CE0116630884224B0DB8BF52 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[70] = 
+static Il2CppMethodPointer s_methodPointers[74] = 
 {
 	ButtonClickScript_Start_mBC7677DEA5E47B79380FE28DF2E3B19D4DDB1A3A,
 	ButtonClickScript_Update_m442AD3CA61D291729C795F487A524D267142E2E2,
@@ -118,12 +122,16 @@ static Il2CppMethodPointer s_methodPointers[70] =
 	PortfolioDisplay_OpenWebLink_m2CE5F30B63AB26F6757E559E2AA536A4779056DB,
 	PortfolioDisplay__ctor_mA45794E19D70B6056CAA0D04BDA9E4C3600391A2,
 	PortfolioManager_Start_m9E5CC69173D418A7B83A42CF6EB07A95908FEC32,
-	PortfolioManager_ShowEntry_mD7A4C71A69D30D2181F9E5A2ECBF4E0E70E090D1,
+	PortfolioManager_ShowEntry_unity_m78AFF22D7E74BFB5C4628B1741004B01A2588EE3,
+	PortfolioManager_ShowEntry_soundDesign_m1264761BFFCDEEE52EAC6EF8BDE2103E4AAD16CD,
+	PortfolioManager_ShowEntry_physical_m81CD994E66FB351E9AC48D3BF766EE08CC97FB6B,
+	PortfolioManager_ShowEntry_start_m334EE9F2DF88E7EFCE4689C8F3901267EF8F1C3B,
 	PortfolioManager_UpdateButtonStates_m5E81D6A8B5E52B9D24532441D82391E1CED79E89,
 	PortfolioManager_ShowNextEntry_m828174A3B455F95705404756DCCB030A6C69F109,
 	PortfolioManager_ShowPreviousEntry_mF022CA7138CEFCB966D00BE96E8FD2ACA99876ED,
 	PortfolioManager_ClearPortfolio_m7748E6E260905FB2C9085068123CFB321657526C,
 	PortfolioManager_ResetCurrentIndex_mE40AD3A1F04233BC757B51C6B60EE67636931210,
+	PortfolioManager_ButtonReset_m727E661CBCA42DA08BF0A339D64C315FE96B3139,
 	PortfolioManager__ctor_mA51F8B5D92A49DA7B15F200BD27C298E7929B3E3,
 	Rotate_Start_mD322E77A3CF2BEF28C4DF71D3F529107F511B1FB,
 	Rotate_Update_m73D585515036D9B7AAD8336BFB8567283CE4C7E7,
@@ -150,7 +158,7 @@ static Il2CppMethodPointer s_methodPointers[70] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[70] = 
+static const int32_t s_InvokerIndices[74] = 
 {
 	6343,
 	6343,
@@ -192,6 +200,10 @@ static const int32_t s_InvokerIndices[70] =
 	6343,
 	6343,
 	5003,
+	5003,
+	5003,
+	5003,
+	6343,
 	6343,
 	6343,
 	6343,
@@ -227,7 +239,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	70,
+	74,
 	s_methodPointers,
 	0,
 	NULL,

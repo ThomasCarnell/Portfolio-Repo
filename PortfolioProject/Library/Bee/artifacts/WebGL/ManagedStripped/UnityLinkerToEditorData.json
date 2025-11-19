@@ -336,7 +336,9 @@
           },
           {
             "name": "RenderTexture",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/MainScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -412,10 +414,8 @@
           },
           {
             "name": "Texture",
-            "scenes": [
-              "Assets/Scenes/MainScene.unity"
-            ],
-            "dependencyType": 0,
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
@@ -1018,6 +1018,14 @@
       {
         "name": "Video",
         "dependencies": [
+          {
+            "name": "VideoClip",
+            "scenes": [
+              "Assets/Scenes/MainScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
           {
             "name": "VideoPlayer",
             "scenes": [

@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
             buttonContainer.GetComponent<ButtonResetAnimation>().StartReverseScaling();
             returnButtonActive = true;
 
-            portfolioManager.ShowEntry(0); // Show first portfolio entry
+            portfolioManager.ShowEntry_unity(0); // Show first portfolio entry
             nextPreviousButtons.SetActive(true);
 
         }
@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
             returnButtonActive = true;
                         nextPreviousButtons.SetActive(true);
 
-
+            portfolioManager.ShowEntry_soundDesign(0); // Show first portfolio entry
         }
         if (currentbutton == "PhysicalToysPortfolioButton")
         {
@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
             returnButtonActive = true;
                         nextPreviousButtons.SetActive(true);
 
-
+            portfolioManager.ShowEntry_physical(0); // Show first portfolio entry
         }
         if (currentbutton == "ReturnToMainMenuButton" && returnButtonActive == true)
         {
@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
             anim3[2].GetComponent<FadeMaterialDirect>().FadeIn();
             returnButtonActive = false;
                         nextPreviousButtons.SetActive(false);
-
+        portfolioManager.ShowEntry_start(0); // Show first portfolio entry
         }
     }
     private void returnButtonClicked()

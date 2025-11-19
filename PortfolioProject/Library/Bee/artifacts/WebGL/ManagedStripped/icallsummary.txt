@@ -799,3 +799,8 @@ UnityEngine.UIElements.UIRenderer::SetNativeData_Injected
 UnityEngine.UISystemProfilerApi::AddMarker_Injected
 UnityEngine.UISystemProfilerApi::BeginSample
 UnityEngine.UISystemProfilerApi::EndSample
+UnityEngine.Video.VideoPlayer::get_targetTexture_Injected
+UnityEngine.Video.VideoPlayer::Play_Injected
+UnityEngine.Video.VideoPlayer::Stop_Injected
+UnityEngine.Video.VideoPlayer::set_clip_Injected
+UnityEngine.Video.VideoPlayer::set_renderMode_Injected

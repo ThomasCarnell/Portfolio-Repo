@@ -22,6 +22,6 @@ MonoBehaviour:
   productionDate: 2024
   thumbnail: {fileID: 0}
   webLink: 
-  showcaseVideo: {fileID: 0}
+  showcaseVideo: {fileID: 32900000, guid: 88f0f0aeb09fca14eaccfdbd802689fc, type: 3}
   projectPrefab: {fileID: 0}
   tags: []
