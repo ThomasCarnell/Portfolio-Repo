@@ -3658,6 +3658,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Video.VideoPlayer
 
+		//System.IntPtr UnityEngine.Video.VideoPlayer::get_texture_Injected(System.IntPtr)
+		void Register_UnityEngine_Video_VideoPlayer_get_texture_Injected();
+		Register_UnityEngine_Video_VideoPlayer_get_texture_Injected();
+
 		//System.Void UnityEngine.Video.VideoPlayer::Play_Injected(System.IntPtr)
 		void Register_UnityEngine_Video_VideoPlayer_Play_Injected();
 		Register_UnityEngine_Video_VideoPlayer_Play_Injected();

@@ -65,6 +65,11 @@ public class PortfolioDisplay : MonoBehaviour
     private void OnVideoPrepared(VideoPlayer vp)
     {
         vp.Play();
+
+             // Resize RawImage to match RenderTexture size
+        float aspect = (float)vp.texture.width / vp.texture.height;
+        RectTransform rt = videoDisplay.rectTransform;
+        rt.sizeDelta = new Vector2(rt.sizeDelta.y * aspect, rt.sizeDelta.y);
     }
 
     void OnEnable()
