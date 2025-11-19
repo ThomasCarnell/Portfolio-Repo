@@ -2083,6 +2083,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130197886}
   m_CullTransparentMesh: 1
+--- !u!1 &1145346062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1145346064}
+  - component: {fileID: 1145346063}
+  m_Layer: 0
+  m_Name: TO DO
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1145346063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145346062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d39e2a6e051f0a94fb058e5f6740c384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteContent: " - Finish video playback, stopping code\n - Formatting for all content
+    to fit most pages, center content\n - add proper background\n - Add all entries\n"
+--- !u!4 &1145346064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145346062}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1122.8477, y: 253.44595, z: -12.805699}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1156876012
 GameObject:
   m_ObjectHideFlags: 0
@@ -5000,3 +5046,4 @@ SceneRoots:
   - {fileID: 1636677453}
   - {fileID: 38532532}
   - {fileID: 28314915}
+  - {fileID: 1145346064}
