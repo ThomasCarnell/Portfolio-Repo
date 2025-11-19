@@ -688,15 +688,6 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "VideoClip",
-            "fullManagedTypeName": "UnityEngine.Video.VideoClip",
-            "moduleName": "Video",
-            "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "VideoPlayer",
             "fullManagedTypeName": "UnityEngine.Video.VideoPlayer",
             "moduleName": "Video",

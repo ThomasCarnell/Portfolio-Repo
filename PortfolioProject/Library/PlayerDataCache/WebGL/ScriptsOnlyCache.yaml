@@ -125,41 +125,41 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1584}
+      Script: {instanceID: 4838}
     - Class: 114
-      Script: {instanceID: 1586}
+      Script: {instanceID: 4938}
     - Class: 114
-      Script: {instanceID: 4842}
+      Script: {instanceID: 5080}
     - Class: 114
-      Script: {instanceID: 4942}
+      Script: {instanceID: 5326}
     - Class: 114
-      Script: {instanceID: 5084}
+      Script: {instanceID: 5342}
     - Class: 114
-      Script: {instanceID: 5330}
+      Script: {instanceID: 5392}
     - Class: 114
-      Script: {instanceID: 5346}
+      Script: {instanceID: 5566}
     - Class: 114
-      Script: {instanceID: 5396}
+      Script: {instanceID: 5778}
     - Class: 114
-      Script: {instanceID: 5570}
+      Script: {instanceID: 5798}
     - Class: 114
-      Script: {instanceID: 5782}
+      Script: {instanceID: 5934}
     - Class: 114
-      Script: {instanceID: 5802}
+      Script: {instanceID: 6038}
     - Class: 114
-      Script: {instanceID: 5938}
+      Script: {instanceID: 6120}
     - Class: 114
-      Script: {instanceID: 6042}
+      Script: {instanceID: 6234}
     - Class: 114
-      Script: {instanceID: 6124}
+      Script: {instanceID: 6240}
     - Class: 114
-      Script: {instanceID: 6238}
+      Script: {instanceID: 6294}
     - Class: 114
-      Script: {instanceID: 6244}
+      Script: {instanceID: 6390}
     - Class: 114
-      Script: {instanceID: 6392}
+      Script: {instanceID: 6394}
     - Class: 114
-      Script: {instanceID: 6396}
+      Script: {instanceID: 6596}
     - Class: 114
       Script: {instanceID: 6824}
     - Class: 114
@@ -200,23 +200,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 328
       Script: {instanceID: 0}
-    - Class: 329
-      Script: {instanceID: 0}
     - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: 80582ce165e5d6ebd43c3332dfa76f6b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ButtonClickScript
-  - hash:
-      serializedVersion: 2
-      Hash: 194c6a9301f10905d24eb4c61f92b2c6
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PortfolioManager
   - hash:
       serializedVersion: 2
       Hash: 71cab9ea29978ad67b9ed74635410b77
@@ -471,10 +457,16 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: cbaff7641ee15d44994f6374f4b5462e
+      Hash: 0f3b1302eb68d557b3131e8eed2e3c54
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PortfolioDisplay
+  - hash:
+      serializedVersion: 2
+      Hash: 194c6a9301f10905d24eb4c61f92b2c6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PortfolioManager
   - hash:
       serializedVersion: 2
       Hash: 2e8c9ebf3a12e4ec6fa3deb5c6b94e48
@@ -493,6 +485,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 80582ce165e5d6ebd43c3332dfa76f6b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ButtonClickScript
   - hash:
       serializedVersion: 2
       Hash: 33f160a5c07e580c29aba2bd1e4db811
@@ -663,7 +661,7 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
-      Hash: a399359e886f1b132bd912ed646066d7
+      Hash: b6716f3161a7aa3607b869e6a8c96f43
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PortfolioEntry

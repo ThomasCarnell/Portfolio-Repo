@@ -14,6 +14,8 @@ public class PortfolioEntry : ScriptableObject
     public Sprite thumbnail;
     public string webLink; // Optional: link to demo, GitHub, etc.
     public VideoClip showcaseVideo; // If you have a short video
+
+    public string videoFileName;
     public GameObject projectPrefab; // Optional 3D model to display
 
     [Header("Tags / Metadata")]
