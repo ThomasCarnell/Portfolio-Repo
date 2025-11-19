@@ -22,8 +22,8 @@ public class PortfolioDisplay : MonoBehaviour
         dateText.text = entry.productionDate;
         descriptionText.text = entry.description;
 
-           if (!string.IsNullOrEmpty(entry.videoFileName))
-            LoadVideo(entry.videoFileName);
+           if (!string.IsNullOrEmpty(entry.videoFileURL))
+            LoadVideo(entry.videoFileURL);
 
         // Video
         // if (entry.showcaseVideo != null)
@@ -47,18 +47,18 @@ public class PortfolioDisplay : MonoBehaviour
         // }
 
     }
-    private void LoadVideo(string fileName)
+    private void LoadVideo(string url)
     {
-        string path = System.IO.Path.Combine(Application.streamingAssetsPath, fileName);
+        string path = System.IO.Path.Combine(Application.streamingAssetsPath, url);
 
         Debug.Log("🎥 Loading video from: " + path);
 
         videoPlayer.source = VideoSource.Url;
-        videoPlayer.url = path;
+        videoPlayer.url = url;
 
         videoPlayer.Prepare();
-        videoPlayer.prepareCompleted += OnVideoPrepared;
-    }
+     videoPlayer.prepareCompleted += (vp) => vp.Play();   
+      }
 
     private void OnVideoPrepared(VideoPlayer vp)
     {
