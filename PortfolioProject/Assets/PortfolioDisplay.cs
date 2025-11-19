@@ -49,15 +49,15 @@ public class PortfolioDisplay : MonoBehaviour
     }
     private void LoadVideo(string url)
     {
-        //string path = System.IO.Path.Combine(Application.streamingAssetsPath, url);
+        string path = System.IO.Path.Combine(Application.streamingAssetsPath, url);
 
-        //Debug.Log("🎥 Loading video from: " + url);
+        Debug.Log("🎥 Loading video from: " + path);
 
         videoPlayer.source = VideoSource.Url;
         videoPlayer.url = url;
 
-        //videoPlayer.Prepare();
-        //videoPlayer.prepareCompleted += (vp) => vp.Play();   
+        videoPlayer.Prepare();
+     videoPlayer.prepareCompleted += (vp) => vp.Play();   
       }
 
     private void OnVideoPrepared(VideoPlayer vp)
@@ -65,7 +65,7 @@ public class PortfolioDisplay : MonoBehaviour
         vp.prepareCompleted -= OnVideoPrepared;
 
         Debug.Log("✅ Video prepared, playing...");
-        //vp.Play();
+        vp.Play();
     }
     void OnEnable()
     {
