@@ -7,7 +7,7 @@ public class PortfolioEntry : ScriptableObject
     [Header("Basic Info")]
     public string projectName;
     [TextArea] public string description;
-    public string[] roles;
+    public string roles;
     public string productionDate;
 
     [Header("Media")]

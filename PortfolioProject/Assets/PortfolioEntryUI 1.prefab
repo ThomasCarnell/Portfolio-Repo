@@ -95,9 +95,9 @@ MonoBehaviour:
   m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 36
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -412,6 +412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleText: {fileID: 55638064671406568}
   dateText: {fileID: 2405788699279937969}
+  roleText: {fileID: 7612628912876864243}
   descriptionText: {fileID: 429599675695267520}
   videoPlayer: {fileID: 2076567015390905506}
   videoDisplay: {fileID: 414423078475275187}

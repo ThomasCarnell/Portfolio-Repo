@@ -7,6 +7,7 @@ public class PortfolioDisplay : MonoBehaviour
 {
     [SerializeField] private TMP_Text titleText;
     [SerializeField] private TMP_Text dateText;
+    [SerializeField] private TMP_Text roleText;
     [SerializeField] private TMP_Text descriptionText;
     [Header("Video Media")]
     [SerializeField] private VideoPlayer videoPlayer;
@@ -22,6 +23,7 @@ public class PortfolioDisplay : MonoBehaviour
         currentEntry = entry;
         titleText.text = entry.projectName;
         dateText.text = entry.productionDate;
+        roleText.text = entry.roles;
         descriptionText.text = entry.description;
 
             if (!string.IsNullOrEmpty(entry.videoURL))

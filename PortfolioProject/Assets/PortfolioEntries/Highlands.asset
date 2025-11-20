@@ -13,12 +13,8 @@ MonoBehaviour:
   m_Name: Highlands
   m_EditorClassIdentifier: 
   projectName: The Highlands
-  description: "uiParent \u2192 a VerticalLayoutGroup or GridLayoutGroup under a
-    ScrollView.uiParent \u2192 a VerticalLayoutGroup or GridLayoutGroup under a ScrollView.uiParent
-    \u2192 a VerticalLayoutGroup or GridLayoutGroup under a ScrollView.uiParent \u2192
-    a VerticalLayoutGroup or GridLayoutGroup under a ScrollView."
-  roles:
-  - Sound- and Game Design, Producer
+  description: Top-Down physics based brawler for online multiplayer
+  roles: 
   productionDate: 2023
   thumbnail: {fileID: 0}
   webLink: 
