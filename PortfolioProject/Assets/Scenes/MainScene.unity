@@ -2113,7 +2113,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteContent: " - Finish video playback, stopping code\n - Formatting for all content
-    to fit most pages, center content\n - add proper background\n - Add all entries\n"
+    to fit most pages, center content\n - add proper background\n - Add entries:
+    Sound design reel + horror, overall showcase/startscreen, \n"
 --- !u!4 &1145346064
 Transform:
   m_ObjectHideFlags: 0
