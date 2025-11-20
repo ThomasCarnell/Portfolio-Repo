@@ -124,6 +124,13 @@
             ]
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "NoteScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "Assembly-CSharp-firstpass.dll",
             "nativeClass": "",
             "fullManagedTypeName": "OrderableText",

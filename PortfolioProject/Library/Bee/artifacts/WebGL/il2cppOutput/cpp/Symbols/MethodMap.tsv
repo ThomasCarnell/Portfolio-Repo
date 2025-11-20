@@ -86887,6 +86887,7 @@ GameManager_ResetTimer_m1A121805653CFF828D6A107DA797C97BD5D7B011	System.Void Gam
 GameManager_StopTimer_mD1DA71D627D519622A70C00F891F744A5989B7F6	System.Void GameManager::StopTimer()	Assembly-CSharp
 GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368	System.Void GameManager::.ctor()	Assembly-CSharp
 PortfolioEntry__ctor_mE289F0AF06EF5DEF641B4C528F34BAD2F1F2D049	System.Void PortfolioEntry::.ctor()	Assembly-CSharp
+NoteScript__ctor_m62F49997804F92232CE4E6146A7659847CD29927	System.Void NoteScript::.ctor()	Assembly-CSharp
 PointAttObj_Update_m89D0F8FE8517C44E722911C898A2C7558CEEBD7A	System.Void PointAttObj::Update()	Assembly-CSharp
 PointAttObj__ctor_m11EAF07E934B89533EEC69AD2C661048A3833CDA	System.Void PointAttObj::.ctor()	Assembly-CSharp
 PortfolioDisplay_SetEntry_mB810A7EF458797ECBF65053B2599799C81401A0B	System.Void PortfolioDisplay::SetEntry(PortfolioEntry)	Assembly-CSharp

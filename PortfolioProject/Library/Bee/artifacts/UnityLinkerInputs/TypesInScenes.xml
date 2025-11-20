@@ -6,6 +6,7 @@
 		<type fullname="FadeMaterialDirect" preserve="nothing"/>
 		<type fullname="FPSCounter" preserve="nothing"/>
 		<type fullname="GameManager" preserve="nothing"/>
+		<type fullname="NoteScript" preserve="nothing"/>
 		<type fullname="PortfolioDisplay" preserve="nothing"/>
 		<type fullname="PortfolioEntry" preserve="nothing"/>
 		<type fullname="PortfolioManager" preserve="nothing"/>

@@ -303,6 +303,7 @@
 "Assets/FPSShow.cs"
 "Assets/GameManager.cs"
 "Assets/NewPortfolioEntry.cs"
+"Assets/NoteScript.cs"
 "Assets/PointAttObj.cs"
 "Assets/PortfolioDisplay.cs"
 "Assets/PortfolioManager.cs"

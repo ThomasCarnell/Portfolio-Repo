@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - FPSCounter
     - FadeMaterialDirect
     - GameManager
+    - NoteScript
     - PortfolioDisplay
     - PortfolioEntry
     - PortfolioManager
@@ -119,63 +120,65 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 4838}
+      Script: {instanceID: 4840}
     - Class: 114
-      Script: {instanceID: 4938}
+      Script: {instanceID: 4940}
     - Class: 114
-      Script: {instanceID: 5080}
+      Script: {instanceID: 5082}
     - Class: 114
-      Script: {instanceID: 5326}
+      Script: {instanceID: 5328}
     - Class: 114
-      Script: {instanceID: 5342}
+      Script: {instanceID: 5344}
     - Class: 114
-      Script: {instanceID: 5392}
+      Script: {instanceID: 5394}
     - Class: 114
-      Script: {instanceID: 5566}
+      Script: {instanceID: 5568}
     - Class: 114
-      Script: {instanceID: 5778}
+      Script: {instanceID: 5780}
     - Class: 114
-      Script: {instanceID: 5798}
+      Script: {instanceID: 5800}
     - Class: 114
-      Script: {instanceID: 5934}
+      Script: {instanceID: 5936}
     - Class: 114
-      Script: {instanceID: 6038}
+      Script: {instanceID: 6040}
     - Class: 114
-      Script: {instanceID: 6120}
+      Script: {instanceID: 6122}
     - Class: 114
-      Script: {instanceID: 6234}
+      Script: {instanceID: 6236}
     - Class: 114
-      Script: {instanceID: 6240}
+      Script: {instanceID: 6242}
     - Class: 114
-      Script: {instanceID: 6294}
+      Script: {instanceID: 6296}
     - Class: 114
-      Script: {instanceID: 6390}
+      Script: {instanceID: 6392}
     - Class: 114
-      Script: {instanceID: 6394}
+      Script: {instanceID: 6396}
     - Class: 114
-      Script: {instanceID: 6596}
+      Script: {instanceID: 6598}
     - Class: 114
-      Script: {instanceID: 6824}
+      Script: {instanceID: 6638}
     - Class: 114
-      Script: {instanceID: 6842}
+      Script: {instanceID: 6828}
     - Class: 114
-      Script: {instanceID: 6904}
+      Script: {instanceID: 6846}
     - Class: 114
-      Script: {instanceID: 6932}
+      Script: {instanceID: 6908}
     - Class: 114
-      Script: {instanceID: 6972}
+      Script: {instanceID: 6936}
     - Class: 114
-      Script: {instanceID: 6982}
+      Script: {instanceID: 6976}
     - Class: 114
-      Script: {instanceID: 7076}
+      Script: {instanceID: 6986}
     - Class: 114
-      Script: {instanceID: 7306}
+      Script: {instanceID: 7080}
     - Class: 114
-      Script: {instanceID: 7744}
+      Script: {instanceID: 7310}
     - Class: 114
-      Script: {instanceID: 7782}
+      Script: {instanceID: 7748}
     - Class: 114
-      Script: {instanceID: 7916}
+      Script: {instanceID: 7786}
+    - Class: 114
+      Script: {instanceID: 7920}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -451,7 +454,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 0f3b1302eb68d557b3131e8eed2e3c54
+      Hash: b0038cbad8708a0674c09a92dc731be9
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PortfolioDisplay
@@ -491,6 +494,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: HorizontalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: c09d7cef020c123ca06c25f70c502540
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: NoteScript
   - hash:
       serializedVersion: 2
       Hash: ff76cf6cf52b4db7b95af6ffadca9288
@@ -655,7 +664,7 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
-      Hash: 8437077a162a5e0d8abf78e046e8318e
+      Hash: 77203aef05b76a9941b3dd874ec22971
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PortfolioEntry
