@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 299f02cab8b437643be53cf2058c1adf, type: 3}
-  m_Name: Highlands
+  m_Name: ButtonClicker
   m_EditorClassIdentifier: 
-  projectName: The Highlands
-  description: 'Top-Down physics based brawler for online multiplayer. '
-  roles: 
-  productionDate: 2023
+  projectName: ButtonClicker
+  description: 
+  roles: Build & Arduino Programming
+  productionDate: 2024
   thumbnail: {fileID: 0}
   webLink: 
-  showcaseVideo: {fileID: 0}
+  showcaseVideo: {fileID: 32900000, guid: 88f0f0aeb09fca14eaccfdbd802689fc, type: 3}
   projectPrefab: {fileID: 0}
-  videoURL: https://thomascarnell.github.io/Portfolio-Repo/Vids/HighlandsShowcase.mp4
+  videoURL: 
   tags: []

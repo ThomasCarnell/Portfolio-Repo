@@ -19,14 +19,12 @@ MonoBehaviour:
     is designed to showcase when your choices don''t matter in games. Humor is intended,
     with the use of sounds from Team Fortress 2.
 
-    
-
-    Using Arduino.'
-  roles: 
+'
+  roles: Build & Arduino Programming
   productionDate: 2024
   thumbnail: {fileID: 0}
   webLink: 
   showcaseVideo: {fileID: 32900000, guid: 88f0f0aeb09fca14eaccfdbd802689fc, type: 3}
   projectPrefab: {fileID: 0}
-  videoURL: 
+  videoURL: https://thomascarnell.github.io/Portfolio-Repo/Vids/MOCKShowcase.mp4
   tags: []
