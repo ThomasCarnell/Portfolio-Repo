@@ -1,8 +1,0 @@
-<linker>
-	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
-		<type fullname="PortfolioManager">
-			<method name="ShowNextEntry"/>
-			<method name="ShowPreviousEntry"/>
-		</type>
-	</assembly>
-</linker>
