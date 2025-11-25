@@ -64,6 +64,14 @@
       "version": "1.0.0",
       "source": "builtin"
     },
+    "com.unity.postprocessing@3.4.0": {
+      "name": "com.unity.postprocessing",
+      "resolvedPath": "C:\\Users\\carco\\Portfolio_Project\\Portfolio\\PortfolioProject\\Library\\PackageCache\\com.unity.postprocessing",
+      "fingerprint": "026b2a0827a438e3079df62a60ca03d54961393d",
+      "editorCompatibility": "2019.4.19f1",
+      "version": "3.4.0",
+      "source": "registry"
+    },
     "com.unity.test-framework@1.4.5": {
       "name": "com.unity.test-framework",
       "resolvedPath": "C:\\Users\\carco\\Portfolio_Project\\Portfolio\\PortfolioProject\\Library\\PackageCache\\com.unity.test-framework",
