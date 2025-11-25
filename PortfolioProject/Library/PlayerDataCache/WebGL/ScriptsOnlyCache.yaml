@@ -121,67 +121,67 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 4840}
+      Script: {instanceID: 4842}
     - Class: 114
-      Script: {instanceID: 4940}
+      Script: {instanceID: 4942}
     - Class: 114
-      Script: {instanceID: 5082}
+      Script: {instanceID: 5084}
     - Class: 114
-      Script: {instanceID: 5328}
+      Script: {instanceID: 5330}
     - Class: 114
-      Script: {instanceID: 5344}
+      Script: {instanceID: 5346}
     - Class: 114
-      Script: {instanceID: 5394}
+      Script: {instanceID: 5396}
     - Class: 114
-      Script: {instanceID: 5568}
+      Script: {instanceID: 5570}
     - Class: 114
-      Script: {instanceID: 5780}
+      Script: {instanceID: 5782}
     - Class: 114
-      Script: {instanceID: 5800}
+      Script: {instanceID: 5802}
     - Class: 114
-      Script: {instanceID: 5936}
+      Script: {instanceID: 5938}
     - Class: 114
-      Script: {instanceID: 6040}
+      Script: {instanceID: 6042}
     - Class: 114
-      Script: {instanceID: 6122}
+      Script: {instanceID: 6124}
     - Class: 114
-      Script: {instanceID: 6236}
+      Script: {instanceID: 6238}
     - Class: 114
-      Script: {instanceID: 6242}
+      Script: {instanceID: 6244}
     - Class: 114
-      Script: {instanceID: 6296}
+      Script: {instanceID: 6260}
     - Class: 114
-      Script: {instanceID: 6392}
+      Script: {instanceID: 6300}
     - Class: 114
       Script: {instanceID: 6396}
     - Class: 114
-      Script: {instanceID: 6598}
+      Script: {instanceID: 6400}
     - Class: 114
-      Script: {instanceID: 6638}
+      Script: {instanceID: 6602}
     - Class: 114
-      Script: {instanceID: 6828}
+      Script: {instanceID: 6642}
     - Class: 114
-      Script: {instanceID: 6846}
+      Script: {instanceID: 6832}
     - Class: 114
-      Script: {instanceID: 6908}
+      Script: {instanceID: 6850}
     - Class: 114
-      Script: {instanceID: 6936}
+      Script: {instanceID: 6912}
     - Class: 114
-      Script: {instanceID: 6976}
+      Script: {instanceID: 6940}
     - Class: 114
-      Script: {instanceID: 6986}
+      Script: {instanceID: 6980}
     - Class: 114
-      Script: {instanceID: 7080}
+      Script: {instanceID: 6990}
     - Class: 114
-      Script: {instanceID: 7310}
+      Script: {instanceID: 7084}
     - Class: 114
-      Script: {instanceID: 7748}
+      Script: {instanceID: 7314}
     - Class: 114
-      Script: {instanceID: 7786}
+      Script: {instanceID: 7752}
     - Class: 114
-      Script: {instanceID: 7920}
+      Script: {instanceID: 7790}
     - Class: 114
-      Script: {instanceID: 30378}
+      Script: {instanceID: 7924}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -463,6 +463,12 @@ ScriptsOnlyBuild:
     className: PortfolioDisplay
   - hash:
       serializedVersion: 2
+      Hash: 83621f1ad92f9443f6d30b04f8acf5a5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SafeArea
+  - hash:
+      serializedVersion: 2
       Hash: 194c6a9301f10905d24eb4c61f92b2c6
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -713,12 +719,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
-  - hash:
-      serializedVersion: 2
-      Hash: 83621f1ad92f9443f6d30b04f8acf5a5
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: SafeArea
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainScene.unity

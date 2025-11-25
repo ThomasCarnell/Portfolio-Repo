@@ -3,29 +3,61 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
     <title>Unity Web Player | PortfolioProject</title>
-  </head>
-  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/docs.loader.js"></script>
-    <script>
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // Mobile device style: fill the whole browser client area with the game canvas:
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
 
-        var canvas = document.querySelector("#unity-canvas");
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
-        canvas.style.position = "fixed";
-
-        document.body.style.textAlign = "left";
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #231F20;
+        overflow: hidden;
       }
 
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        arguments: [],
+      #unity-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #231F20;
+      }
+
+      /* Optional fade-in effect */
+      #myText {
+        opacity: 0;
+        transition: opacity 2s ease;
+        color: white;
+        position: fixed;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: sans-serif;
+      }
+
+      .fade-in {
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Your Unity canvas -->
+    <canvas id="unity-canvas" tabindex="-1"></canvas>
+
+    <!-- Optional text element -->
+    <div id="myText">Welcome to my Portfolio!</div>
+
+    <!-- Load Unity -->
+    <script src="Build/docs.loader.js"></script>
+
+    <!-- Wait until Unity fully loads -->
+    <script>
+      const canvas = document.querySelector("#unity-canvas");
+
+      createUnityInstance(canvas, {
         dataUrl: "Build/docs.data.unityweb",
         frameworkUrl: "Build/docs.framework.js.unityweb",
         codeUrl: "Build/docs.wasm.unityweb",
@@ -33,9 +65,20 @@
         companyName: "Thomas Carnell",
         productName: "PortfolioProject",
         productVersion: "0.1",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      })
+      .then((unityInstance) => {
+        console.log("✅ Unity WebGL fully loaded!");
+        startTextFadeIn(); // Only runs after Unity is ready
+      })
+      .catch((message) => {
+        console.error("❌ Unity failed to load:", message);
       });
+
+      // Your fade animation
+      function startTextFadeIn() {
+        const text = document.querySelector("#myText");
+        text.classList.add("fade-in");
+      }
     </script>
   </body>
 </html>
