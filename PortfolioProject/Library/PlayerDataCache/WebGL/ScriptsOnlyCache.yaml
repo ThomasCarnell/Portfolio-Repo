@@ -14,7 +14,6 @@ ScriptsOnlyBuild:
     - PortfolioEntry
     - PortfolioManager
     - Rotate
-    - SafeArea
     - TMPGroupFader
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -175,7 +174,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7790}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 7924}
+=======
+      Script: {instanceID: 7786}
+    - Class: 114
+      Script: {instanceID: 7920}
+>>>>>>> parent of bf6ee9d6 (safe area panel support, trying for bg fix)
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128

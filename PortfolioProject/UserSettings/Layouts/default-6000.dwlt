@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: Build Profiles
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,10 +120,14 @@ MonoBehaviour:
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 94
 =======
   controlID: 53
 >>>>>>> parent of 132c5389 (2nd fix to bg, include index)
+=======
+  controlID: 112
+>>>>>>> parent of bf6ee9d6 (safe area panel support, trying for bg fix)
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -149,7 +153,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 254
+=======
+  controlID: 51
+>>>>>>> parent of bf6ee9d6 (safe area panel support, trying for bg fix)
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -176,7 +184,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
+<<<<<<< HEAD
   controlID: 53
+=======
+  controlID: 52
+>>>>>>> parent of bf6ee9d6 (safe area panel support, trying for bg fix)
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -278,7 +290,7 @@ MonoBehaviour:
     height: 616
   m_MinSize: {x: 231, y: 276}
   m_MaxSize: {x: 10001, y: 10026}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
@@ -286,12 +298,17 @@ MonoBehaviour:
   - {fileID: 14}
   - {fileID: 13}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Selected: 0
   m_LastSelected: 1
 =======
   m_Selected: 3
   m_LastSelected: 0
 >>>>>>> parent of 132c5389 (2nd fix to bg, include index)
+=======
+  m_Selected: 0
+  m_LastSelected: 3
+>>>>>>> parent of bf6ee9d6 (safe area panel support, trying for bg fix)
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -386,7 +403,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: a26b0000
     m_LastClickedID: 27554
-    m_ExpandedIDs: 00000000d06b0000
+    m_ExpandedIDs: 00000000a26b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -415,7 +432,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d06b0000
+    m_ExpandedIDs: 00000000a26b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -539,6 +556,7 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 4e6c0000
     m_LastClickedID: 27726
     m_ExpandedIDs: 00000000d06b0000
@@ -547,6 +565,11 @@ MonoBehaviour:
     m_LastClickedID: 27716
     m_ExpandedIDs: 00000000d06b000000ca9a3bffffff7f
 >>>>>>> parent of 132c5389 (2nd fix to bg, include index)
+=======
+    m_SelectedIDs: 126c0000
+    m_LastClickedID: 27666
+    m_ExpandedIDs: 00000000a26b000000ca9a3bffffff7f
+>>>>>>> parent of bf6ee9d6 (safe area panel support, trying for bg fix)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -575,7 +598,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d06b0000
+    m_ExpandedIDs: 00000000a26b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -601,8 +624,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: e8f3fdff
+    m_LastClickedInstanceID: -134168
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
@@ -676,10 +699,14 @@ MonoBehaviour:
       m_SelectedIDs: 
       m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: 20dfffff76dfffffb0e0ffff4cf6ffff28fbffffd45f0000
 =======
       m_ExpandedIDs: f6c6ffff4cc7ffff02c9ffffb8d5fffffadaffff74edffffcaedffff88efffff28fbffff3671000074710000
 >>>>>>> parent of 132c5389 (2nd fix to bg, include index)
+=======
+      m_ExpandedIDs: 8217fdffd817fdff8e19fdffaa27fdff5a4efdff944efdff1867fdff5267fdff266efdfffe76fdffcc78fdff0679fdffa27afdffe888fdff8a90fdff52bdfdffcec4fdffb6ddfdfff0ddfdff0ce0fdff46edfdff80edfdffe8f3fdff22f4fdffa60afeff940cfeffa829feffe229feffeea6feff6a22ffffdcc9ffffa4d5ffff00d6ffff7eebffff08f1ffff28fbffff5c5f00006e5f0000a65f0000bc5f0000
+>>>>>>> parent of bf6ee9d6 (safe area panel support, trying for bg fix)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1470,9 +1497,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d06b0000
-    m_LastClickedID: 27600
-    m_ExpandedIDs: 00000000d06b000000ca9a3bffffff7f
+    m_SelectedIDs: a26b0000
+    m_LastClickedID: 27554
+    m_ExpandedIDs: 00000000a26b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1501,7 +1528,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d06b0000
+    m_ExpandedIDs: 00000000a26b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1527,9 +1554,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: c05f0000
-    m_LastClickedInstanceID: 24512
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300003aaa000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1826,10 +1853,14 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastInspectedObjectInstanceID: -1
 =======
   m_LastInspectedObjectInstanceID: -10824
 >>>>>>> parent of 132c5389 (2nd fix to bg, include index)
+=======
+  m_LastInspectedObjectInstanceID: -165626
+>>>>>>> parent of bf6ee9d6 (safe area panel support, trying for bg fix)
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
