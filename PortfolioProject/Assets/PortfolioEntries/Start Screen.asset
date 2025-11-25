@@ -17,9 +17,8 @@ MonoBehaviour:
     ScrollView.uiParent \u2192 a VerticalLayoutGroup or GridLayoutGroup under a ScrollView.uiParent
     \u2192 a VerticalLayoutGroup or GridLayoutGroup under a ScrollView.uiParent \u2192
     a VerticalLayoutGroup or GridLayoutGroup under a ScrollView."
-  roles:
-  - Solo Developer
-  productionDate: 2024
+  roles: 
+  productionDate: 
   thumbnail: {fileID: 0}
   webLink: 
   showcaseVideo: {fileID: 32900000, guid: 88f0f0aeb09fca14eaccfdbd802689fc, type: 3}

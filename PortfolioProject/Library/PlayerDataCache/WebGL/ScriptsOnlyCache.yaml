@@ -14,6 +14,7 @@ ScriptsOnlyBuild:
     - PortfolioEntry
     - PortfolioManager
     - Rotate
+    - SafeArea
     - TMPGroupFader
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -34,6 +35,8 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
@@ -118,69 +121,67 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 4842}
+      Script: {instanceID: 4840}
     - Class: 114
-      Script: {instanceID: 4942}
+      Script: {instanceID: 4940}
     - Class: 114
-      Script: {instanceID: 5084}
+      Script: {instanceID: 5082}
     - Class: 114
-      Script: {instanceID: 5330}
+      Script: {instanceID: 5328}
     - Class: 114
-      Script: {instanceID: 5346}
+      Script: {instanceID: 5344}
     - Class: 114
-      Script: {instanceID: 5396}
+      Script: {instanceID: 5394}
     - Class: 114
-      Script: {instanceID: 5570}
+      Script: {instanceID: 5568}
     - Class: 114
-      Script: {instanceID: 5782}
+      Script: {instanceID: 5780}
     - Class: 114
-      Script: {instanceID: 5802}
+      Script: {instanceID: 5800}
     - Class: 114
-      Script: {instanceID: 5938}
+      Script: {instanceID: 5936}
     - Class: 114
-      Script: {instanceID: 6042}
+      Script: {instanceID: 6040}
     - Class: 114
-      Script: {instanceID: 6124}
+      Script: {instanceID: 6122}
     - Class: 114
-      Script: {instanceID: 6238}
+      Script: {instanceID: 6236}
     - Class: 114
-      Script: {instanceID: 6244}
+      Script: {instanceID: 6242}
     - Class: 114
-      Script: {instanceID: 6260}
+      Script: {instanceID: 6296}
     - Class: 114
-      Script: {instanceID: 6300}
+      Script: {instanceID: 6392}
     - Class: 114
       Script: {instanceID: 6396}
     - Class: 114
-      Script: {instanceID: 6400}
+      Script: {instanceID: 6598}
     - Class: 114
-      Script: {instanceID: 6602}
+      Script: {instanceID: 6638}
     - Class: 114
-      Script: {instanceID: 6642}
+      Script: {instanceID: 6828}
     - Class: 114
-      Script: {instanceID: 6832}
+      Script: {instanceID: 6846}
     - Class: 114
-      Script: {instanceID: 6912}
+      Script: {instanceID: 6908}
     - Class: 114
-      Script: {instanceID: 6940}
+      Script: {instanceID: 6936}
     - Class: 114
-      Script: {instanceID: 6980}
+      Script: {instanceID: 6976}
     - Class: 114
-      Script: {instanceID: 6990}
+      Script: {instanceID: 6986}
     - Class: 114
-      Script: {instanceID: 7314}
+      Script: {instanceID: 7080}
     - Class: 114
-      Script: {instanceID: 7752}
+      Script: {instanceID: 7310}
     - Class: 114
-      Script: {instanceID: 7790}
+      Script: {instanceID: 7748}
     - Class: 114
-<<<<<<< HEAD
-      Script: {instanceID: 7924}
-=======
       Script: {instanceID: 7786}
     - Class: 114
       Script: {instanceID: 7920}
->>>>>>> parent of bf6ee9d6 (safe area panel support, trying for bg fix)
+    - Class: 114
+      Script: {instanceID: 30378}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -462,12 +463,6 @@ ScriptsOnlyBuild:
     className: PortfolioDisplay
   - hash:
       serializedVersion: 2
-      Hash: 83621f1ad92f9443f6d30b04f8acf5a5
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: SafeArea
-  - hash:
-      serializedVersion: 2
       Hash: 194c6a9301f10905d24eb4c61f92b2c6
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -718,6 +713,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 83621f1ad92f9443f6d30b04f8acf5a5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SafeArea
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainScene.unity

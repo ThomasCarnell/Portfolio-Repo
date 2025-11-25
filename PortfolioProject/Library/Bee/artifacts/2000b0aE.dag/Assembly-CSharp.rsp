@@ -374,6 +374,7 @@
 "Assets/PortfolioDisplay.cs"
 "Assets/PortfolioManager.cs"
 "Assets/Rotate.cs"
+"Assets/SafeArea.cs"
 "Assets/TextAllignment.cs"
 "Assets/TextFadeInScript.cs"
 "Assets/TMPFader.cs"

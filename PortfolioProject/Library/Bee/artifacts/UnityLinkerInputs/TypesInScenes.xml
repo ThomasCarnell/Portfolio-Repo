@@ -11,6 +11,7 @@
 		<type fullname="PortfolioEntry" preserve="nothing"/>
 		<type fullname="PortfolioManager" preserve="nothing"/>
 		<type fullname="Rotate" preserve="nothing"/>
+		<type fullname="SafeArea" preserve="nothing"/>
 		<type fullname="TMPGroupFader" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp-firstpass">

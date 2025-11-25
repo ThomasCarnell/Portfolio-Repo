@@ -63,6 +63,10 @@ extern void PortfolioManager__ctor_mA51F8B5D92A49DA7B15F200BD27C298E7929B3E3 (vo
 extern void Rotate_Start_mD322E77A3CF2BEF28C4DF71D3F529107F511B1FB (void);
 extern void Rotate_Update_m73D585515036D9B7AAD8336BFB8567283CE4C7E7 (void);
 extern void Rotate__ctor_m0EE5CC8EB699542BFC438DC3D547D39E442E9EE4 (void);
+extern void SafeArea_Awake_m0FBA93BC89FDE7C54FBB4C01BB6682AE8C3566BC (void);
+extern void SafeArea_Update_m8670A7D740F36C9D7D7C0D23E846EFD5F8A1234F (void);
+extern void SafeArea_ApplySafeArea_m6A791DBE8089B59AF1892FD144AF38CA2EC42921 (void);
+extern void SafeArea__ctor_m1AF464D252734CAEB885EB555CB6A1DC17A13682 (void);
 extern void AttachToObject_Update_m86B1E34FAA11F872BE3AFC0D017A2938228E1C81 (void);
 extern void AttachToObject__ctor_m40A72339929EAF7FAA56FEDB76078AF80A16528D (void);
 extern void FadeMaterialDirect_Start_mE50A0C7A82564BAD844838506E573F889C0522C9 (void);
@@ -84,7 +88,7 @@ extern void U3CFadeGroupU3Ed__5_System_Collections_IEnumerator_Reset_m2E9A4666FD
 extern void U3CFadeGroupU3Ed__5_System_Collections_IEnumerator_get_Current_m10DA777AA804A030CE0116630884224B0DB8BF52 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[77] = 
+static Il2CppMethodPointer s_methodPointers[81] = 
 {
 	ButtonClickScript_Start_mBC7677DEA5E47B79380FE28DF2E3B19D4DDB1A3A,
 	ButtonClickScript_Update_m442AD3CA61D291729C795F487A524D267142E2E2,
@@ -142,6 +146,10 @@ static Il2CppMethodPointer s_methodPointers[77] =
 	Rotate_Start_mD322E77A3CF2BEF28C4DF71D3F529107F511B1FB,
 	Rotate_Update_m73D585515036D9B7AAD8336BFB8567283CE4C7E7,
 	Rotate__ctor_m0EE5CC8EB699542BFC438DC3D547D39E442E9EE4,
+	SafeArea_Awake_m0FBA93BC89FDE7C54FBB4C01BB6682AE8C3566BC,
+	SafeArea_Update_m8670A7D740F36C9D7D7C0D23E846EFD5F8A1234F,
+	SafeArea_ApplySafeArea_m6A791DBE8089B59AF1892FD144AF38CA2EC42921,
+	SafeArea__ctor_m1AF464D252734CAEB885EB555CB6A1DC17A13682,
 	AttachToObject_Update_m86B1E34FAA11F872BE3AFC0D017A2938228E1C81,
 	AttachToObject__ctor_m40A72339929EAF7FAA56FEDB76078AF80A16528D,
 	FadeMaterialDirect_Start_mE50A0C7A82564BAD844838506E573F889C0522C9,
@@ -164,7 +172,7 @@ static Il2CppMethodPointer s_methodPointers[77] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[77] = 
+static const int32_t s_InvokerIndices[81] = 
 {
 	6343,
 	6343,
@@ -233,6 +241,10 @@ static const int32_t s_InvokerIndices[77] =
 	6343,
 	6343,
 	6343,
+	6343,
+	6343,
+	6343,
+	6343,
 	1901,
 	6343,
 	5003,
@@ -248,7 +260,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	77,
+	81,
 	s_methodPointers,
 	0,
 	NULL,
