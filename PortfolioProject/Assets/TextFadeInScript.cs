@@ -6,6 +6,7 @@ public class FadeMaterialDirect : MonoBehaviour
 {
     [SerializeField] private Material targetMaterial;
     [SerializeField] private RawImage targetRawImage;
+    [SerializeField] private Image targetImage;
     [SerializeField] private float fadeDuration = 1.5f;
     [SerializeField] private AnimationCurve fadeCurve = AnimationCurve.EaseInOut(0, 0, 1, 1); // curve for easing
 
@@ -51,6 +52,10 @@ public class FadeMaterialDirect : MonoBehaviour
         {
             targetRawImage.color = Color.Lerp(imgStartColor, imgEndColor, curvedT);
         }
+        if( targetImage != null)
+        {
+            targetImage.color = Color.Lerp(imgStartColor, imgEndColor, curvedT);
+        }
 
         if (t >= 1f)
             fading = false;
@@ -70,6 +75,14 @@ public class FadeMaterialDirect : MonoBehaviour
         if (targetRawImage != null && musingImage == true)
         {
             imgStartColor = targetRawImage.color;
+            imgEndColor = imgStartColor;
+            imgEndColor.a = 1f;
+        }
+
+        // prepare image
+        if (targetImage != null && musingImage == true)
+        {
+            imgStartColor = targetImage.color;
             imgEndColor = imgStartColor;
             imgEndColor.a = 1f;
         }

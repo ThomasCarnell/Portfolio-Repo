@@ -409,7 +409,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 269bd6f32482c746777fcd701023af57
+      Hash: e3e9a2e29616878f51e7361b08fe9f32
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: FadeMaterialDirect
