@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectName: Sound Design Reel
   description: SOUND DESSSSSSIIIIGINGNNGN
-  roles:
-  - Sound Design
+  roles: 
   productionDate: 2023
   thumbnail: {fileID: 0}
   webLink: 
   showcaseVideo: {fileID: 0}
   projectPrefab: {fileID: 0}
+  videoURL: https://thomascarnell.github.io/Portfolio-Repo/Vids/SoundDesignReel.mp4
   tags: []
