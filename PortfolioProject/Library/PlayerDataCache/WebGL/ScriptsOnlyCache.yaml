@@ -16,6 +16,7 @@ ScriptsOnlyBuild:
     - Rotate
     - SafeArea
     - TMPGroupFader
+    - WebGLVideoFix
     Unity.Postprocessing.Runtime.dll:
     - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
     - UnityEngine.Rendering.PostProcessing.AutoExposure
@@ -159,77 +160,79 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 5166}
+      Script: {instanceID: 5168}
     - Class: 114
-      Script: {instanceID: 5268}
+      Script: {instanceID: 5270}
     - Class: 114
-      Script: {instanceID: 5416}
+      Script: {instanceID: 5418}
     - Class: 114
-      Script: {instanceID: 5678}
+      Script: {instanceID: 5680}
     - Class: 114
-      Script: {instanceID: 5694}
+      Script: {instanceID: 5696}
     - Class: 114
-      Script: {instanceID: 5752}
+      Script: {instanceID: 5754}
     - Class: 114
-      Script: {instanceID: 5932}
+      Script: {instanceID: 5934}
     - Class: 114
-      Script: {instanceID: 6166}
+      Script: {instanceID: 6168}
     - Class: 114
-      Script: {instanceID: 6188}
+      Script: {instanceID: 6190}
     - Class: 114
-      Script: {instanceID: 6332}
+      Script: {instanceID: 6334}
     - Class: 114
-      Script: {instanceID: 6444}
+      Script: {instanceID: 6446}
     - Class: 114
-      Script: {instanceID: 6538}
+      Script: {instanceID: 6540}
     - Class: 114
-      Script: {instanceID: 6630}
+      Script: {instanceID: 6632}
     - Class: 114
-      Script: {instanceID: 6668}
+      Script: {instanceID: 6670}
     - Class: 114
-      Script: {instanceID: 6674}
+      Script: {instanceID: 6676}
     - Class: 114
-      Script: {instanceID: 6692}
+      Script: {instanceID: 6694}
     - Class: 114
-      Script: {instanceID: 6738}
+      Script: {instanceID: 6740}
     - Class: 114
-      Script: {instanceID: 6844}
+      Script: {instanceID: 6846}
     - Class: 114
-      Script: {instanceID: 6848}
-    - Class: 114
-      Script: {instanceID: 7070}
+      Script: {instanceID: 6850}
     - Class: 114
       Script: {instanceID: 7072}
     - Class: 114
-      Script: {instanceID: 7080}
+      Script: {instanceID: 7074}
     - Class: 114
-      Script: {instanceID: 7118}
+      Script: {instanceID: 7082}
     - Class: 114
-      Script: {instanceID: 7316}
+      Script: {instanceID: 7120}
     - Class: 114
-      Script: {instanceID: 7338}
+      Script: {instanceID: 7318}
     - Class: 114
-      Script: {instanceID: 7406}
+      Script: {instanceID: 7340}
     - Class: 114
-      Script: {instanceID: 7434}
+      Script: {instanceID: 7408}
     - Class: 114
-      Script: {instanceID: 7476}
+      Script: {instanceID: 7436}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7478}
     - Class: 114
-      Script: {instanceID: 7590}
+      Script: {instanceID: 7490}
     - Class: 114
-      Script: {instanceID: 7652}
+      Script: {instanceID: 7592}
     - Class: 114
-      Script: {instanceID: 7838}
+      Script: {instanceID: 7654}
     - Class: 114
-      Script: {instanceID: 8266}
+      Script: {instanceID: 7740}
     - Class: 114
-      Script: {instanceID: 8320}
+      Script: {instanceID: 7842}
     - Class: 114
-      Script: {instanceID: 8360}
+      Script: {instanceID: 8270}
     - Class: 114
-      Script: {instanceID: 8502}
+      Script: {instanceID: 8324}
+    - Class: 114
+      Script: {instanceID: 8364}
+    - Class: 114
+      Script: {instanceID: 8506}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -725,6 +728,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: PostProcessDebug
+  - hash:
+      serializedVersion: 2
+      Hash: f2ff1f13990cd494dd1bee25bd892778
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WebGLVideoFix
   - hash:
       serializedVersion: 2
       Hash: fe111e830148f07e5735ebe7620f752e
