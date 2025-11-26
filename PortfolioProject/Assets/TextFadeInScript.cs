@@ -1,4 +1,5 @@
 // ...existing code...
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,7 @@ public class FadeMaterialDirect : MonoBehaviour
     [SerializeField] private Material targetMaterial;
     [SerializeField] private RawImage targetRawImage;
     [SerializeField] private Image targetImage;
+    [SerializeField] private TextMeshProUGUI targetTextMesh;
     [SerializeField] private float fadeDuration = 1.5f;
     [SerializeField] private AnimationCurve fadeCurve = AnimationCurve.EaseInOut(0, 0, 1, 1); // curve for easing
 
@@ -56,6 +58,10 @@ public class FadeMaterialDirect : MonoBehaviour
         {
             targetImage.color = Color.Lerp(imgStartColor, imgEndColor, curvedT);
         }
+        if( targetTextMesh != null)
+        {
+            targetTextMesh.color = Color.Lerp(imgStartColor, imgEndColor, curvedT);
+        }
 
         if (t >= 1f)
             fading = false;
@@ -83,6 +89,13 @@ public class FadeMaterialDirect : MonoBehaviour
         if (targetImage != null && musingImage == true)
         {
             imgStartColor = targetImage.color;
+            imgEndColor = imgStartColor;
+            imgEndColor.a = 1f;
+        }
+        // prepare textmesh
+        if (targetTextMesh != null && musingImage == true)
+        {
+            imgStartColor = targetTextMesh.color;
             imgEndColor = imgStartColor;
             imgEndColor.a = 1f;
         }

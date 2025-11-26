@@ -1504,6 +1504,7 @@ struct FadeMaterialDirect_t6FADC3BDFFFFC2D8A74FD272881D86848B5F41F8  : public Mo
 	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___targetMaterial;
 	RawImage_tFF12F7DB574FBDC1863CF607C7A12A5D9F8D6179* ___targetRawImage;
 	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___targetImage;
+	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___targetTextMesh;
 	float ___fadeDuration;
 	AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* ___fadeCurve;
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___matStartColor;
@@ -5891,17 +5892,38 @@ IL_009c:
 
 IL_00c7:
 	{
-		float L_32 = V_0;
-		if ((!(((float)L_32) >= ((float)(1.0f)))))
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_32 = __this->___targetTextMesh;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_33;
+		L_33 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_32, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_33)
 		{
-			goto IL_00d6;
+			goto IL_00f2;
+		}
+	}
+	{
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_34 = __this->___targetTextMesh;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_35 = __this->___imgStartColor;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_36 = __this->___imgEndColor;
+		float L_37 = V_1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_38;
+		L_38 = Color_Lerp_mE79F87889843ECDC188E4CB5B5E1F1B2256E5EBE_inline(L_35, L_36, L_37, NULL);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_34, L_38);
+	}
+
+IL_00f2:
+	{
+		float L_39 = V_0;
+		if ((!(((float)L_39) >= ((float)(1.0f)))))
+		{
+			goto IL_0101;
 		}
 	}
 	{
 		__this->___fading = (bool)0;
 	}
 
-IL_00d6:
+IL_0101:
 	{
 		return;
 	}
@@ -5994,6 +6016,35 @@ IL_007e:
 	}
 
 IL_00c1:
+	{
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_20 = __this->___targetTextMesh;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_21;
+		L_21 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_20, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_21)
+		{
+			goto IL_0104;
+		}
+	}
+	{
+		bool L_22 = __this->___musingImage;
+		if (!L_22)
+		{
+			goto IL_0104;
+		}
+	}
+	{
+		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_23 = __this->___targetTextMesh;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_24;
+		L_24 = VirtualFuncInvoker0< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(22, L_23);
+		__this->___imgStartColor = L_24;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_25 = __this->___imgStartColor;
+		__this->___imgEndColor = L_25;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* L_26 = (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F*)(&__this->___imgEndColor);
+		L_26->___a = (1.0f);
+	}
+
+IL_0104:
 	{
 		__this->___timer = (0.0f);
 		__this->___fading = (bool)1;
