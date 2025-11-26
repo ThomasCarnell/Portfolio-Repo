@@ -22098,7 +22098,7 @@ IL_0047:
 		V_0 = L_19;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_20 = V_0;
 		bool L_21;
-		L_21 = VirtualFuncInvoker0< bool >::Invoke(8, L_20);
+		L_21 = VirtualFuncInvoker0< bool >::Invoke(10, L_20);
 		V_7 = (bool)((((int32_t)L_21) == ((int32_t)0))? 1 : 0);
 		bool L_22 = V_7;
 		if (!L_22)
@@ -24236,7 +24236,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FontAsset_TryAddGlyphToAtlas_m79A28E53E3
 		int32_t L_3 = L_2;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_4 = (L_1)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_3));
 		bool L_5;
-		L_5 = VirtualFuncInvoker0< bool >::Invoke(8, L_4);
+		L_5 = VirtualFuncInvoker0< bool >::Invoke(10, L_4);
 		V_0 = (bool)((((int32_t)L_5) == ((int32_t)0))? 1 : 0);
 		bool L_6 = V_0;
 		if (!L_6)
