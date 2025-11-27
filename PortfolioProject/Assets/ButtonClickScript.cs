@@ -56,6 +56,7 @@ public class ButtonClickScript : MonoBehaviour
     void Start()
     {
         startsize = GetComponent<Transform>().localScale;
+
     }
 
 
@@ -84,6 +85,7 @@ public class ButtonClickScript : MonoBehaviour
                     gameManager.openTarget(gameObject.name);
                     pm.GetComponent<PortfolioManager>().ClearPortfolio();
                     pm.GetComponent<PortfolioManager>().ResetCurrentIndex();
+                    pm.GetComponent<PortfolioManager>().ShowEntry_start(0);
 
                 }
             }
