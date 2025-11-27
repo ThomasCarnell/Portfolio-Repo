@@ -163,45 +163,45 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 5172}
+      Script: {instanceID: 1638}
     - Class: 114
-      Script: {instanceID: 5276}
+      Script: {instanceID: 1640}
     - Class: 114
-      Script: {instanceID: 5424}
+      Script: {instanceID: 5176}
     - Class: 114
-      Script: {instanceID: 5686}
+      Script: {instanceID: 5280}
     - Class: 114
-      Script: {instanceID: 5702}
+      Script: {instanceID: 5428}
     - Class: 114
-      Script: {instanceID: 5760}
+      Script: {instanceID: 5690}
     - Class: 114
-      Script: {instanceID: 5940}
+      Script: {instanceID: 5706}
     - Class: 114
-      Script: {instanceID: 6174}
+      Script: {instanceID: 5764}
     - Class: 114
-      Script: {instanceID: 6196}
+      Script: {instanceID: 5944}
     - Class: 114
-      Script: {instanceID: 6340}
+      Script: {instanceID: 6178}
     - Class: 114
-      Script: {instanceID: 6452}
+      Script: {instanceID: 6200}
     - Class: 114
-      Script: {instanceID: 6546}
+      Script: {instanceID: 6344}
     - Class: 114
-      Script: {instanceID: 6638}
+      Script: {instanceID: 6456}
     - Class: 114
-      Script: {instanceID: 6676}
+      Script: {instanceID: 6550}
     - Class: 114
-      Script: {instanceID: 6682}
+      Script: {instanceID: 6642}
     - Class: 114
-      Script: {instanceID: 6700}
+      Script: {instanceID: 6680}
     - Class: 114
-      Script: {instanceID: 6746}
+      Script: {instanceID: 6686}
     - Class: 114
-      Script: {instanceID: 6852}
+      Script: {instanceID: 6704}
     - Class: 114
-      Script: {instanceID: 6856}
+      Script: {instanceID: 6854}
     - Class: 114
-      Script: {instanceID: 7078}
+      Script: {instanceID: 6858}
     - Class: 114
       Script: {instanceID: 7080}
     - Class: 114
@@ -259,6 +259,18 @@ ScriptsOnlyBuild:
     - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 80582ce165e5d6ebd43c3332dfa76f6b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ButtonClickScript
+  - hash:
+      serializedVersion: 2
+      Hash: 6541c5641298a673f81beab9c023cc6e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PortfolioManager
   - hash:
       serializedVersion: 2
       Hash: 71cab9ea29978ad67b9ed74635410b77
@@ -543,12 +555,6 @@ ScriptsOnlyBuild:
     className: SafeArea
   - hash:
       serializedVersion: 2
-      Hash: 6541c5641298a673f81beab9c023cc6e
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PortfolioManager
-  - hash:
-      serializedVersion: 2
       Hash: 2e8c9ebf3a12e4ec6fa3deb5c6b94e48
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -577,12 +583,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: PostProcessVolume
-  - hash:
-      serializedVersion: 2
-      Hash: 80582ce165e5d6ebd43c3332dfa76f6b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ButtonClickScript
   - hash:
       serializedVersion: 2
       Hash: b6792907b61f32faaf3e23f55e750107

@@ -17,7 +17,7 @@ MonoBehaviour:
   roles: 
   productionDate: 2023
   thumbnail: {fileID: 0}
-  webLink: https://store.steampowered.com/app/1528280/THE_HIGHLANDS/
+  webLink: 
   showcaseVideo: {fileID: 0}
   projectPrefab: {fileID: 0}
   videoURL: https://thomascarnell.github.io/Portfolio-Repo/Vids/HighlandsShowcase.mp4
