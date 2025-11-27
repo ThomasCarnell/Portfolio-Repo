@@ -125,9 +125,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ClipCopy
     methodName: Copy
-  - assembly: Assembly-CSharp
-    fullTypeName: ClipCopy
-    methodName: Copy
   sceneClasses:
     Assets/Scenes/MainScene.unity:
     - Class: 1
