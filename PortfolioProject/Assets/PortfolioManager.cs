@@ -13,7 +13,6 @@ public class PortfolioManager : MonoBehaviour
     [SerializeField] private Transform uiParent;
     [SerializeField] private GameObject entryUIPrefab;
 
-    [SerializeField] private GameObject mailButton;
 
     [Header("UI Navigation")]
     [SerializeField] private Button nextButton;
@@ -138,12 +137,10 @@ public class PortfolioManager : MonoBehaviour
         Debug.Log($"🖼️ Showing entry {index + 1}/{entries_start.Count}: {entry.projectName}");
 
         UpdateButtonStates();
-        mailButton.SetActive(true);
     }
 
     private void UpdateButtonStates()
     {
-                mailButton.SetActive(false);
 
         if (previousButton != null)
             previousButton.interactable = currentIndex > 0;

@@ -21,7 +21,7 @@ MonoBehaviour:
   roles: Project Manager, Sound Designer, Programmer, VA
   productionDate: 
   thumbnail: {fileID: 0}
-  webLink: https://giorgio-perri.itch.io/blind-faith
+  webLink: 
   showcaseVideo: {fileID: 0}
   projectPrefab: {fileID: 0}
   videoURL: https://thomascarnell.github.io/Portfolio-Repo/Vids/BlindFaithShowcase.mp4

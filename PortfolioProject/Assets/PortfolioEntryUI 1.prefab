@@ -378,7 +378,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3686075554255088624
 RectTransform:
   m_ObjectHideFlags: 0
@@ -715,6 +715,7 @@ MonoBehaviour:
   roleText: {fileID: 7612628912876864243}
   descriptionText: {fileID: 429599675695267520}
   webLink: {fileID: 612391200030225275}
+  copyButton: {fileID: 2279063835351161978}
   videoPlayer: {fileID: 2076567015390905506}
   videoDisplay: {fileID: 414423078475275187}
 --- !u!114 &2708066132903766387
