@@ -1018,7 +1018,7 @@ MonoBehaviour:
   targetRawImage: {fileID: 0}
   targetImage: {fileID: 0}
   targetTextMesh: {fileID: 0}
-  fadeDuration: 2
+  fadeDuration: 1
   fadeCurve:
     serializedVersion: 2
     m_Curve:
@@ -3702,7 +3702,7 @@ MonoBehaviour:
   targetRawImage: {fileID: 0}
   targetImage: {fileID: 0}
   targetTextMesh: {fileID: 0}
-  fadeDuration: 2
+  fadeDuration: 1
   fadeCurve:
     serializedVersion: 2
     m_Curve:
@@ -4417,7 +4417,7 @@ MonoBehaviour:
   targetRawImage: {fileID: 0}
   targetImage: {fileID: 0}
   targetTextMesh: {fileID: 0}
-  fadeDuration: 2
+  fadeDuration: 1
   fadeCurve:
     serializedVersion: 2
     m_Curve:
@@ -4817,6 +4817,11 @@ PrefabInstance:
       propertyPath: mat
       value: 
       objectReference: {fileID: 2100000, guid: 37e375cad7421854280b8b267784625a, type: 2}
+    - target: {fileID: 3854133640646728904, guid: b7f9778d79e33db47bb3cf87c5c92524,
+        type: 3}
+      propertyPath: movementDuration
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3854133640646728905, guid: b7f9778d79e33db47bb3cf87c5c92524,
         type: 3}
       propertyPath: m_IsActive
@@ -4847,11 +4852,21 @@ PrefabInstance:
       propertyPath: explosionForce
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7789487774295786397, guid: b7f9778d79e33db47bb3cf87c5c92524,
+        type: 3}
+      propertyPath: movementDuration
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8619938258983793106, guid: b7f9778d79e33db47bb3cf87c5c92524,
         type: 3}
       propertyPath: mat
       value: 
       objectReference: {fileID: 2100000, guid: efea9442c19d49d45b5c163754614426, type: 2}
+    - target: {fileID: 8619938258983793106, guid: b7f9778d79e33db47bb3cf87c5c92524,
+        type: 3}
+      propertyPath: movementDuration
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8619938258983793107, guid: b7f9778d79e33db47bb3cf87c5c92524,
         type: 3}
       propertyPath: m_IsActive
