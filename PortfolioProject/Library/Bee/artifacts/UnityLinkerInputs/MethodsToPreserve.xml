@@ -2,6 +2,7 @@
 	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
 		<type fullname="ClipCopy">
 			<method name="Copy"/>
+			<method name="Copy"/>
 		</type>
 	</assembly>
 </linker>
