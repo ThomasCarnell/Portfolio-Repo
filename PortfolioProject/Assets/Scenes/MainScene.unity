@@ -154,11 +154,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 636d330668bf5df4596d7e128eabf5cc, type: 2}
   - {fileID: 11400000, guid: 24cf4f3759147b445a4dcedb55983d7d, type: 2}
   - {fileID: 11400000, guid: 5a71bc24dcc8e89498de4f3c10feafb1, type: 2}
-  - {fileID: 11400000, guid: 7a4ed16811eb1774299a994706483ef2, type: 2}
   entries_soundDesign:
   - {fileID: 11400000, guid: 368f63c9e4dde234297779e8a6c14ce3, type: 2}
   - {fileID: 11400000, guid: 69c87b4a0478cac49a83778b8dbec6eb, type: 2}
-  - {fileID: 11400000, guid: 61a8016104a984f48b90460e4037acb0, type: 2}
   entries_physical:
   - {fileID: 11400000, guid: 15ddfa932db847945867bf7713e14971, type: 2}
   - {fileID: 11400000, guid: c7c27d0149e26b54687d5d8213b8fb62, type: 2}

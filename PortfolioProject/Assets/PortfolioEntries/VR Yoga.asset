@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: VR Yoga
   m_EditorClassIdentifier: 
   projectName: VR Yoga
-  description: 'VR Yoga! A VR simulator showcasing the posibilities of teaching players
-    basic yoga using music and interaction. '
+  description: "VR Yoga! A VR simulator showcasing the posibilities of teaching players
+    basic yoga using music and interaction. \n\nITU Project"
   roles: Solo Developer
   productionDate: 2024
   thumbnail: {fileID: 0}

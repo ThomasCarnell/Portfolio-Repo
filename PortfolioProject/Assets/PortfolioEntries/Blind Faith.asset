@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Blind Faith
   m_EditorClassIdentifier: 
   projectName: Blind Faith
-  description: 'Blind Faith is an atmospheric first-person horror puzzle game set
+  description: "Blind Faith is an atmospheric first-person horror puzzle game set
     in a technologically corrupted Victorian age. The player wakes up in a church
     which has been repurposed as a lab for all sorts of sinister experiments in the
     light, and they must manipulate the light to solve environmental puzzles and
-    piece together what has transpired. '
+    piece together what has transpired. \n\nITU Project"
   roles: Project Manager, Sound Designer, Programmer, VA
   productionDate: 2022
   thumbnail: {fileID: 0}

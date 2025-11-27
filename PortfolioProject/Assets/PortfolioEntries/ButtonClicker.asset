@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: ButtonClicker
   m_EditorClassIdentifier: 
   projectName: ButtonClicker
-  description: In this project, we explored the redudancy in some interfaces and
+  description: 'In this project, we explored the redudancy in some interfaces and
     systems, such as google assistant, and some of the "problems" they solve. Or
     rather- how they push the problem further down the line. We made this marbletrack-box
     to display that in the end it is just some other interface that pushes the button.
+
+
+    ITU
+    Project'
   roles: Build & Arduino Programming
   productionDate: 2023
   thumbnail: {fileID: 0}
