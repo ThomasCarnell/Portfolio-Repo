@@ -3841,6 +3841,7 @@ IL_00fa:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_Start_m87A71D65F3171A58DBDDBFB03832ADA65643D0E2 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	{
+		GameManager_returnButtonClicked_mF2C4BB8E1CF8707A9681C877974B9A10C86D75DE(__this, NULL);
 		__this->___running = (bool)1;
 		return;
 	}
