@@ -9,7 +9,7 @@ public class PortfolioDisplay : MonoBehaviour
     [SerializeField] private TMP_Text dateText;
     [SerializeField] private TMP_Text roleText;
     [SerializeField] private TMP_Text descriptionText;
-    //[SerializeField] private string webLink;
+    [SerializeField] private TMP_Text webLink;
     [Header("Video Media")]
     [SerializeField] private VideoPlayer videoPlayer;
     [SerializeField] private RawImage videoDisplay;
@@ -26,7 +26,7 @@ public class PortfolioDisplay : MonoBehaviour
         dateText.text = entry.productionDate;
         roleText.text = entry.roles;
         descriptionText.text = entry.description;
-        //webLink.text = entry.webLink;
+        webLink.text = entry.webLink;
 
             if (!string.IsNullOrEmpty(entry.videoURL))
         {

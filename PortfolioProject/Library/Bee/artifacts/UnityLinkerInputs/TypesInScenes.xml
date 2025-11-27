@@ -3,6 +3,7 @@
 		<type fullname="AttachToObject" preserve="nothing"/>
 		<type fullname="ButtonClickScript" preserve="nothing"/>
 		<type fullname="ButtonResetAnimation" preserve="nothing"/>
+		<type fullname="ClipCopy" preserve="nothing"/>
 		<type fullname="FadeMaterialDirect" preserve="nothing"/>
 		<type fullname="FPSCounter" preserve="nothing"/>
 		<type fullname="GameManager" preserve="nothing"/>

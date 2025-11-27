@@ -370,6 +370,8 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.30f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/ButtonClickScript.cs"
 "Assets/ButtonResetAnimation.cs"
+"Assets/ClipBoardCopyWebGL.cs"
+"Assets/ClipCopy.cs"
 "Assets/FPSShow.cs"
 "Assets/GameManager.cs"
 "Assets/NewPortfolioEntry.cs"

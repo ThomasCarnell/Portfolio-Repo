@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - AttachToObject
     - ButtonClickScript
     - ButtonResetAnimation
+    - ClipCopy
     - FPSCounter
     - FadeMaterialDirect
     - GameManager
@@ -120,7 +121,10 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ScrollRect/ScrollRectEvent
     - UnityEngine.UI.Scrollbar/ScrollEvent
     - UnityEngine.UI.SpriteState
-  methodsToPreserve: []
+  methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: ClipCopy
+    methodName: Copy
   sceneClasses:
     Assets/Scenes/MainScene.unity:
     - Class: 1
@@ -156,79 +160,81 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 5168}
+      Script: {instanceID: 5170}
     - Class: 114
-      Script: {instanceID: 5270}
+      Script: {instanceID: 5272}
     - Class: 114
-      Script: {instanceID: 5418}
+      Script: {instanceID: 5420}
     - Class: 114
-      Script: {instanceID: 5680}
+      Script: {instanceID: 5684}
     - Class: 114
-      Script: {instanceID: 5696}
+      Script: {instanceID: 5700}
     - Class: 114
-      Script: {instanceID: 5754}
+      Script: {instanceID: 5758}
     - Class: 114
-      Script: {instanceID: 5934}
+      Script: {instanceID: 5938}
     - Class: 114
-      Script: {instanceID: 6168}
+      Script: {instanceID: 6172}
     - Class: 114
-      Script: {instanceID: 6190}
+      Script: {instanceID: 6194}
     - Class: 114
-      Script: {instanceID: 6334}
+      Script: {instanceID: 6338}
     - Class: 114
-      Script: {instanceID: 6446}
+      Script: {instanceID: 6450}
     - Class: 114
-      Script: {instanceID: 6540}
+      Script: {instanceID: 6544}
     - Class: 114
-      Script: {instanceID: 6632}
+      Script: {instanceID: 6636}
     - Class: 114
-      Script: {instanceID: 6670}
+      Script: {instanceID: 6674}
     - Class: 114
-      Script: {instanceID: 6676}
+      Script: {instanceID: 6680}
     - Class: 114
-      Script: {instanceID: 6694}
+      Script: {instanceID: 6698}
     - Class: 114
-      Script: {instanceID: 6740}
-    - Class: 114
-      Script: {instanceID: 6846}
+      Script: {instanceID: 6744}
     - Class: 114
       Script: {instanceID: 6850}
     - Class: 114
-      Script: {instanceID: 7072}
+      Script: {instanceID: 6854}
     - Class: 114
-      Script: {instanceID: 7074}
+      Script: {instanceID: 7076}
     - Class: 114
-      Script: {instanceID: 7082}
+      Script: {instanceID: 7078}
     - Class: 114
-      Script: {instanceID: 7120}
+      Script: {instanceID: 7086}
     - Class: 114
-      Script: {instanceID: 7318}
+      Script: {instanceID: 7124}
     - Class: 114
-      Script: {instanceID: 7340}
+      Script: {instanceID: 7322}
     - Class: 114
-      Script: {instanceID: 7408}
+      Script: {instanceID: 7344}
     - Class: 114
-      Script: {instanceID: 7436}
+      Script: {instanceID: 7412}
     - Class: 114
-      Script: {instanceID: 7478}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7490}
+      Script: {instanceID: 7482}
     - Class: 114
-      Script: {instanceID: 7592}
+      Script: {instanceID: 7494}
     - Class: 114
-      Script: {instanceID: 7654}
+      Script: {instanceID: 7596}
     - Class: 114
-      Script: {instanceID: 7740}
+      Script: {instanceID: 7658}
     - Class: 114
-      Script: {instanceID: 7842}
+      Script: {instanceID: 7744}
     - Class: 114
-      Script: {instanceID: 8270}
+      Script: {instanceID: 7846}
     - Class: 114
-      Script: {instanceID: 8324}
+      Script: {instanceID: 8274}
     - Class: 114
-      Script: {instanceID: 8364}
+      Script: {instanceID: 8328}
     - Class: 114
-      Script: {instanceID: 8506}
+      Script: {instanceID: 8368}
+    - Class: 114
+      Script: {instanceID: 8510}
+    - Class: 114
+      Script: {instanceID: 28720}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -522,7 +528,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: b0038cbad8708a0674c09a92dc731be9
+      Hash: 5d40e266ff290ba56117c9625c0ed46a
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PortfolioDisplay
@@ -874,6 +880,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 192470ceedf028764e43d212e44cbb18
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ClipCopy
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainScene.unity

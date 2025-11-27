@@ -21,6 +21,11 @@ extern void ButtonResetAnimation_Update_mE3CED71D7B105C501197CB0F850C72C805FFADD
 extern void ButtonResetAnimation_ApplyEase_m2D9F8029DB887E2618CE87A4FC7C46488E27BFBA (void);
 extern void ButtonResetAnimation_Bounce_m40865D7CC081C09299F8CEFB100D1E0AC48B36F4 (void);
 extern void ButtonResetAnimation__ctor_m964922F6ABD05B426682FAB5260FA413E09F1CC9 (void);
+extern void ClipBoardCopyWebGL_CopyToClipboard_m3C5244D68B7FC8EB324A52CE3A8B34A6A632C536 (void);
+extern void ClipBoardCopyWebGL_Copy_mC4C7A6B37F6E3A73D5EFD8B943BC418A7E16F001 (void);
+extern void ClipCopy_Copy_mD94F7584F52652BA35DBE11A459BEF2294436192 (void);
+extern void ClipCopy_SetText_m634A3A49583702AF2B7771C6FEF2A4EB516F1557 (void);
+extern void ClipCopy__ctor_mF3B1EC28E1D4DB878A04A6F05FC93DEC9CB7BFED (void);
 extern void FPSCounter_Update_m8FD51CDD4FC6103E47194F4D9848A7D325004E30 (void);
 extern void FPSCounter_OnGUI_mE235C1459C860E75FB2AC0B20F74E82AD63B465E (void);
 extern void FPSCounter__ctor_m4814EB8CF15E05040C15D4F6B057357EC68B7268 (void);
@@ -91,7 +96,7 @@ extern void WebGLVideoFix_OnVideoPrepared_m56E51C9DC3ED774487BD923D38F4149F4AE23
 extern void WebGLVideoFix__ctor_m410A590C2DF960694DFE3C0B7BF0037D6E02843F (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[84] = 
+static Il2CppMethodPointer s_methodPointers[89] = 
 {
 	ButtonClickScript_Start_mBC7677DEA5E47B79380FE28DF2E3B19D4DDB1A3A,
 	ButtonClickScript_Update_m442AD3CA61D291729C795F487A524D267142E2E2,
@@ -107,6 +112,11 @@ static Il2CppMethodPointer s_methodPointers[84] =
 	ButtonResetAnimation_ApplyEase_m2D9F8029DB887E2618CE87A4FC7C46488E27BFBA,
 	ButtonResetAnimation_Bounce_m40865D7CC081C09299F8CEFB100D1E0AC48B36F4,
 	ButtonResetAnimation__ctor_m964922F6ABD05B426682FAB5260FA413E09F1CC9,
+	ClipBoardCopyWebGL_CopyToClipboard_m3C5244D68B7FC8EB324A52CE3A8B34A6A632C536,
+	ClipBoardCopyWebGL_Copy_mC4C7A6B37F6E3A73D5EFD8B943BC418A7E16F001,
+	ClipCopy_Copy_mD94F7584F52652BA35DBE11A459BEF2294436192,
+	ClipCopy_SetText_m634A3A49583702AF2B7771C6FEF2A4EB516F1557,
+	ClipCopy__ctor_mF3B1EC28E1D4DB878A04A6F05FC93DEC9CB7BFED,
 	FPSCounter_Update_m8FD51CDD4FC6103E47194F4D9848A7D325004E30,
 	FPSCounter_OnGUI_mE235C1459C860E75FB2AC0B20F74E82AD63B465E,
 	FPSCounter__ctor_m4814EB8CF15E05040C15D4F6B057357EC68B7268,
@@ -178,7 +188,7 @@ static Il2CppMethodPointer s_methodPointers[84] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[84] = 
+static const int32_t s_InvokerIndices[89] = 
 {
 	6493,
 	6493,
@@ -193,6 +203,11 @@ static const int32_t s_InvokerIndices[84] =
 	6493,
 	2003,
 	4491,
+	6493,
+	8797,
+	8797,
+	6493,
+	5179,
 	6493,
 	6493,
 	6493,
@@ -269,7 +284,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	84,
+	89,
 	s_methodPointers,
 	0,
 	NULL,
