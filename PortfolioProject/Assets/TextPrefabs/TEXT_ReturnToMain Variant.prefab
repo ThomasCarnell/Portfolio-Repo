@@ -80,6 +80,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 862898829475560426, guid: 3130e871c78eff7479f4a9acc8701eef,
         type: 3}
+      propertyPath: spaceBetweenLines
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 862898829475560426, guid: 3130e871c78eff7479f4a9acc8701eef,
+        type: 3}
       propertyPath: spawnSphereRadius
       value: 3
       objectReference: {fileID: 0}
@@ -91,7 +96,7 @@ PrefabInstance:
     - target: {fileID: 862898829475560426, guid: 3130e871c78eff7479f4a9acc8701eef,
         type: 3}
       propertyPath: spaceBetweenCharacters
-      value: 0.45
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 862898829475560426, guid: 3130e871c78eff7479f4a9acc8701eef,
         type: 3}
