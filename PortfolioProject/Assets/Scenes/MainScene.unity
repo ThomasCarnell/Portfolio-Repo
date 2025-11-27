@@ -1842,9 +1842,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d39e2a6e051f0a94fb058e5f6740c384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteContent: " - Finish video playback, stopping code\n - Formatting for all content
-    to fit most pages, center content\n - add proper background\n - Add entries:
-    Sound design reel + horror, overall showcase/startscreen, \n"
+  noteContent: '
+
+'
 --- !u!4 &1145346064
 Transform:
   m_ObjectHideFlags: 0
