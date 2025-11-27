@@ -1762,6 +1762,7 @@ struct PortfolioManager_t933598C4A20AF9C0F0DD2B6B5C865EA6D9596903  : public Mono
 	List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* ___entries_start;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___uiParent;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___entryUIPrefab;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___mailButton;
 	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___nextButton;
 	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___previousButton;
 	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___spawnedEntries;
@@ -5033,6 +5034,8 @@ IL_0060:
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_27, NULL);
 		PortfolioManager_UpdateButtonStates_m5E81D6A8B5E52B9D24532441D82391E1CED79E89(__this, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28 = __this->___mailButton;
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_28, (bool)1, NULL);
 		return;
 	}
 }
@@ -5046,118 +5049,120 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PortfolioManager_UpdateButtonStates_m5E8
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = __this->___previousButton;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___mailButton;
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_1 = __this->___previousButton;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_1;
-		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_1)
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
 		{
-			goto IL_0022;
+			goto IL_002e;
 		}
 	}
 	{
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_2 = __this->___previousButton;
-		int32_t L_3 = __this->___currentIndex;
-		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_2, (bool)((((int32_t)L_3) > ((int32_t)0))? 1 : 0), NULL);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_3 = __this->___previousButton;
+		int32_t L_4 = __this->___currentIndex;
+		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_3, (bool)((((int32_t)L_4) > ((int32_t)0))? 1 : 0), NULL);
 	}
 
-IL_0022:
+IL_002e:
 	{
-		bool L_4 = __this->___isUnityPortfolio;
-		if (!L_4)
+		bool L_5 = __this->___isUnityPortfolio;
+		if (!L_5)
 		{
-			goto IL_0059;
+			goto IL_0065;
 		}
 	}
 	{
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_5 = __this->___nextButton;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_6 = __this->___nextButton;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_6;
-		L_6 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_6)
+		bool L_7;
+		L_7 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_6, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_7)
 		{
-			goto IL_0058;
+			goto IL_0064;
 		}
 	}
 	{
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_7 = __this->___nextButton;
-		int32_t L_8 = __this->___currentIndex;
-		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_9 = __this->___entries_unity;
-		int32_t L_10;
-		L_10 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_9, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
-		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_7, (bool)((((int32_t)L_8) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_10, 1))))? 1 : 0), NULL);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_8 = __this->___nextButton;
+		int32_t L_9 = __this->___currentIndex;
+		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_10 = __this->___entries_unity;
+		int32_t L_11;
+		L_11 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_10, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
+		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_8, (bool)((((int32_t)L_9) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_11, 1))))? 1 : 0), NULL);
 	}
 
-IL_0058:
+IL_0064:
 	{
 		return;
 	}
 
-IL_0059:
+IL_0065:
 	{
-		bool L_11 = __this->___isSoundDesignPortfolio;
-		if (!L_11)
+		bool L_12 = __this->___isSoundDesignPortfolio;
+		if (!L_12)
 		{
-			goto IL_0090;
+			goto IL_009c;
 		}
 	}
 	{
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_12 = __this->___nextButton;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_13 = __this->___nextButton;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_13;
-		L_13 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_12, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_13)
+		bool L_14;
+		L_14 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_13, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_14)
 		{
-			goto IL_008f;
+			goto IL_009b;
 		}
 	}
 	{
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_14 = __this->___nextButton;
-		int32_t L_15 = __this->___currentIndex;
-		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_16 = __this->___entries_soundDesign;
-		int32_t L_17;
-		L_17 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_16, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
-		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_14, (bool)((((int32_t)L_15) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_17, 1))))? 1 : 0), NULL);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_15 = __this->___nextButton;
+		int32_t L_16 = __this->___currentIndex;
+		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_17 = __this->___entries_soundDesign;
+		int32_t L_18;
+		L_18 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_17, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
+		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_15, (bool)((((int32_t)L_16) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_18, 1))))? 1 : 0), NULL);
 	}
 
-IL_008f:
+IL_009b:
 	{
 		return;
 	}
 
-IL_0090:
+IL_009c:
 	{
-		bool L_18 = __this->___isPhysicalPortfolio;
-		if (!L_18)
+		bool L_19 = __this->___isPhysicalPortfolio;
+		if (!L_19)
 		{
-			goto IL_00c7;
+			goto IL_00d3;
 		}
 	}
 	{
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_19 = __this->___nextButton;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_20 = __this->___nextButton;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_20;
-		L_20 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_19, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_20)
+		bool L_21;
+		L_21 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_20, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_21)
 		{
-			goto IL_00c6;
+			goto IL_00d2;
 		}
 	}
 	{
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_21 = __this->___nextButton;
-		int32_t L_22 = __this->___currentIndex;
-		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_23 = __this->___entries_physical;
-		int32_t L_24;
-		L_24 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_23, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
-		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_21, (bool)((((int32_t)L_22) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_24, 1))))? 1 : 0), NULL);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_22 = __this->___nextButton;
+		int32_t L_23 = __this->___currentIndex;
+		List_1_t285C3C7E3D561597668C43EFFAEE6E9FB3D3744C* L_24 = __this->___entries_physical;
+		int32_t L_25;
+		L_25 = List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_inline(L_24, List_1_get_Count_m0D3E0B4865843C5AB3C31BFEC9C73FA115D82250_RuntimeMethod_var);
+		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_22, (bool)((((int32_t)L_23) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_25, 1))))? 1 : 0), NULL);
 	}
 
-IL_00c6:
+IL_00d2:
 	{
 		return;
 	}
 
-IL_00c7:
+IL_00d3:
 	{
 		return;
 	}

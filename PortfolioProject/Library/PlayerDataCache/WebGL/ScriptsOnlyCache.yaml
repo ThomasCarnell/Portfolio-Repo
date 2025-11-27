@@ -125,6 +125,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ClipCopy
     methodName: Copy
+  - assembly: Assembly-CSharp
+    fullTypeName: ClipCopy
+    methodName: Copy
   sceneClasses:
     Assets/Scenes/MainScene.unity:
     - Class: 1
@@ -160,81 +163,81 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 5170}
+      Script: {instanceID: 5172}
     - Class: 114
-      Script: {instanceID: 5272}
+      Script: {instanceID: 5276}
     - Class: 114
-      Script: {instanceID: 5420}
+      Script: {instanceID: 5424}
     - Class: 114
-      Script: {instanceID: 5684}
+      Script: {instanceID: 5686}
     - Class: 114
-      Script: {instanceID: 5700}
+      Script: {instanceID: 5702}
     - Class: 114
-      Script: {instanceID: 5758}
+      Script: {instanceID: 5760}
     - Class: 114
-      Script: {instanceID: 5938}
+      Script: {instanceID: 5940}
     - Class: 114
-      Script: {instanceID: 6172}
+      Script: {instanceID: 6174}
     - Class: 114
-      Script: {instanceID: 6194}
+      Script: {instanceID: 6196}
     - Class: 114
-      Script: {instanceID: 6338}
+      Script: {instanceID: 6340}
     - Class: 114
-      Script: {instanceID: 6450}
+      Script: {instanceID: 6452}
     - Class: 114
-      Script: {instanceID: 6544}
+      Script: {instanceID: 6546}
     - Class: 114
-      Script: {instanceID: 6636}
+      Script: {instanceID: 6638}
     - Class: 114
-      Script: {instanceID: 6674}
+      Script: {instanceID: 6676}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6682}
     - Class: 114
-      Script: {instanceID: 6698}
+      Script: {instanceID: 6700}
     - Class: 114
-      Script: {instanceID: 6744}
+      Script: {instanceID: 6746}
     - Class: 114
-      Script: {instanceID: 6850}
+      Script: {instanceID: 6852}
     - Class: 114
-      Script: {instanceID: 6854}
-    - Class: 114
-      Script: {instanceID: 7076}
+      Script: {instanceID: 6856}
     - Class: 114
       Script: {instanceID: 7078}
     - Class: 114
-      Script: {instanceID: 7086}
+      Script: {instanceID: 7080}
     - Class: 114
-      Script: {instanceID: 7124}
+      Script: {instanceID: 7088}
     - Class: 114
-      Script: {instanceID: 7322}
+      Script: {instanceID: 7126}
     - Class: 114
-      Script: {instanceID: 7344}
+      Script: {instanceID: 7324}
     - Class: 114
-      Script: {instanceID: 7412}
+      Script: {instanceID: 7346}
     - Class: 114
-      Script: {instanceID: 7440}
+      Script: {instanceID: 7414}
     - Class: 114
-      Script: {instanceID: 7482}
+      Script: {instanceID: 7442}
     - Class: 114
-      Script: {instanceID: 7494}
+      Script: {instanceID: 7484}
     - Class: 114
-      Script: {instanceID: 7596}
+      Script: {instanceID: 7496}
     - Class: 114
-      Script: {instanceID: 7658}
+      Script: {instanceID: 7598}
     - Class: 114
-      Script: {instanceID: 7744}
+      Script: {instanceID: 7660}
     - Class: 114
-      Script: {instanceID: 7846}
+      Script: {instanceID: 7746}
     - Class: 114
-      Script: {instanceID: 8274}
+      Script: {instanceID: 7848}
     - Class: 114
-      Script: {instanceID: 8328}
+      Script: {instanceID: 8276}
     - Class: 114
-      Script: {instanceID: 8368}
+      Script: {instanceID: 8330}
     - Class: 114
-      Script: {instanceID: 8510}
+      Script: {instanceID: 8370}
     - Class: 114
-      Script: {instanceID: 28720}
+      Script: {instanceID: 8490}
+    - Class: 114
+      Script: {instanceID: 8514}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -540,7 +543,7 @@ ScriptsOnlyBuild:
     className: SafeArea
   - hash:
       serializedVersion: 2
-      Hash: 194c6a9301f10905d24eb4c61f92b2c6
+      Hash: 6541c5641298a673f81beab9c023cc6e
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PortfolioManager
@@ -846,6 +849,12 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 192470ceedf028764e43d212e44cbb18
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ClipCopy
+  - hash:
+      serializedVersion: 2
       Hash: a90f6a00b23520788be7d89ee3b0773d
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -880,12 +889,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
-  - hash:
-      serializedVersion: 2
-      Hash: 192470ceedf028764e43d212e44cbb18
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ClipCopy
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainScene.unity
