@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectName: The Highlands
   description: 'Top-Down physics based brawler for online multiplayer. '
-  roles: 
+  roles: Sound Design, Project Manager
   productionDate: 2023
   thumbnail: {fileID: 0}
   webLink: 

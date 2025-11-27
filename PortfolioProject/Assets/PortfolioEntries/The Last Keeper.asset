@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: The Last Keeper
   m_EditorClassIdentifier: 
   projectName: The Last Keeper
-  description: VR adventure vertical slice.
+  description: 'VR adventure vertical slice.
+
+    With the premise of attemtping
+    to produce a VR walking game, this ITU project was the first to complete a VR
+    game in the course "Game World Design". '
   roles: Project Manager, Sound Designer, Programmer, VA
-  productionDate: 
+  productionDate: 2023
   thumbnail: {fileID: 0}
   webLink: 
   showcaseVideo: {fileID: 0}

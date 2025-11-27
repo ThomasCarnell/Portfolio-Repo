@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: YaY
   m_EditorClassIdentifier: 
   projectName: '"YaY - You Against You"'
-  description: "uiParent \u2192 a VerticalLayoutGroup or GridLayoutGroup under a
-    ScrollView.uiParent \u2192 a VerticalLayoutGroup or GridLayoutGroup under a ScrollView.uiParent
-    \u2192 a VerticalLayoutGroup or GridLayoutGroup under a ScrollView.uiParent \u2192
-    a VerticalLayoutGroup or GridLayoutGroup under a ScrollView."
-  roles: Solo Developer
+  description: "Virtual Reality Horror game built for master thesis in order to test
+    challenges of adaptive games. \r\nMade to be used with Mind Monitor App and the
+    Muse2 EEG headset. \n\n\r\nDo you trust the voice from the speaker? It is also
+    the developer of the game!"
+  roles: Solo Developer - Master Thesis Project
   productionDate: 2024
   thumbnail: {fileID: 0}
   webLink: 

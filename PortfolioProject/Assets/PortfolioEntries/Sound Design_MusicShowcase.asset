@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: Sound Design_MusicShowcase
   m_EditorClassIdentifier: 
   projectName: Adaptive Horror Music Showcase
-  description: Dynamic horror music, based on the players biofeedback
-  roles: 
+  description: 'Dynamic horror music, based on the players biofeedback.
+
+    I produced
+    and composed the music, as well as programmed the Wwise project.'
+  roles: Composer, Programmer
   productionDate: 2023
   thumbnail: {fileID: 0}
   webLink: 
   showcaseVideo: {fileID: 0}
   projectPrefab: {fileID: 0}
-  videoURL: 
+  videoURL: https://thomascarnell.github.io/Portfolio-Repo/Vids/AdaptiveHorrorMusicShowcase.mp4
   tags: []

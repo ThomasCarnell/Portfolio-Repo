@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Sound Design
   m_EditorClassIdentifier: 
   projectName: Sound Design Reel
-  description: SOUND DESSSSSSIIIIGINGNNGN
+  description: Sound Design showreel, from various projects.
   roles: 
-  productionDate: 2023
+  productionDate: 2019-2024
   thumbnail: {fileID: 0}
   webLink: 
   showcaseVideo: {fileID: 0}
