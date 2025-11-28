@@ -8,6 +8,7 @@
 		<type fullname="FPSCounter" preserve="nothing"/>
 		<type fullname="GameManager" preserve="nothing"/>
 		<type fullname="NoteScript" preserve="nothing"/>
+		<type fullname="OpenURLButton" preserve="nothing"/>
 		<type fullname="PortfolioDisplay" preserve="nothing"/>
 		<type fullname="PortfolioEntry" preserve="nothing"/>
 		<type fullname="PortfolioManager" preserve="nothing"/>

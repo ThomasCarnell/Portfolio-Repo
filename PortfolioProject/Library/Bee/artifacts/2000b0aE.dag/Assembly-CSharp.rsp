@@ -372,6 +372,7 @@
 "Assets/ButtonResetAnimation.cs"
 "Assets/ClipBoardCopyWebGL.cs"
 "Assets/ClipCopy.cs"
+"Assets/CVUrlOpener.cs"
 "Assets/FPSShow.cs"
 "Assets/GameManager.cs"
 "Assets/NewPortfolioEntry.cs"

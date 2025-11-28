@@ -26,6 +26,8 @@ extern void ClipBoardCopyWebGL_Copy_mC4C7A6B37F6E3A73D5EFD8B943BC418A7E16F001 (v
 extern void ClipCopy_Copy_mD94F7584F52652BA35DBE11A459BEF2294436192 (void);
 extern void ClipCopy_SetText_m634A3A49583702AF2B7771C6FEF2A4EB516F1557 (void);
 extern void ClipCopy__ctor_mF3B1EC28E1D4DB878A04A6F05FC93DEC9CB7BFED (void);
+extern void OpenURLButton_OpenURL_m898ACCC0A2087D28AEDAAD8344568F3EB35AD158 (void);
+extern void OpenURLButton__ctor_m568C2EE231E279556E64BEA0F2328CEACA450849 (void);
 extern void FPSCounter_Update_m8FD51CDD4FC6103E47194F4D9848A7D325004E30 (void);
 extern void FPSCounter_OnGUI_mE235C1459C860E75FB2AC0B20F74E82AD63B465E (void);
 extern void FPSCounter__ctor_m4814EB8CF15E05040C15D4F6B057357EC68B7268 (void);
@@ -96,7 +98,7 @@ extern void WebGLVideoFix_OnVideoPrepared_m56E51C9DC3ED774487BD923D38F4149F4AE23
 extern void WebGLVideoFix__ctor_m410A590C2DF960694DFE3C0B7BF0037D6E02843F (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[89] = 
+static Il2CppMethodPointer s_methodPointers[91] = 
 {
 	ButtonClickScript_Start_mBC7677DEA5E47B79380FE28DF2E3B19D4DDB1A3A,
 	ButtonClickScript_Update_m442AD3CA61D291729C795F487A524D267142E2E2,
@@ -117,6 +119,8 @@ static Il2CppMethodPointer s_methodPointers[89] =
 	ClipCopy_Copy_mD94F7584F52652BA35DBE11A459BEF2294436192,
 	ClipCopy_SetText_m634A3A49583702AF2B7771C6FEF2A4EB516F1557,
 	ClipCopy__ctor_mF3B1EC28E1D4DB878A04A6F05FC93DEC9CB7BFED,
+	OpenURLButton_OpenURL_m898ACCC0A2087D28AEDAAD8344568F3EB35AD158,
+	OpenURLButton__ctor_m568C2EE231E279556E64BEA0F2328CEACA450849,
 	FPSCounter_Update_m8FD51CDD4FC6103E47194F4D9848A7D325004E30,
 	FPSCounter_OnGUI_mE235C1459C860E75FB2AC0B20F74E82AD63B465E,
 	FPSCounter__ctor_m4814EB8CF15E05040C15D4F6B057357EC68B7268,
@@ -188,7 +192,7 @@ static Il2CppMethodPointer s_methodPointers[89] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[89] = 
+static const int32_t s_InvokerIndices[91] = 
 {
 	6493,
 	6493,
@@ -208,6 +212,8 @@ static const int32_t s_InvokerIndices[89] =
 	8797,
 	6493,
 	5179,
+	6493,
+	6493,
 	6493,
 	6493,
 	6493,
@@ -284,7 +290,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	89,
+	91,
 	s_methodPointers,
 	0,
 	NULL,

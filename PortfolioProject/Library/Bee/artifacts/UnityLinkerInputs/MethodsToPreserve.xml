@@ -4,5 +4,8 @@
 			<method name="Copy"/>
 			<method name="Copy"/>
 		</type>
+		<type fullname="OpenURLButton">
+			<method name="OpenURL"/>
+		</type>
 	</assembly>
 </linker>
