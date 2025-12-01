@@ -1019,7 +1019,7 @@ MonoBehaviour:
   targetRawImage: {fileID: 0}
   targetImage: {fileID: 0}
   targetTextMesh: {fileID: 0}
-  fadeDuration: 1
+  fadeDuration: 0.5
   fadeCurve:
     serializedVersion: 2
     m_Curve:
@@ -1085,7 +1085,7 @@ MonoBehaviour:
   selectionTarget: {fileID: 0}
   delay: 1
   delay2: 2
-  delay3: 3
+  delay3: 2
   anim1:
   - {fileID: 1811591035}
   anim2:
@@ -2130,20 +2130,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6185634269837010249}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1290559847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1290559842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b33366dad6f162446a856652fdef2d30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  offset: {x: 0, y: 1, z: 0}
 --- !u!1 &1335754754
 GameObject:
   m_ObjectHideFlags: 0
@@ -4044,7 +4030,7 @@ MonoBehaviour:
   targetRawImage: {fileID: 0}
   targetImage: {fileID: 0}
   targetTextMesh: {fileID: 0}
-  fadeDuration: 1
+  fadeDuration: 0.5
   fadeCurve:
     serializedVersion: 2
     m_Curve:
@@ -4069,7 +4055,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  musingImage: 0
+  musingImage: 1
 --- !u!1 &1907407574
 GameObject:
   m_ObjectHideFlags: 0
@@ -4759,7 +4745,7 @@ MonoBehaviour:
   targetRawImage: {fileID: 0}
   targetImage: {fileID: 0}
   targetTextMesh: {fileID: 0}
-  fadeDuration: 1
+  fadeDuration: 0.5
   fadeCurve:
     serializedVersion: 2
     m_Curve:
@@ -4784,7 +4770,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  musingImage: 0
+  musingImage: 1
 --- !u!1 &2079346809
 GameObject:
   m_ObjectHideFlags: 0
@@ -5241,21 +5227,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 248662012945642882, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 248662012945642882, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 248662012945642882, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 248662012945642882, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: 8
       objectReference: {fileID: 0}
@@ -5311,49 +5282,14 @@ PrefabInstance:
       objectReference: {fileID: 28314914}
     - target: {fileID: 829006257735540232, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
         type: 3}
-      propertyPath: speed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 829006257735540232, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
-        type: 3}
-      propertyPath: title
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 829006257735540232, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 829006257735540232, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
-        type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 963194227}
     - target: {fileID: 829006257735540232, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
         type: 3}
-      propertyPath: buttonTexts
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 829006257735540232, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
-        type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 817703065}
-    - target: {fileID: 829006257735540232, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
-        type: 3}
-      propertyPath: unityButton
-      value: 
-      objectReference: {fileID: 1290559842}
-    - target: {fileID: 829006257735540232, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
-        type: 3}
-      propertyPath: textTransform
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 829006257735540232, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
-        type: 3}
-      propertyPath: unityPortfolio
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 829006257735540232, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
         type: 3}
       propertyPath: soundDesignButton
@@ -5366,11 +5302,6 @@ PrefabInstance:
       objectReference: {fileID: 1687888010}
     - target: {fileID: 829006257735540232, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
         type: 3}
-      propertyPath: buttonResetAnimation
-      value: 
-      objectReference: {fileID: 1176554428}
-    - target: {fileID: 829006257735540232, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
-        type: 3}
       propertyPath: returnToMainMenuButton
       value: 
       objectReference: {fileID: 1864346977}
@@ -5379,19 +5310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UnityPortfolioButton
       objectReference: {fileID: 0}
-    - target: {fileID: 8316109997474050889, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8316109997474050889, guid: 9cf42d571f03e8f4abcdcbd0b7de028c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1290559847}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cf42d571f03e8f4abcdcbd0b7de028c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
