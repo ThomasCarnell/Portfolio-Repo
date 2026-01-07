@@ -13,7 +13,16 @@ MonoBehaviour:
   m_Name: Sound Design
   m_EditorClassIdentifier: 
   projectName: Sound Design Reel
-  description: Sound Design showreel, from various projects.
+  description: 'Sound Design showreel, from various projects.
+
+
+    My primary DAW''s
+    are Logic and Reaper
+
+
+    I use FMOD2 and WWise for implementation.'
+  addText: 
+  addText2: 
   roles: 
   productionDate: 2019-2024
   thumbnail: {fileID: 0}

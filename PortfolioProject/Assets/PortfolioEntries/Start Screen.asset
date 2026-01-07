@@ -13,17 +13,79 @@ MonoBehaviour:
   m_Name: Start Screen
   m_EditorClassIdentifier: 
   projectName: Quick Bio
-  description: "I'm Thomas, Game Dev with a background in sound design and academia!
-    I live near Copenhagen and I love building interactive media, using Unity where
-    I have experience with 2D, 3D, VR, Mobile & Web development. I know the importance
-    of clean C# code and playtesting, as well as good project management. \n\nIn
-    2024 I finished my Masters degree in Game Design at ITU, Copenhagen.\n\nI'm open
-    for work and ideas, so please don't hesitate to get in touch!"
+  description: "I am Thomas, a game developer with a background in sound design and
+    academic research, based near Copenhagen. I work primarily with Unity and have
+    experience developing interactive applications across 2D, 3D, VR, mobile, and
+    web platforms. My approach emphasizes clean, maintainable C# code, structured
+    playtesting, and reliable project management.\n\nI completed my Master\u2019s
+    degree in Game Design at IT University of Copenhagen in 2024. I am currently
+    open to new opportunities and collaborations and welcome conversations about
+    potential projects or roles."
+  addText: '- Unity 3D, 2D, VR, WebGL
+
+    - Online Multiplayer Development
+
+    -
+    Component-Based Workflow
+
+    - Git, gitLab, gitLFS
+
+    - Github, Fork, SourceControl
+
+    -
+    Plastic
+
+
+    - C#, Object-Oriented Programming
+
+
+    - FMOD
+
+    - WWise
+
+    -
+    Implementation C#
+
+    - Unity Audio
+
+    - Logic Pro x, Reaper
+
+
+'
+  addText2: '- Discord, Slack, Teams, Zoom
+
+    - Notion, Trello, Miroboard
+
+    -
+    Google Suite
+
+
+    - Agile / Iterative Development
+
+    - Cross-Disciplinary
+    Collaboration
+
+    - Production Pipelines
+
+    - Prototyping & Rapid Iteration
+
+    -
+    Debugging & Performance Optimization
+
+
+
+
+    ...and more! Interested?
+
+    Throw
+    me a message on LinkedIn or by mail!
+
+'
   roles: Games, XR & Sound Design
   productionDate: +5 Years Broad Experience
   thumbnail: {fileID: 0}
-  webLink: Carcompose@gmail.com
+  webLink: 
   showcaseVideo: {fileID: 32900000, guid: 88f0f0aeb09fca14eaccfdbd802689fc, type: 3}
   projectPrefab: {fileID: 0}
-  videoURL: https://thomascarnell.github.io/Portfolio-Repo/Vids/FrontPageMovie.mp4
+  videoURL: 
   tags: []

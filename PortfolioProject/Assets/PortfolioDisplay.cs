@@ -9,6 +9,8 @@ public class PortfolioDisplay : MonoBehaviour
     [SerializeField] private TMP_Text dateText;
     [SerializeField] private TMP_Text roleText;
     [SerializeField] private TMP_Text descriptionText;
+    [SerializeField] private TMP_Text addText;
+    [SerializeField] private TMP_Text addText2;
     [SerializeField] private TMP_Text webLink;
     [SerializeField] private GameObject copyButton;
     [Header("Video Media")]
@@ -28,6 +30,8 @@ public class PortfolioDisplay : MonoBehaviour
         roleText.text = entry.roles;
         descriptionText.text = entry.description;
         webLink.text = entry.webLink;
+        addText.text = entry.addText;
+        addText2.text = entry.addText2;
         if(webLink.text == "Carcompose@gmail.com")
         {
             copyButton.SetActive(true);
