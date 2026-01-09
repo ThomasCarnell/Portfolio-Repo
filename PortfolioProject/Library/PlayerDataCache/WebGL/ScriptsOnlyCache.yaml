@@ -130,6 +130,15 @@ ScriptsOnlyBuild:
     fullTypeName: ClipCopy
     methodName: Copy
   - assembly: Assembly-CSharp
+    fullTypeName: ClipCopy
+    methodName: Copy
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: OpenURLButton
+    methodName: OpenURL
+  - assembly: Assembly-CSharp
     fullTypeName: OpenURLButton
     methodName: OpenURL
   sceneClasses:
@@ -543,7 +552,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 8bb994f55f64e9664f842c03239c5d94
+      Hash: 5093040332defabe390c1c451ea8b19d
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PortfolioDisplay
@@ -843,7 +852,7 @@ ScriptsOnlyBuild:
     className: Bloom
   - hash:
       serializedVersion: 2
-      Hash: 77203aef05b76a9941b3dd874ec22971
+      Hash: 340495600a4d5b4681c470e278f802a5
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PortfolioEntry

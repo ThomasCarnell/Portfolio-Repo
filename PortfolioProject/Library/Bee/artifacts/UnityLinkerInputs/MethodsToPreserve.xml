@@ -3,9 +3,16 @@
 		<type fullname="ClipCopy">
 			<method name="Copy"/>
 			<method name="Copy"/>
+			<method name="Copy"/>
 		</type>
 		<type fullname="OpenURLButton">
 			<method name="OpenURL"/>
+			<method name="OpenURL"/>
+		</type>
+	</assembly>
+	<assembly fullname="Unity.TextMeshPro" ignoreIfMissing="1">
+		<type fullname="TMPro.TMP_Text">
+			<method name="set_text"/>
 		</type>
 	</assembly>
 </linker>

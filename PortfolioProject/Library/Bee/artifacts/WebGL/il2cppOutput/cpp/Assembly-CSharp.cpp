@@ -1196,6 +1196,8 @@ struct PortfolioEntry_t774C6C49674F5B30B070EE2E33C533D18599B0E7  : public Script
 {
 	String_t* ___projectName;
 	String_t* ___description;
+	String_t* ___addText;
+	String_t* ___addText2;
 	String_t* ___roles;
 	String_t* ___productionDate;
 	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___thumbnail;
@@ -1755,6 +1757,8 @@ struct PortfolioDisplay_t149184D6A243DFDC31BC1946B3FA07CB1BE7A8A6  : public Mono
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___dateText;
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___roleText;
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___descriptionText;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___addText;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___addText2;
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___webLink;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___copyButton;
 	VideoPlayer_t48EA4A8117B822BC59590150DED9AD46C62F65D3* ___videoPlayer;
@@ -4453,49 +4457,57 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PortfolioDisplay_SetEntry_mB810A7EF45879
 		PortfolioEntry_t774C6C49674F5B30B070EE2E33C533D18599B0E7* L_14 = ___0_entry;
 		String_t* L_15 = L_14->___webLink;
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_13, L_15);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_16 = __this->___webLink;
-		String_t* L_17;
-		L_17 = VirtualFuncInvoker0< String_t* >::Invoke(65, L_16);
-		bool L_18;
-		L_18 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_17, _stringLiteral980C1DF609CF2FC3A1BD661F9CF1ACB4FD2B8A9D, NULL);
-		if (!L_18)
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_16 = __this->___addText;
+		PortfolioEntry_t774C6C49674F5B30B070EE2E33C533D18599B0E7* L_17 = ___0_entry;
+		String_t* L_18 = L_17->___addText;
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_16, L_18);
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_19 = __this->___addText2;
+		PortfolioEntry_t774C6C49674F5B30B070EE2E33C533D18599B0E7* L_20 = ___0_entry;
+		String_t* L_21 = L_20->___addText2;
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_19, L_21);
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_22 = __this->___webLink;
+		String_t* L_23;
+		L_23 = VirtualFuncInvoker0< String_t* >::Invoke(65, L_22);
+		bool L_24;
+		L_24 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_23, _stringLiteral980C1DF609CF2FC3A1BD661F9CF1ACB4FD2B8A9D, NULL);
+		if (!L_24)
 		{
-			goto IL_0081;
+			goto IL_00a3;
 		}
 	}
 	{
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = __this->___copyButton;
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)1, NULL);
-		goto IL_008d;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25 = __this->___copyButton;
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_25, (bool)1, NULL);
+		goto IL_00af;
 	}
 
-IL_0081:
+IL_00a3:
 	{
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = __this->___copyButton;
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_20, (bool)0, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = __this->___copyButton;
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_26, (bool)0, NULL);
 	}
 
-IL_008d:
+IL_00af:
 	{
-		PortfolioEntry_t774C6C49674F5B30B070EE2E33C533D18599B0E7* L_21 = ___0_entry;
-		String_t* L_22 = L_21->___videoURL;
-		bool L_23;
-		L_23 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_22, NULL);
-		if (L_23)
+		PortfolioEntry_t774C6C49674F5B30B070EE2E33C533D18599B0E7* L_27 = ___0_entry;
+		String_t* L_28 = L_27->___videoURL;
+		bool L_29;
+		L_29 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_28, NULL);
+		if (L_29)
 		{
-			goto IL_00b2;
+			goto IL_00d4;
 		}
 	}
 	{
-		PortfolioEntry_t774C6C49674F5B30B070EE2E33C533D18599B0E7* L_24 = ___0_entry;
-		String_t* L_25 = L_24->___videoURL;
-		__this->___videoURL = L_25;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___videoURL), (void*)L_25);
-		String_t* L_26 = __this->___videoURL;
-		PortfolioDisplay_SetupVideo_m439F851858B0CDB3403922198BDB167509D30EE5(__this, L_26, NULL);
+		PortfolioEntry_t774C6C49674F5B30B070EE2E33C533D18599B0E7* L_30 = ___0_entry;
+		String_t* L_31 = L_30->___videoURL;
+		__this->___videoURL = L_31;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___videoURL), (void*)L_31);
+		String_t* L_32 = __this->___videoURL;
+		PortfolioDisplay_SetupVideo_m439F851858B0CDB3403922198BDB167509D30EE5(__this, L_32, NULL);
 	}
 
-IL_00b2:
+IL_00d4:
 	{
 		return;
 	}
