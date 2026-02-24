@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Video;
+using System;
 
 public class PortfolioDisplay : MonoBehaviour
 {
@@ -16,7 +17,11 @@ public class PortfolioDisplay : MonoBehaviour
     [Header("Video Media")]
     [SerializeField] private VideoPlayer videoPlayer;
     [SerializeField] private RawImage videoDisplay;
-        private string videoURL;
+    private string videoURL;
+    private bool videoClicked = false;
+    private bool isPrepared = false;
+  
+    [SerializeField] private GameObject playOverlay;
 
     //[SerializeField] private Image thumbnailImage;
 
@@ -44,7 +49,7 @@ public class PortfolioDisplay : MonoBehaviour
             if (!string.IsNullOrEmpty(entry.videoURL))
         {
             videoURL = entry.videoURL;
-            SetupVideo(videoURL);
+            //SetupVideo(videoURL);
         }
 
         // Video
@@ -69,6 +74,7 @@ public class PortfolioDisplay : MonoBehaviour
         // }
 
     }
+    
         private void SetupVideo(string url)
     {
         if (videoPlayer == null) return;
@@ -77,18 +83,31 @@ public class PortfolioDisplay : MonoBehaviour
         videoPlayer.url = url;
         videoPlayer.Prepare();
         videoPlayer.prepareCompleted += OnVideoPrepared;
-    }
 
-    private void OnVideoPrepared(VideoPlayer vp)
+            // Start checking for video end
+            if (isPrepared && videoPlayer.frame >= (long)videoPlayer.frameCount - 1)
+        {
+            videoPlayer.frame = 0;
+            videoPlayer.Play();
+            if (playOverlay != null) playOverlay.SetActive(false);
+            return;
+        }
+    }
+    
+
+    public void OnVideoPrepared(VideoPlayer vp)
     {
         vp.Play();
-
-             // Resize RawImage to match RenderTexture size
+        // Resize RawImage to match RenderTexture size
         float aspect = (float)vp.texture.width / vp.texture.height;
         RectTransform rt = videoDisplay.rectTransform;
         rt.sizeDelta = new Vector2(rt.sizeDelta.y * aspect, rt.sizeDelta.y);
+        videoClicked = true;
     }
-
+    public void PlayVideoNow()
+    {
+      SetupVideo(videoURL);
+    }
     void OnEnable()
     {
         GetComponentInChildren<TMPGroupFader>().FadeGroupIn();

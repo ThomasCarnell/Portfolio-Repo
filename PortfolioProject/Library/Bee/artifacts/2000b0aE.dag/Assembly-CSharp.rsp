@@ -378,6 +378,7 @@
 "Assets/NewPortfolioEntry.cs"
 "Assets/NoteScript.cs"
 "Assets/PointAttObj.cs"
+"Assets/PortflioManagerScroll.cs"
 "Assets/PortfolioDisplay.cs"
 "Assets/PortfolioManager.cs"
 "Assets/Rotate.cs"
@@ -385,6 +386,8 @@
 "Assets/TextAllignment.cs"
 "Assets/TextFadeInScript.cs"
 "Assets/TMPFader.cs"
+"Assets/VideoAutoPause.cs"
+"Assets/VideoRenderTextureSetup.cs"
 "Assets/WebGLFix.cs"
 -langversion:9.0
 /deterministic
