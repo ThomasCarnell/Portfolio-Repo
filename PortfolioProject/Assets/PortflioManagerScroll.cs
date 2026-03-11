@@ -13,6 +13,8 @@ public class PortfolioManagerScroll : MonoBehaviour
     [SerializeField] private List<PortfolioEntry> entries_unity;
     [SerializeField] private List<PortfolioEntry> entries_soundDesign;
     [SerializeField] private List<PortfolioEntry> entries_physical;
+        [SerializeField] private List<PortfolioEntry> entries_vr;
+
 
     void Start()
     {
@@ -36,12 +38,16 @@ public class PortfolioManagerScroll : MonoBehaviour
     {
         ShowEntries(entries_physical);
     }
+    public void ShowVRPortfolio()
+    {
+        ShowEntries(entries_vr);
+    }
 
     // ---------- Core ----------
 
     public void ShowEntries(List<PortfolioEntry> entrySet)
     {
-        ClearPortfolio();
+        ClearPortfolioScroll();
 
         if (entrySet == null || entrySet.Count == 0)
         {
@@ -63,7 +69,7 @@ public class PortfolioManagerScroll : MonoBehaviour
         Debug.Log($"Displayed {entrySet.Count} entries.");
     }
 
-    private void ClearPortfolio()
+    public void ClearPortfolioScroll()
     {
         foreach (var obj in spawnedEntries)
             if (obj != null)
