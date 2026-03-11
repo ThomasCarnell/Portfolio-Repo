@@ -17,13 +17,12 @@ public class PortfolioDisplay : MonoBehaviour
     [Header("Video Media")]
     [SerializeField] private VideoPlayer videoPlayer;
     [SerializeField] private RawImage videoDisplay;
+    [SerializeField] private Button playVideoButton;
     private string videoURL;
     private bool videoClicked = false;
     private bool isPrepared = false;
   
     [SerializeField] private GameObject playOverlay;
-
-    //[SerializeField] private Image thumbnailImage;
 
     private PortfolioEntry currentEntry;
 
@@ -37,6 +36,7 @@ public class PortfolioDisplay : MonoBehaviour
         webLink.text = entry.webLink;
         addText.text = entry.addText;
         addText2.text = entry.addText2;
+
         if(webLink.text == "Carcompose@gmail.com")
         {
             copyButton.SetActive(true);
@@ -49,36 +49,13 @@ public class PortfolioDisplay : MonoBehaviour
             if (!string.IsNullOrEmpty(entry.videoURL))
         {
             videoURL = entry.videoURL;
-            //SetupVideo(videoURL);
+            playVideoButton.gameObject.SetActive(true);
         }
-
-        // Video
-        // if (entry.showcaseVideo != null)
-        // {
-        //     VideoPlayer.clip = entry.showcaseVideo;
-
-        //     // Bind output texture
-        //     if (videoDisplay != null)
-        //     {
-        //         VideoPlayer.renderMode = VideoRenderMode.RenderTexture;
-        //         videoDisplay.texture = VideoPlayer.targetTexture;
-        //     }
-
-        //     VideoPlayer.Stop();
-        //     VideoPlayer.Play();
-        // }
-        // else
-        // {
-        //     // If no video, ensure player is off
-        //     if (VideoPlayer) VideoPlayer.Stop();
-        // }
-
     }
     
         private void SetupVideo(string url)
     {
         if (videoPlayer == null) return;
-
         videoPlayer.source = VideoSource.Url;
         videoPlayer.url = url;
         videoPlayer.Prepare();

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 299f02cab8b437643be53cf2058c1adf, type: 3}
+  m_Name: ToyStart
+  m_EditorClassIdentifier: 
+  projectName: Toys/Physical
+  description: "Not everything needs to be a game. Toys are where I experiment \u2014
+    C++, Java, physical prototypes, and ideas that exist just to be played with.
+    This is the scrappier, more curious corner of my work, and honestly one of my
+    favorites.\n\nScroll Down For Content"
+  addText: 
+  addText2: 
+  roles: 
+  productionDate: 
+  thumbnail: {fileID: 0}
+  webLink: 
+  showcaseVideo: {fileID: 32900000, guid: 88f0f0aeb09fca14eaccfdbd802689fc, type: 3}
+  projectPrefab: {fileID: 0}
+  videoURL: 
+  tags: []

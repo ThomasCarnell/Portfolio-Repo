@@ -48,9 +48,19 @@ extern void PortfolioEntry__ctor_mE289F0AF06EF5DEF641B4C528F34BAD2F1F2D049 (void
 extern void NoteScript__ctor_m62F49997804F92232CE4E6146A7659847CD29927 (void);
 extern void PointAttObj_Update_m89D0F8FE8517C44E722911C898A2C7558CEEBD7A (void);
 extern void PointAttObj__ctor_m11EAF07E934B89533EEC69AD2C661048A3833CDA (void);
+extern void PortfolioManagerScroll_Start_mB6B6DE2F1A8033A839AF9D74F9D5543A72B5BCBD (void);
+extern void PortfolioManagerScroll_ShowUnityPortfolio_m18692FA6BFDE776D11FA28B5BA492ECEA9FA245F (void);
+extern void PortfolioManagerScroll_ShowSoundDesignPortfolio_m0C8C4AF0D3034576297AB78BE817C216C6AA6EBB (void);
+extern void PortfolioManagerScroll_ShowPhysicalPortfolio_m1872FCD27FF6BA6B8FFD4B4D4F0D6BB8E7A30A04 (void);
+extern void PortfolioManagerScroll_ShowVRPortfolio_m74DC0C3FF4CF1BB1A75A9BFCE3068F15DF2F68D3 (void);
+extern void PortfolioManagerScroll_ShowAboutPortfolio_m0623E40D8819A1FD2A70278D4E9411FB46E4EA78 (void);
+extern void PortfolioManagerScroll_ShowEntries_m5D032DF589A5AF21720367A570F86D6B2EF35F22 (void);
+extern void PortfolioManagerScroll_ClearPortfolioScroll_m7AE6B9B5DDB18008FCB6FCAC23C916BF6B93FC9C (void);
+extern void PortfolioManagerScroll__ctor_m3BA35502F167BDB2DA2BD3C79BC871161EBA4A12 (void);
 extern void PortfolioDisplay_SetEntry_mB810A7EF458797ECBF65053B2599799C81401A0B (void);
 extern void PortfolioDisplay_SetupVideo_m439F851858B0CDB3403922198BDB167509D30EE5 (void);
 extern void PortfolioDisplay_OnVideoPrepared_m843F526638147CBB8FA15B276307D31660DF311B (void);
+extern void PortfolioDisplay_PlayVideoNow_m6603E4023BFE94E590880BCE7CAABC6CC0AFD24C (void);
 extern void PortfolioDisplay_OnEnable_m385DD02E504A7458C44129C684FE8CF925B9ABFA (void);
 extern void PortfolioDisplay_OnDisable_m67D7BA24982085A41E0FE6910B5909065724AD09 (void);
 extern void PortfolioDisplay_OpenWebLink_m2CE5F30B63AB26F6757E559E2AA536A4779056DB (void);
@@ -93,12 +103,21 @@ extern void U3CFadeGroupU3Ed__5_MoveNext_mC8A79265935BEF33293F79C52EF69F8A99009B
 extern void U3CFadeGroupU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8635DFB2EF0E406015E5F4EFED4FF12212CE302A (void);
 extern void U3CFadeGroupU3Ed__5_System_Collections_IEnumerator_Reset_m2E9A4666FD9F259993E2B20AA49BF3822A1282B0 (void);
 extern void U3CFadeGroupU3Ed__5_System_Collections_IEnumerator_get_Current_m10DA777AA804A030CE0116630884224B0DB8BF52 (void);
+extern void VideoAutoPause_Start_m01D9FAE58AFC4A749CAB55B7B95A93A0D1E20E1B (void);
+extern void VideoAutoPause_Update_m9B331A26254C1EE3AD7A32E9C21A40CB419BBC8B (void);
+extern void VideoAutoPause_buttonPause_mCFFEEC48E855E465D17E3574B3C33E847E0E3E94 (void);
+extern void VideoAutoPause_IsVisibleInViewport_m0485A3C56E10044F26D515498A6DE2CB9E33D32E (void);
+extern void VideoAutoPause__ctor_m389D9730636CDF9180E628661D3D521C171BFE0F (void);
+extern void VideoRenderTextureSetup_Awake_mEB06C02F56B4F0A6093C0EF0B648B1A0A64EA449 (void);
+extern void VideoRenderTextureSetup_CreateRenderTexture_mFB0B945A461451F94FEB94DEEC4EA578F71414DC (void);
+extern void VideoRenderTextureSetup_OnDestroy_m6D027317BFF22145F048FFCA3D4CF83EED3B1A86 (void);
+extern void VideoRenderTextureSetup__ctor_m60642D47F20DF9ECAAD4A0792CEA6380110971CE (void);
 extern void WebGLVideoFix_Start_m6B5AC9671BE6132143B364EC760A128ED175520F (void);
 extern void WebGLVideoFix_OnVideoPrepared_m56E51C9DC3ED774487BD923D38F4149F4AE23F5F (void);
 extern void WebGLVideoFix__ctor_m410A590C2DF960694DFE3C0B7BF0037D6E02843F (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[91] = 
+static Il2CppMethodPointer s_methodPointers[110] = 
 {
 	ButtonClickScript_Start_mBC7677DEA5E47B79380FE28DF2E3B19D4DDB1A3A,
 	ButtonClickScript_Update_m442AD3CA61D291729C795F487A524D267142E2E2,
@@ -141,9 +160,19 @@ static Il2CppMethodPointer s_methodPointers[91] =
 	NoteScript__ctor_m62F49997804F92232CE4E6146A7659847CD29927,
 	PointAttObj_Update_m89D0F8FE8517C44E722911C898A2C7558CEEBD7A,
 	PointAttObj__ctor_m11EAF07E934B89533EEC69AD2C661048A3833CDA,
+	PortfolioManagerScroll_Start_mB6B6DE2F1A8033A839AF9D74F9D5543A72B5BCBD,
+	PortfolioManagerScroll_ShowUnityPortfolio_m18692FA6BFDE776D11FA28B5BA492ECEA9FA245F,
+	PortfolioManagerScroll_ShowSoundDesignPortfolio_m0C8C4AF0D3034576297AB78BE817C216C6AA6EBB,
+	PortfolioManagerScroll_ShowPhysicalPortfolio_m1872FCD27FF6BA6B8FFD4B4D4F0D6BB8E7A30A04,
+	PortfolioManagerScroll_ShowVRPortfolio_m74DC0C3FF4CF1BB1A75A9BFCE3068F15DF2F68D3,
+	PortfolioManagerScroll_ShowAboutPortfolio_m0623E40D8819A1FD2A70278D4E9411FB46E4EA78,
+	PortfolioManagerScroll_ShowEntries_m5D032DF589A5AF21720367A570F86D6B2EF35F22,
+	PortfolioManagerScroll_ClearPortfolioScroll_m7AE6B9B5DDB18008FCB6FCAC23C916BF6B93FC9C,
+	PortfolioManagerScroll__ctor_m3BA35502F167BDB2DA2BD3C79BC871161EBA4A12,
 	PortfolioDisplay_SetEntry_mB810A7EF458797ECBF65053B2599799C81401A0B,
 	PortfolioDisplay_SetupVideo_m439F851858B0CDB3403922198BDB167509D30EE5,
 	PortfolioDisplay_OnVideoPrepared_m843F526638147CBB8FA15B276307D31660DF311B,
+	PortfolioDisplay_PlayVideoNow_m6603E4023BFE94E590880BCE7CAABC6CC0AFD24C,
 	PortfolioDisplay_OnEnable_m385DD02E504A7458C44129C684FE8CF925B9ABFA,
 	PortfolioDisplay_OnDisable_m67D7BA24982085A41E0FE6910B5909065724AD09,
 	PortfolioDisplay_OpenWebLink_m2CE5F30B63AB26F6757E559E2AA536A4779056DB,
@@ -186,13 +215,22 @@ static Il2CppMethodPointer s_methodPointers[91] =
 	U3CFadeGroupU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8635DFB2EF0E406015E5F4EFED4FF12212CE302A,
 	U3CFadeGroupU3Ed__5_System_Collections_IEnumerator_Reset_m2E9A4666FD9F259993E2B20AA49BF3822A1282B0,
 	U3CFadeGroupU3Ed__5_System_Collections_IEnumerator_get_Current_m10DA777AA804A030CE0116630884224B0DB8BF52,
+	VideoAutoPause_Start_m01D9FAE58AFC4A749CAB55B7B95A93A0D1E20E1B,
+	VideoAutoPause_Update_m9B331A26254C1EE3AD7A32E9C21A40CB419BBC8B,
+	VideoAutoPause_buttonPause_mCFFEEC48E855E465D17E3574B3C33E847E0E3E94,
+	VideoAutoPause_IsVisibleInViewport_m0485A3C56E10044F26D515498A6DE2CB9E33D32E,
+	VideoAutoPause__ctor_m389D9730636CDF9180E628661D3D521C171BFE0F,
+	VideoRenderTextureSetup_Awake_mEB06C02F56B4F0A6093C0EF0B648B1A0A64EA449,
+	VideoRenderTextureSetup_CreateRenderTexture_mFB0B945A461451F94FEB94DEEC4EA578F71414DC,
+	VideoRenderTextureSetup_OnDestroy_m6D027317BFF22145F048FFCA3D4CF83EED3B1A86,
+	VideoRenderTextureSetup__ctor_m60642D47F20DF9ECAAD4A0792CEA6380110971CE,
 	WebGLVideoFix_Start_m6B5AC9671BE6132143B364EC760A128ED175520F,
 	WebGLVideoFix_OnVideoPrepared_m56E51C9DC3ED774487BD923D38F4149F4AE23F5F,
 	WebGLVideoFix__ctor_m410A590C2DF960694DFE3C0B7BF0037D6E02843F,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[91] = 
+static const int32_t s_InvokerIndices[110] = 
 {
 	6493,
 	6493,
@@ -208,8 +246,8 @@ static const int32_t s_InvokerIndices[91] =
 	2003,
 	4491,
 	6493,
-	8797,
-	8797,
+	8799,
+	8799,
 	6493,
 	5179,
 	6493,
@@ -235,9 +273,19 @@ static const int32_t s_InvokerIndices[91] =
 	6493,
 	6493,
 	6493,
+	6493,
+	6493,
+	6493,
+	6493,
+	6493,
+	6493,
+	5179,
+	6493,
+	6493,
 	5179,
 	5179,
 	5179,
+	6493,
 	6493,
 	6493,
 	6493,
@@ -281,16 +329,25 @@ static const int32_t s_InvokerIndices[91] =
 	6493,
 	6375,
 	6493,
+	6493,
+	6493,
+	6265,
+	6493,
+	6493,
+	6493,
+	6493,
+	6493,
+	6493,
 	5179,
 	6493,
-	9012,
+	9014,
 	6493,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	91,
+	110,
 	s_methodPointers,
 	0,
 	NULL,

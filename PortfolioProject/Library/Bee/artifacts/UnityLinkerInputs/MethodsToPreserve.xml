@@ -9,10 +9,45 @@
 			<method name="OpenURL"/>
 			<method name="OpenURL"/>
 		</type>
+		<type fullname="PortfolioDisplay">
+			<method name="PlayVideoNow"/>
+			<method name="PlayVideoNow"/>
+		</type>
+		<type fullname="PortfolioManagerScroll">
+			<method name="ShowAboutPortfolio"/>
+			<method name="ShowPhysicalPortfolio"/>
+			<method name="ShowSoundDesignPortfolio"/>
+			<method name="ShowUnityPortfolio"/>
+			<method name="ShowVRPortfolio"/>
+		</type>
+		<type fullname="VideoAutoPause">
+			<method name="buttonPause"/>
+			<method name="buttonPause"/>
+		</type>
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro" ignoreIfMissing="1">
 		<type fullname="TMPro.TMP_Text">
 			<method name="set_text"/>
+		</type>
+	</assembly>
+	<assembly fullname="UnityEngine.CoreModule" ignoreIfMissing="1">
+		<type fullname="UnityEngine.GameObject">
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+		</type>
+	</assembly>
+	<assembly fullname="UnityEngine.VideoModule" ignoreIfMissing="1">
+		<type fullname="UnityEngine.Video.VideoPlayer">
+			<method name="Play"/>
+			<method name="Play"/>
 		</type>
 	</assembly>
 </linker>

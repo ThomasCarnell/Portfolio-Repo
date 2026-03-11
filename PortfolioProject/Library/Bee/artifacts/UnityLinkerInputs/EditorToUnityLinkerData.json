@@ -49,7 +49,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -72,7 +72,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -95,7 +95,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -111,7 +111,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -127,7 +127,7 @@
             "fullManagedTypeName": "",
             "moduleName": "AI",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -176,6 +176,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "PortfolioManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "PortfolioManagerScroll",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -290,7 +297,7 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -334,7 +341,7 @@
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -343,7 +350,7 @@
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -352,7 +359,7 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -361,7 +368,7 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -370,7 +377,7 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -379,7 +386,7 @@
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -388,7 +395,7 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -397,7 +404,7 @@
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -406,7 +413,7 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -415,7 +422,7 @@
             "fullManagedTypeName": "UnityEngine.ComputeShader",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -438,7 +445,7 @@
             "fullManagedTypeName": "UnityEngine.Font",
             "moduleName": "TextRendering",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -447,7 +454,7 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -456,7 +463,7 @@
             "fullManagedTypeName": "UnityEngine.LightingSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -465,7 +472,7 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -474,7 +481,7 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -483,7 +490,7 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -492,7 +499,7 @@
             "fullManagedTypeName": "UnityEngine.MeshCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -501,7 +508,7 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -510,7 +517,7 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -519,7 +526,7 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -528,7 +535,7 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -544,7 +551,7 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -553,7 +560,7 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -674,7 +681,7 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -683,7 +690,7 @@
             "fullManagedTypeName": "UnityEngine.RenderTexture",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -692,7 +699,7 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -701,7 +708,7 @@
             "fullManagedTypeName": "UnityEngine.Sprite",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -710,7 +717,7 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -719,7 +726,7 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -728,7 +735,7 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -737,7 +744,7 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
         },
         {
@@ -816,8 +823,22 @@
             "fullManagedTypeName": "UnityEngine.Video.VideoPlayer",
             "moduleName": "Video",
             "usedInScenes": [
-                "Assets/Scenes/MainScene.unity"
+                "Assets/Scenes/MainSceneScroll.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "VideoAutoPause",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "VideoRenderTextureSetup",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",

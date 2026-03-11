@@ -15,9 +15,12 @@ ScriptsOnlyBuild:
     - PortfolioDisplay
     - PortfolioEntry
     - PortfolioManager
+    - PortfolioManagerScroll
     - Rotate
     - SafeArea
     - TMPGroupFader
+    - VideoAutoPause
+    - VideoRenderTextureSetup
     - WebGLVideoFix
     Unity.Postprocessing.Runtime.dll:
     - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
@@ -123,12 +126,66 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Scrollbar/ScrollEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
+  - assembly: UnityEngine.VideoModule
+    fullTypeName: UnityEngine.Video.VideoPlayer
+    methodName: Play
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: VideoAutoPause
+    methodName: buttonPause
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: PortfolioDisplay
+    methodName: PlayVideoNow
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: ClipCopy
     methodName: Copy
   - assembly: Assembly-CSharp
     fullTypeName: ClipCopy
     methodName: Copy
+  - assembly: UnityEngine.VideoModule
+    fullTypeName: UnityEngine.Video.VideoPlayer
+    methodName: Play
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: PortfolioDisplay
+    methodName: PlayVideoNow
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: VideoAutoPause
+    methodName: buttonPause
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: PortfolioManagerScroll
+    methodName: ShowSoundDesignPortfolio
+  - assembly: Assembly-CSharp
+    fullTypeName: PortfolioManagerScroll
+    methodName: ShowUnityPortfolio
   - assembly: Assembly-CSharp
     fullTypeName: ClipCopy
     methodName: Copy
@@ -136,13 +193,22 @@ ScriptsOnlyBuild:
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
   - assembly: Assembly-CSharp
+    fullTypeName: PortfolioManagerScroll
+    methodName: ShowVRPortfolio
+  - assembly: Assembly-CSharp
+    fullTypeName: PortfolioManagerScroll
+    methodName: ShowAboutPortfolio
+  - assembly: Assembly-CSharp
     fullTypeName: OpenURLButton
     methodName: OpenURL
+  - assembly: Assembly-CSharp
+    fullTypeName: PortfolioManagerScroll
+    methodName: ShowPhysicalPortfolio
   - assembly: Assembly-CSharp
     fullTypeName: OpenURLButton
     methodName: OpenURL
   sceneClasses:
-    Assets/Scenes/MainScene.unity:
+    Assets/Scenes/MainSceneScroll.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -176,83 +242,89 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 5174}
+      Script: {instanceID: 5180}
     - Class: 114
-      Script: {instanceID: 5278}
+      Script: {instanceID: 5284}
     - Class: 114
-      Script: {instanceID: 5426}
+      Script: {instanceID: 5432}
     - Class: 114
-      Script: {instanceID: 5688}
+      Script: {instanceID: 5694}
     - Class: 114
-      Script: {instanceID: 5704}
+      Script: {instanceID: 5710}
     - Class: 114
-      Script: {instanceID: 5762}
+      Script: {instanceID: 5768}
     - Class: 114
-      Script: {instanceID: 5942}
+      Script: {instanceID: 5948}
     - Class: 114
-      Script: {instanceID: 6176}
+      Script: {instanceID: 6182}
     - Class: 114
-      Script: {instanceID: 6198}
+      Script: {instanceID: 6204}
     - Class: 114
-      Script: {instanceID: 6342}
+      Script: {instanceID: 6348}
     - Class: 114
-      Script: {instanceID: 6362}
+      Script: {instanceID: 6368}
     - Class: 114
-      Script: {instanceID: 6456}
+      Script: {instanceID: 6374}
     - Class: 114
-      Script: {instanceID: 6550}
+      Script: {instanceID: 6464}
     - Class: 114
-      Script: {instanceID: 6642}
+      Script: {instanceID: 6558}
     - Class: 114
-      Script: {instanceID: 6680}
+      Script: {instanceID: 6650}
     - Class: 114
-      Script: {instanceID: 6686}
+      Script: {instanceID: 6688}
     - Class: 114
-      Script: {instanceID: 6704}
+      Script: {instanceID: 6694}
     - Class: 114
-      Script: {instanceID: 6750}
+      Script: {instanceID: 6712}
     - Class: 114
-      Script: {instanceID: 6856}
+      Script: {instanceID: 6758}
     - Class: 114
-      Script: {instanceID: 6860}
+      Script: {instanceID: 6864}
     - Class: 114
-      Script: {instanceID: 7082}
+      Script: {instanceID: 6868}
     - Class: 114
-      Script: {instanceID: 7084}
+      Script: {instanceID: 7090}
     - Class: 114
       Script: {instanceID: 7092}
     - Class: 114
-      Script: {instanceID: 7130}
+      Script: {instanceID: 7100}
     - Class: 114
-      Script: {instanceID: 7328}
+      Script: {instanceID: 7138}
     - Class: 114
-      Script: {instanceID: 7350}
+      Script: {instanceID: 7280}
     - Class: 114
-      Script: {instanceID: 7418}
+      Script: {instanceID: 7338}
     - Class: 114
-      Script: {instanceID: 7446}
+      Script: {instanceID: 7360}
     - Class: 114
-      Script: {instanceID: 7488}
+      Script: {instanceID: 7428}
     - Class: 114
-      Script: {instanceID: 7500}
+      Script: {instanceID: 7456}
     - Class: 114
-      Script: {instanceID: 7602}
+      Script: {instanceID: 7498}
     - Class: 114
-      Script: {instanceID: 7664}
+      Script: {instanceID: 7510}
     - Class: 114
-      Script: {instanceID: 7750}
+      Script: {instanceID: 7540}
     - Class: 114
-      Script: {instanceID: 7852}
+      Script: {instanceID: 7614}
     - Class: 114
-      Script: {instanceID: 8280}
+      Script: {instanceID: 7676}
     - Class: 114
-      Script: {instanceID: 8334}
+      Script: {instanceID: 7762}
     - Class: 114
-      Script: {instanceID: 8374}
+      Script: {instanceID: 7864}
     - Class: 114
-      Script: {instanceID: 8494}
+      Script: {instanceID: 8292}
     - Class: 114
-      Script: {instanceID: 8518}
+      Script: {instanceID: 8346}
+    - Class: 114
+      Script: {instanceID: 8386}
+    - Class: 114
+      Script: {instanceID: 8506}
+    - Class: 114
+      Script: {instanceID: 8530}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -480,6 +552,12 @@ ScriptsOnlyBuild:
     className: OpenURLButton
   - hash:
       serializedVersion: 2
+      Hash: 43c3261f6d118bb616ee3abb058c932d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: VideoAutoPause
+  - hash:
+      serializedVersion: 2
       Hash: 1553f209ae0b2d5d3a35685fca55f9c3
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -552,7 +630,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 5093040332defabe390c1c451ea8b19d
+      Hash: 7165b90100d19cfac6535b5ab4d601f9
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PortfolioDisplay
@@ -642,6 +720,12 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
+      Hash: bbf96b6271732bde242973c3bb8ddc08
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: VideoRenderTextureSetup
+  - hash:
+      serializedVersion: 2
       Hash: 424074d3010ce4ec3d155fbdba52a3b3
     assemblyName: Unity.Postprocessing.Runtime
     namespaceName: UnityEngine.Rendering.PostProcessing
@@ -724,6 +808,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 8fd9eca14e65828c22d099b6dcf13fa0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PortfolioManagerScroll
   - hash:
       serializedVersion: 2
       Hash: 33656f83bb0079184b2206a69690ec46
@@ -912,5 +1002,5 @@ ScriptsOnlyBuild:
     className: EventTrigger
   platform: 20
   scenePathNames:
-  - Assets/Scenes/MainScene.unity
+  - Assets/Scenes/MainSceneScroll.unity
   playerPath: C:/Users/carco/Portfolio_Project/Portfolio/docs

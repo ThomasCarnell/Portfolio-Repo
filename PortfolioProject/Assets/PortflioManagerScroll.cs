@@ -13,13 +13,13 @@ public class PortfolioManagerScroll : MonoBehaviour
     [SerializeField] private List<PortfolioEntry> entries_unity;
     [SerializeField] private List<PortfolioEntry> entries_soundDesign;
     [SerializeField] private List<PortfolioEntry> entries_physical;
-        [SerializeField] private List<PortfolioEntry> entries_vr;
-
+    [SerializeField] private List<PortfolioEntry> entries_vr;
+    [SerializeField] private List<PortfolioEntry> entries_about;
 
     void Start()
     {
         // Optional default category
-        ShowUnityPortfolio();
+        ShowAboutPortfolio();
     }
 
     // ---------- Category Buttons ----------
@@ -41,6 +41,10 @@ public class PortfolioManagerScroll : MonoBehaviour
     public void ShowVRPortfolio()
     {
         ShowEntries(entries_vr);
+    }
+    public void ShowAboutPortfolio()
+    {
+        ShowEntries(entries_about);
     }
 
     // ---------- Core ----------

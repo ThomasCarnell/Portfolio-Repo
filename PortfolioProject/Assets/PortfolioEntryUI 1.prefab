@@ -661,7 +661,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1484968958157792403
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1016,6 +1016,7 @@ MonoBehaviour:
   copyButton: {fileID: 2279063835351161978}
   videoPlayer: {fileID: 2076567015390905506}
   videoDisplay: {fileID: 414423078475275187}
+  playVideoButton: {fileID: 9028238391080470363}
   playOverlay: {fileID: 0}
 --- !u!114 &2708066132903766387
 MonoBehaviour:
