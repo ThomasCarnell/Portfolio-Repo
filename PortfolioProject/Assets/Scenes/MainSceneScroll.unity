@@ -243,7 +243,6 @@ MonoBehaviour:
   entries_soundDesign:
   - {fileID: 11400000, guid: 1eb75b080252e9f4ab7fdfc5b67db45e, type: 2}
   - {fileID: 11400000, guid: 368f63c9e4dde234297779e8a6c14ce3, type: 2}
-  - {fileID: 11400000, guid: 61a8016104a984f48b90460e4037acb0, type: 2}
   - {fileID: 11400000, guid: 69c87b4a0478cac49a83778b8dbec6eb, type: 2}
   entries_physical:
   - {fileID: 11400000, guid: 8cddcde3faa79644a880a43bfc344f44, type: 2}
@@ -256,6 +255,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 24cf4f3759147b445a4dcedb55983d7d, type: 2}
   entries_about:
   - {fileID: 11400000, guid: 90148e75c97fb004fb84248fb4b4d459, type: 2}
+  scroll: {fileID: 1672080557}
 --- !u!1 &38532528
 GameObject:
   m_ObjectHideFlags: 0
@@ -2644,7 +2644,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 23}
   m_SizeDelta: {x: 263.02002, y: 91.79999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &678496463
@@ -4367,9 +4367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d39e2a6e051f0a94fb058e5f6740c384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteContent: '
-
-'
+  noteContent: EXTEND HORROR MUSIC
 --- !u!4 &1145346064
 Transform:
   m_ObjectHideFlags: 0

@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: Hell Dive
   m_EditorClassIdentifier: 
   projectName: Hell Dive
-  description: 'Hell Dive is a first-person horror game where you are a Maritime
+  description: "Hell Dive is a first-person horror game where you are a Maritime
     Operative alone aboard a submarine. Sent on a mission to revive an abandoned
     deep-sea colony, you uncover dark secrets as terrifying and deadly horrors await
-    in its depths.
-
-
-    
-
-'
+    in its depths.\n\nI joined the post-release phase tasked with overhauling the
+    audio implementation \u2014 resolving clipping, timing, compression, and consistency
+    issues to bring the mix up to a professional standard. \n\nBeyond the technical
+    cleanup, my background in horror led to additional work designing and implementing
+    new audio events and improving existing ones to better serve the game's tension
+    and pacing."
   addText: 
   addText2: 
-  roles: Audio Tech & Design
-  productionDate: 2025
+  roles: Audio & technical Design, programming Gameplay Design
+  productionDate: 2026
   thumbnail: {fileID: 0}
   webLink: 
   showcaseVideo: {fileID: 32900000, guid: 88f0f0aeb09fca14eaccfdbd802689fc, type: 3}

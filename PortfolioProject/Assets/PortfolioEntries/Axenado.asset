@@ -13,7 +13,14 @@ MonoBehaviour:
   m_Name: Axenado
   m_EditorClassIdentifier: 
   projectName: Axenado
-  description: Prototype of Hypercasual mobile game
+  description: "A prototype exploring \nnon-linear, \nRPG-lite mechanics \nin a hypercasual
+    \nmobile format. The \nplayer controls an \naxe cutting down \nrare trees for
+    points, \nwith escalating tension \nas monkeys give chase \nand force a \nretreat
+    to base. \n\n\nSimple progression hooks like levelling up showed genuine player
+    engagement \u2014 though the \ndeforestation undertones were an unintended design
+    note worth flagging."
+  addText: 
+  addText2: 
   roles: Solo Developer
   productionDate: 2024
   thumbnail: {fileID: 0}

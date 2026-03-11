@@ -13,11 +13,23 @@ MonoBehaviour:
   m_Name: Blind Faith
   m_EditorClassIdentifier: 
   projectName: Blind Faith
-  description: "Blind Faith is an atmospheric first-person horror puzzle game set
-    in a technologically corrupted Victorian age. The player wakes up in a church
-    which has been repurposed as a lab for all sorts of sinister experiments in the
-    light, and they must manipulate the light to solve environmental puzzles and
-    piece together what has transpired. \n\nITU Project"
+  description: 'First-Person Horror Puzzle
+
+    An atmospheric horror puzzle game
+    set in a technologically corrupted Victorian era. The player wakes in a church
+    repurposed as a sinister laboratory, using light manipulation to solve environmental
+    puzzles and unravel the dark history of the place. Built as part of an ITU project,
+    Blind Faith leans into atmosphere and environmental storytelling to create a
+    slow-burning, unsettling experience.
+
+
+    I contributed with production/pitch,
+    all sound design and implementation(Wwise & C#)
+
+    Voice acting, Unity Development
+    and programming(C#)'
+  addText: 
+  addText2: 
   roles: Project Manager, Sound Designer, Programmer, VA
   productionDate: 2022
   thumbnail: {fileID: 0}

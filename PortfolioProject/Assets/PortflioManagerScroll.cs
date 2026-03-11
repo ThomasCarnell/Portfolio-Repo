@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class PortfolioManagerScroll : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class PortfolioManagerScroll : MonoBehaviour
     [SerializeField] private List<PortfolioEntry> entries_physical;
     [SerializeField] private List<PortfolioEntry> entries_vr;
     [SerializeField] private List<PortfolioEntry> entries_about;
+    [SerializeField] private ScrollRect scroll;
 
     void Start()
     {
@@ -52,7 +54,7 @@ public class PortfolioManagerScroll : MonoBehaviour
     public void ShowEntries(List<PortfolioEntry> entrySet)
     {
         ClearPortfolioScroll();
-
+        scroll.verticalNormalizedPosition = 1f; // Scroll to top
         if (entrySet == null || entrySet.Count == 0)
         {
             Debug.LogWarning("No entries to display.");

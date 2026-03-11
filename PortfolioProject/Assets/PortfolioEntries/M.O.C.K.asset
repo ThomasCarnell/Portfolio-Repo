@@ -13,15 +13,20 @@ MonoBehaviour:
   m_Name: M.O.C.K
   m_EditorClassIdentifier: 
   projectName: 'M.O.C.K '
-  description: 'Menecing Omnicritical Contraption Kernal
-
-    Useless box game, that
-    is designed to showcase when your choices don''t matter in games. Humor is intended,
-    with the use of sounds from Team Fortress 2.
-
-
-    ITU Project'
-  roles: Build & Arduino Programming
+  description: "Menacing Omnicritical Contraption Kernel\nA critical art project
+    wrapping a pointed game design argument in a joke. Built around the concept of
+    the \"unbeatable machine,\" M.O.C.K. is a useless box game that confronts the
+    player with the illusion of choice \u2014 inspired by the Mass Effect Andromeda
+    controversy, where every ending amounted to the same differently-colored explosion.
+    \nThe humor is intentional, as the absurd Team Fortress 2 audio brings it home.
+    The buttons are supposed to represent YES/NO answering to the question \"Disam
+    Bomb?\"\nBuilt and programmed in Arduino by me. I had to implement feedback when
+    players hit buttons in the wrong order, since it would otherwise confuse them.
+    Due to the limitations of a physical/Arduino product, it was not possible to
+    adress it similarily, when players spammed buttons. It generated some good laughs!\n"
+  addText: 
+  addText2: 
+  roles: Solo Build & Arduino Programming
   productionDate: 2024
   thumbnail: {fileID: 0}
   webLink: 

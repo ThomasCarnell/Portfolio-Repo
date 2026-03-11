@@ -13,14 +13,17 @@ MonoBehaviour:
   m_Name: ButtonClicker
   m_EditorClassIdentifier: 
   projectName: ButtonClicker
-  description: 'In this project, we explored the redudancy in some interfaces and
-    systems, such as google assistant, and some of the "problems" they solve. Or
-    rather- how they push the problem further down the line. We made this marbletrack-box
-    to display that in the end it is just some other interface that pushes the button.
-
-
-    ITU
-    Project'
+  description: "ITU Project\nA critical design project exploring the redundancy baked
+    into modern interfaces and voice assistants. Rather than solving problems, systems
+    like Google Assistant often just defer them \u2014 so we built a marble track
+    box that literally does exactly that: push a button through an increasingly elaborate
+    chain, until something else pushes it for you.\n\nI contributed with the physical
+    build as well as the Arduino programming.\n\nI would have liked to include some
+    music, specifically Powerhouse by Raymond Scott, made popular by The Simpsons
+    during elborate and comedic factory scenes. It was scoped out, due to the slightly
+    cumbersome nature of Arduino and audio integration."
+  addText: 
+  addText2: 
   roles: Build & Arduino Programming
   productionDate: 2023
   thumbnail: {fileID: 0}

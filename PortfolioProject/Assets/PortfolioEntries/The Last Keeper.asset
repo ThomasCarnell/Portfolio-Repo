@@ -13,9 +13,17 @@ MonoBehaviour:
   m_Name: The Last Keeper
   m_EditorClassIdentifier: 
   projectName: The Last Keeper
-  description: "VR adventure vertical slice.\nWith the premise of attemtping to produce
-    a VR walking game, this ITU project was the first to complete a VR game in the
-    course \"Game World Design\". \n\nITU Project"
+  description: "A vertical slice built around the challenge of designing a compelling
+    VR walking game \u2014 and the first project in ITU's Game World Design course
+    to ship a complete VR experience. \n\nI handled sound design, music &  implementation,
+    voice acting, and production \u2014 managing the pipeline across Miroboard and
+    Trello, coordinating with contributors outside ITU, and leading pitch presentations.\nVR
+    production breaks a lot of conventional rules, and as project manager that meant
+    making tough scope calls \u2014 grounding the team's ideas in what actually works
+    in VR and what the project could realistically deliver. Previous VR experience
+    made that easier, but it's never a comfortable conversation."
+  addText: 
+  addText2: 
   roles: Project Manager, Sound Designer, Programmer, VA
   productionDate: 2023
   thumbnail: {fileID: 0}

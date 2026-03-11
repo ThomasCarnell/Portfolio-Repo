@@ -12,12 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 299f02cab8b437643be53cf2058c1adf, type: 3}
   m_Name: Sound Design_MusicShowcase
   m_EditorClassIdentifier: 
-  projectName: Adaptive Horror Music Showcase
-  description: 'Dynamic horror music, based on the players biofeedback.
-
-    I produced
-    and composed the music, as well as programmed the Wwise project.'
-  roles: Composer, Programmer
+  projectName: Horror Music
+  description: "Horror Music Showcase\nHorror is a specialism, not just a genre I
+    enjoy. I wrote my Bachelor's thesis on dynamic music in horror games, and that
+    research has fed directly into my practice ever since.\n\nThis showcase covers
+    a range of horror music work \u2014 including dynamic systems driven by player
+    biofeedback, and music redesigns for Alien: Isolation and SOMA. If you want to
+    understand how sound shapes fear, this is a good place to start.\n\nAll the music
+    is composed and produced by me."
+  addText: 
+  addText2: 
+  roles: Composer & Programmer
   productionDate: 2023
   thumbnail: {fileID: 0}
   webLink: 

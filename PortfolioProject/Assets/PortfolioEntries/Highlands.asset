@@ -13,8 +13,17 @@ MonoBehaviour:
   m_Name: Highlands
   m_EditorClassIdentifier: 
   projectName: The Highlands
-  description: "Top-Down physics based brawler for online multiplayer. \n\nFootstomp
-    Studio"
+  description: "In a world high beyond the skies is the home for angry little creatures
+    called NEFs. Show your worth to other NEFs by defeating them on home ground with
+    fun weapons and awesome ragdoll-physics. A multiplayer physics-based brawler.\n\nI
+    handled all sound design, voice acting, and audio implementation via Wwise and
+    C#, across a full iterative production cycle. Alongside audio, I took on project
+    management \u2014 coordinating the team through Miro and Trello and organising
+    a Steam Next Fest release. \n\nThe project taught a valuable lesson: we had polished
+    a prototype before locking the design, so the team has stepped back to rework
+    the concept with the existing assets as a foundation."
+  addText: 
+  addText2: 
   roles: Sound Design, Project Manager
   productionDate: 2023
   thumbnail: {fileID: 0}
