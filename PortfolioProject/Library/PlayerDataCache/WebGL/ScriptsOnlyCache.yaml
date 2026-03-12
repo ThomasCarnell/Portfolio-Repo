@@ -154,18 +154,6 @@ ScriptsOnlyBuild:
     fullTypeName: ClipCopy
     methodName: Copy
   - assembly: Assembly-CSharp
-    fullTypeName: ClipCopy
-    methodName: Copy
-  - assembly: UnityEngine.VideoModule
-    fullTypeName: UnityEngine.Video.VideoPlayer
-    methodName: Play
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: Assembly-CSharp
     fullTypeName: PortfolioDisplay
     methodName: PlayVideoNow
   - assembly: UnityEngine.CoreModule
@@ -175,8 +163,20 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: Assembly-CSharp
+    fullTypeName: ClipCopy
+    methodName: Copy
+  - assembly: Assembly-CSharp
     fullTypeName: VideoAutoPause
     methodName: buttonPause
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.VideoModule
+    fullTypeName: UnityEngine.Video.VideoPlayer
+    methodName: Play
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -810,7 +810,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 8fd9eca14e65828c22d099b6dcf13fa0
+      Hash: 6c2ef8a79f234790ae43e6b7418e1dac
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PortfolioManagerScroll

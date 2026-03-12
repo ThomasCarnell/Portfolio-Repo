@@ -13,10 +13,19 @@ MonoBehaviour:
   m_Name: YaY
   m_EditorClassIdentifier: 
   projectName: '"YaY - You Against You"'
-  description: "Virtual Reality Horror game built for master thesis in order to test
-    challenges of adaptive games. \r\nMade to be used with Mind Monitor App and the
-    Muse2 EEG headset. \n\n\r\nDo you trust the voice from the speaker? It is also
-    the developer of the game!"
+  description: "\"YaY is a VR horror game of the psychological nature, where the
+    player must traverse a hallway several times wherein weird anomalous things are
+    happening. The player is equipped with a Muse2 under the VR headset, that records
+    their EEG data, or brainwaves, and sends it to the game in real-time. \r\nThis
+    project aims to enlighten the challenges involved with the different phenomena
+    that occur when combining all aspects of such an experience. The associated symptoms
+    and emotions that are picked up by the EEG recording device and how they, from
+    a developers perspective, can be used to create an adaptive experience, as well
+    as the challenges they bring. The challenges of gathering meaningful data via
+    playtests, in a VR horror setting are also explored, alongside a rendition of
+    the author's verdict as to the viability of future potential in gaming and research.\""
+  addText: 
+  addText2: 
   roles: Solo Developer - Thesis Project
   productionDate: 2024
   thumbnail: {fileID: 0}

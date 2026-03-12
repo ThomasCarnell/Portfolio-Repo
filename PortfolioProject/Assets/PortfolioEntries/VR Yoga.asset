@@ -13,8 +13,15 @@ MonoBehaviour:
   m_Name: VR Yoga
   m_EditorClassIdentifier: 
   projectName: VR Yoga
-  description: "VR Yoga! A VR simulator showcasing the posibilities of teaching players
-    basic yoga using music and interaction. \n\nITU Project"
+  description: "A VR prototype exploring how games can teach real physical skills
+    \u2014 in this case, basic standing yoga poses. Inspired by Beat Saber's movement
+    mechanics, the game guides players into correct positions by having them intercept
+    incoming objects, then hold the pose statically for 30 seconds. Soothing music
+    rewards correct form, tying the auditory feedback directly to the physical experience.\n\nThree
+    moves, simple rules, and a genuinely interesting design question: can a game
+    make you do yoga without it feeling like exercise?\nITU Project"
+  addText: 
+  addText2: 
   roles: Solo Developer
   productionDate: 2024
   thumbnail: {fileID: 0}
