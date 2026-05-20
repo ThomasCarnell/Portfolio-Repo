@@ -1,3 +1,4 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -18,7 +19,8 @@ public class PortfolioEntry : ScriptableObject
     public VideoClip showcaseVideo; // If you have a short video
     public GameObject projectPrefab; // Optional 3D model to display
     public string videoURL; // Optional: link to external video
-
+    [SerializeField]
+    public Image picture;
     [Header("Tags / Metadata")]
     public string[] tags; // e.g. ["Unity", "C#", "Shader Graph"]
 }

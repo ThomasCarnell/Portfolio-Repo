@@ -13,16 +13,14 @@ MonoBehaviour:
   m_Name: Start Screen
   m_EditorClassIdentifier: 
   projectName: Quick Bio
-  description: "Game Developer \xB7 Sound Designer \xB7 Unity \xB7 C#\nI'm Thomas,
-    a game developer and sound designer based near Copenhagen. I build games that
-    are well-crafted under the hood \u2014 clean C#, solid systems, and audio that
-    actually does something.\nWith 5+ years across indie, academic, and professional
-    projects, I've worn a lot of hats \u2014 programmer, designer, producer, project
-    lead \u2014 often across cross-disciplinary and international teams. My background
-    spans both a Bachelor's in Sound Design and a Master's in Game Design from ITU
-    Copenhagen, which means I think about games from both a technical and experiential
-    angle.\nCurrently open to studio roles. If something here catches your eye, I'd
-    love to talk."
+  description: "Game Developer \xB7 Sound Designer \xB7 Unity \xB7 C# \xB7 .NET\n\nHello!
+    Thank you for looking at my portfolio - please have a look around!\n\nI'm Thomas
+    \u2014 a game developer and sound designer based near Copenhagen. Clean C#, solid
+    systems, audio that earns its place. I've shipped games, led teams, and worn
+    many different hats across 5+ years of indie, academic, and professional work.\n\nMSc
+    Games (ITU Copenhagen) \xB7 Ba. Sound Design. Lately expanding into .NET full-stack
+    \u2014 because strong fundamentals travel.\n\nOpen to studio and developer roles.
+    Let's talk."
   addText: 
   addText2: 
   roles: 
