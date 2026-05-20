@@ -20,7 +20,6 @@ public class PortfolioEntry : ScriptableObject
     public GameObject projectPrefab; // Optional 3D model to display
     public string videoURL; // Optional: link to external video
     [SerializeField]
-    public Image picture;
     [Header("Tags / Metadata")]
     public string[] tags; // e.g. ["Unity", "C#", "Shader Graph"]
 }
