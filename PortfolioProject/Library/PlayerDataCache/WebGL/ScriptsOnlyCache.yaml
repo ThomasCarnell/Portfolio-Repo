@@ -182,10 +182,31 @@ ScriptsOnlyBuild:
     methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: PortfolioManagerScroll
+    methodName: ShowDotNetPortfolio
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: PortfolioManagerScroll
     methodName: ShowSoundDesignPortfolio
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: PortfolioManagerScroll
     methodName: ShowUnityPortfolio
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: ClipCopy
     methodName: Copy
@@ -195,15 +216,33 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: PortfolioManagerScroll
     methodName: ShowVRPortfolio
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: PortfolioManagerScroll
     methodName: ShowAboutPortfolio
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: OpenURLButton
     methodName: OpenURL
   - assembly: Assembly-CSharp
     fullTypeName: PortfolioManagerScroll
     methodName: ShowPhysicalPortfolio
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: OpenURLButton
     methodName: OpenURL
@@ -810,7 +849,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 6c2ef8a79f234790ae43e6b7418e1dac
+      Hash: 8062f69388804a98d495529b452e9728
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PortfolioManagerScroll
